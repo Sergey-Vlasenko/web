@@ -142,6 +142,7 @@ html {
 	width: 70px;
 	background:#292c31;
 	border-radius:3px;
+	box-shadow: 1px 1px 1px 0 #393b40, 2px 2px 2px 0 #181a1d inset;
 }
 #head_toogle_control:after{
 	content:'';
@@ -151,7 +152,8 @@ html {
 	border-radius:3px;
     top: 2px;
     right: 1px;
-	background:#8b9298;
+	background: rgb(100,100,100) radial-gradient(circle at 50% 0, rgba(255,255,255,0.45), rgba(255,255,255,0.35));
+    box-shadow: inset rgba(0,0,0,0.6) 0 -3px 8px, inset rgba(252,255,255,0.7) 0 3px 8px, rgba(0,0,0,0.8) 1px 1px 1px 0px;
 }
 .head_toogle_control:target:after{
 	left: 1px;
