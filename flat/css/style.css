@@ -172,8 +172,47 @@ html {
     left: 50%;
     margin-left: -275px;
 	text-align: left;
+	z-index:2;
 }
-.head_control:after {
+/***SVG header menu***/
+.head_control_bg0{
+	fill:#273C53;
+}
+.head_control_bg1{
+	fill:#405D7B;
+}
+.head_control_menu-bg {
+	fill:#E8E8E8;
+}
+.head_control_text-way {
+	fill:none;
+}
+.head_control_dotted-line{
+	fill:none;
+	stroke:#5D748C;
+	stroke-linecap:square;
+	stroke-linejoin:round;
+	stroke-miterlimit:10;
+	stroke-dasharray:1.9,3.8;
+}
+.head_control_logo{
+	fill:#D3E3F4;
+}
+.head_control tspan{
+	font-size:14px;
+}
+.head_control text {
+	font-size:24px;
+}
+.head_control_item-active {
+	fill:#0E75EA; 
+}
+.head_control text, .head_control tspan {
+	font-family:'Verdana';
+	fill:#546373;
+}
+/***********/
+/*.head_control:after {
 	content: "";
     position: absolute;
     width: 650px;
@@ -364,7 +403,8 @@ html {
     position: absolute;
     top: -13px;
     right: 16px;
-}
+}*/
+/***********/
 .header_content_slider_caption {
     position: absolute;
     top: 200px;
@@ -372,7 +412,6 @@ html {
     width: 650px;
     margin: 0 0 0 -325px;
 }
-/***********/
 .atom {
 	text-align: center;
 	margin: 0 0 50px 0;
