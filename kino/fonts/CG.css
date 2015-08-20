@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'CG';
+    src: url('fonts/CG.eot');
+    src: url('fonts/CG.eot') format('embedded-opentype'),
+         url('fonts/CG.woff2') format('woff2'),
+         url('fonts/CG.woff') format('woff'),
+         url('fonts/CG.ttf') format('truetype'),
+         url('fonts/CG.svg#CG') format('svg');
+}

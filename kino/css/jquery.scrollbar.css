@@ -1,0 +1,65 @@
+.scroll-wrapper {
+	overflow: hidden;
+}
+.content_comment_description_wrapper_vk> .scroll-element, .content_comment_description_wrapper_vk> .scroll-element div {
+    border: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+.content_comment_description_wrapper_vk> .scroll-element div {
+    background-color: transparent;
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.content_comment_description_wrapper_vk> .scroll-element.scroll-y {
+    height: 100%;
+    min-height: 100%;
+    right: 0;
+    top: 0;
+    width: 10px;
+}
+.content_comment_description_wrapper_vk> .scroll-element .scroll-element_corner {
+    display: none;
+}
+.content_comment_description_wrapper_vk> .scroll-element.scroll-y .scroll-element_track {
+    /*background-image: ;
+    background-repeat: repeat-y;*/
+}
+.content_comment_description_wrapper_vk> .scroll-element.scroll-y .scroll-bar .scroll-bar_body {
+	background-color:rgba(0,0,0, 0.15);
+	border-radius:5px;
+}
+.content_comment_description_wrapper_vk> .scroll-element.scroll-y .scroll-arrow_less {
+    background: url(../img/ico.png) -89px -112px no-repeat;
+}
+.content_comment_description_wrapper_vk> .scroll-element.scroll-y .scroll-arrow_more {
+    background: url(../img/ico.png) -89px -125px no-repeat;
+}
+.content_comment_description_wrapper_vk> .scroll-element .scroll-arrow,.content_comment_description_wrapper_vk> .scroll-element .scroll-bar_body {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content_comment_description_wrapper_vk> .scroll-content.scroll-scrolly_visible {
+	padding-right:200%;
+}
+.content_comment_description_wrapper_vk> .scroll-element.scroll-y.scroll-element_arrows_visible .scroll-arrow_less { 
+	width: 100%; height: 10px;
+}
+.content_comment_description_wrapper_vk> .scroll-element.scroll-y.scroll-element_arrows_visible .scroll-arrow_more { 
+	width: 100%; top: auto; bottom: 0; height: 10px;
+}
+.content_comment_description_wrapper_vk> .scroll-element.scroll-y.scroll-element_arrows_visible .scroll-element_outer {
+	top: 16px;
+}
+.content_comment_description_wrapper_vk> .scroll-element.scroll-y.scroll-element_arrows_visible .scroll-element_track {
+	top: -32px;
+}
+.content_comment_description_wrapper_vk> .scroll-element.scroll-y.scroll-element_arrows_visible .scroll-element_size {
+	top: -33px;
+}
