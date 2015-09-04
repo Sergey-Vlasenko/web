@@ -1,0 +1,4 @@
+[submodule "_dist"]
+	path = _dist
+	url = git@github.com:Sergey-Vlasenko/web.git
+	branch = gh-pages
