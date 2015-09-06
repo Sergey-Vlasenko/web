@@ -1,9 +1,9 @@
-.promo .bx-wrapper img {
+.head .bx-wrapper img {
 	width: 100%;
     display: inline-block;
     margin: 0 auto;
 }
-.promo .bx-pager-item a{
+.head .bx-pager-item a{
 	background: #adadad;
 text-indent: -9999px;
     display: block;
@@ -14,8 +14,8 @@ text-indent: -9999px;
     border-radius: 50%;
     border: 3px solid #adadad;
 }
-.promo  .bx-pager-item a:hover,
-.promo  .bx-pager-item a.active {
+.head  .bx-pager-item a:hover,
+.head  .bx-pager-item a.active {
     background: #2190c1;
     border: 3px solid #f98561;
 }
@@ -28,11 +28,11 @@ text-indent: -9999px;
     margin: 0px 10px;
 	border-radius: 0;
 }
-.testimonials .bx-pager-item a:hover,
+.testimonials .bx-pager-item a:hover, 
 .testimonials .bx-pager-item a.active{
 	background: #f98561;
 }
-.testimonials .bx-pager-item:first-child a,
+.testimonials .bx-pager-item:first-child a, 
 .testimonials .bx-pager-item:last-child a{
 	margin:0;
 }
@@ -94,8 +94,8 @@ text-indent: -9999px;
 	border:  5px solid #fff;
 	background: #fff;
 	left: -5px;*/
-
-
+	
+	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
 	-moz-transform: translatez(0);
