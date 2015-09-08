@@ -40,7 +40,7 @@ html {
 .promo {
 	text-align: center;
 }
-.slide__button {
+.button_promo {
 	display: inline-block;
 	color: #ffebca;
 	text-transform: uppercase;
@@ -104,7 +104,7 @@ html {
 	line-height: 45px;
 	margin: 0 -3px 0 0;
 }
-.social__header {
+.caption_social {
 	display:inline-block;
 	color:#9d9d9d;
 	font: 13px 'Ubuntu Condensed', Tahoma, serif;
@@ -177,7 +177,7 @@ html {
 	background:#000;
 }
 /*****Head_menu******/
-.menu {
+.menu_head {
     position: absolute;
     width: 550px;
     margin: 0 auto;
@@ -416,7 +416,7 @@ html {
 	font: 35px 'Bree Serif', sans-serif;
 	display: inline-block;
 }
-.button_title {
+.button_portfolio {
 	display:inline-block;
 	font: 20px 'Ubuntu Condensed', sans-serif;
 	color: #fff;
@@ -498,10 +498,10 @@ html {
 	text-align:center;
 	background: #fbfbfb;
 }
-.testimonials_wraper {
+.wraper_testimonials {
 	padding: 17px 0 33px 0;
 }
-.testimonials h2 {
+.caption_slogan-testimonials {
 	color: #446f9b;
 	font: 32px 'bebas_neuebold', sans-serif;
 	border-bottom:1px solid #8ec5de;
@@ -509,16 +509,16 @@ html {
 	margin: 0 0 46px 0;
 	padding: 0 0 10px 0;
 }
-.testimonials_slogan {
+.slogan_testimonals {
 	color: #515862;
 	font: 25px 'Bree Serif', serif;
 	width: 67%;
 	margin: 0 auto;
 }
-.testimonials_content{
+.content_testimonials{
 	margin: 45px 0 0 0;
 }
-.testimonials_content_title {
+.caption_content-testimonials {
 	color:#f98561;
 	font: 14px 'Open Sans', sans-serif;
 	margin: 0 0 25px 0;
@@ -528,19 +528,19 @@ html {
     background: #2e3e4f;
 	font-family:'Open Sans',sans-serif;
 }
-.footer_connect {
+.slogan_footer {
 	background:#f2f2f2;
 	padding: 50px 0 45px 0;
 	overflow: hidden;
 	margin: 0 0 15px 0;
 }
-.footer_connect p {
+.caption_slogan-footer{
 	color:#2e3e4f;
 	font-size: 32px;
 	letter-spacing: -2px;
 	font-weight: 300;
 }
-.footer_connect  .testimonials_get{
+.button_footer{
 	display:inline-block;
 	padding: 10px 60px;
 	border-radius:5px;
@@ -552,28 +552,28 @@ html {
 	margin: 25px 0 0 0;
 	transition:0.5s ease;
 }
-.footer_menu {
+.menu {
 	display:inline-block;
 	padding: 10px 20px;
 	border-radius: 0 0 5px 5px;
 }
-.footer_menu li {
+.menu__item{
 	display:inline-block;
 	padding: 0 5px 0 28px;
 }
-.footer_menu li:first-child {
+.menu__item:first-child {
 	padding-left:0;
 }
-.footer_menu a {
+.menu__link {
 	text-decoration:none;
 	font-size: 15px;
 	color:#808b96;
 }
-.footer_menu a:hover {
+.menu__link:hover {
 	color:#fbfbfb;
 	transition:0.5s ease;
 }
-.footer_menu .active {
+.menu__link_active {
 	color:#4f97e9;
 }
 .footer_social_menu{
