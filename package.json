@@ -1,0 +1,18 @@
+{
+  "name": "MyProject",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "*",
+    "gulp-imagemin": "*",
+    "gulp-livereload": "^3.8.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-rename": "*",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-watch": "*",
+    "normalize.css": "^3.0.3"
+  }
+}

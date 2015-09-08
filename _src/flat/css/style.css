@@ -51,7 +51,7 @@ html {
 	border-radius: 5px;
 	transition: 0.5s ease;
 }
-.button:hover, .portfolio_more:hover, .footer_connect .testimonials_get:hover {
+.button:hover {
 	background:#2190C2;
 	transition: 0.5s ease;
 }
@@ -177,7 +177,7 @@ html {
 	background:#000;
 }
 /*****Head_menu******/
-.menu_head {
+.menu-top {
     position: absolute;
     width: 550px;
     margin: 0 auto;
@@ -210,18 +210,23 @@ html {
 .menu-logo{
 	fill:#D3E3F4;
 }
-.menu tspan{
+.menu-svg__text tspan{
 	font-size:14px;
 }
-.menu text {
+.menu-svg__separator text {
 	font-size:24px;
 }
-.menu_item-active {
-	fill:#0E75EA;
-}
-.menu text, .menu tspan {
+.menu-svg text, .menu-svg tspan {
 	font-family:'Verdana';
 	fill:#546373;
+}
+.menu-svg__text .menu_item-active {
+	fill:#0E75EA;
+}
+.menu-svg__text tspan:hover {
+	cursor: pointer;
+	fill:#0E75EA;
+	transition: 0.5s ease;
 }
 .atom {
 	text-align: center;
@@ -576,44 +581,46 @@ html {
 .menu__link_active {
 	color:#4f97e9;
 }
-.footer_social_menu{
-	display:inline-block;
+.social-list{
+	display:block;
 	padding: 15px 20px;
 }
-.footer_social_menu li {
+.social-list__item {
 	display:inline-block;
 	padding: 0 3px 0 15px;
 }
-.footer_social_menu a {
+.social-list__link {
 	display:inline-block;
 	width:45px;
 	height:45px;
 	transition:0.2s ease;
 }
-.footer_social_menu a:hover {
+.social-list__link:hover {
 	transform:scale(1.1);
 	transition:0.2s ease;
 }
 .footer_social_menu li:first-child {
 	padding-left:0;
 }
-.footer_social_menu_fb {
+.social-list__link_fb {
 	background:url(../images/social_footer.png) no-repeat -3px -3px;
 }
-.footer_social_menu_tw {
+.social-list__link_tw {
 	background:url(../images/social_footer.png) no-repeat -65px -3px;
 }
-.footer_social_menu_be {
+.social-list__link_be {
 	background:url(../images/social_footer.png) no-repeat -133px -3px;
 }
-.footer_social_menu_in {
+.social-list__link_in {
 	background: url(../images/social_footer.png) no-repeat -195px -3px;
 }
-.footer_copyright {
+.copyright {
 	color:#bbc1c9;
 	font-size: 13px;
 	padding: 15px 0 20px 0px;
 }
+/*ссылки сделать линк в sass цвет по ховер для переменной темнее на 20%*/
+
 /***********/
 /*.menu:after {
 	content: "";

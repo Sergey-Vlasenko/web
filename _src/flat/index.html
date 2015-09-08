@@ -14,8 +14,8 @@
 </head>
 <body>
 	<div class="head">
-		<div class="menu menu_head">
-			<svg class="menu__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="25 25 582 229">
+		<div class="menu-top">
+			<svg class="menu-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="25 25 582 229">
 				<g>
 					<g>
 						<path class="menu-bg0" d="M132.3,86.7c0.1,1.1-0.1,2.1-0.7,3c-1.9,3.1-6.9,3.9-11.3,1.6c-4.4-2.2-6.4-6.6-4.5-9.7
@@ -39,7 +39,7 @@
 					<g>
 						<path class="menu-dotted-line" d="M72.7,25.6c144.2,103.6,343.8,103.6,488,0"/>
 					</g>
-					<g>
+					<g class="menu-svg__text">
 						<path id="arc_text" class="menu-text-way" d="M143,105 c105,45 251,45, 347,00"/>
 						<text>
 						  <textPath  xlink:href="#arc_text" startOffset="1%">
@@ -50,7 +50,7 @@
 						  </textPath>
 						</text>
 					</g>
-					<g>
+					<g class="menu-svg__separator">
 						<path id="arc_separator" class="menu-text-way" d="M192.2,125.8c67.1,19.4,160.5,21,228.2,3.8"/>
 						<text>
 							<textPath  xlink:href="#arc_separator" startOffset="80%"></textPath>
@@ -325,16 +325,16 @@
 			<li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
 			<li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
 		</ul>
-		<div class="footer_social">
-			<ul class="footer_social_menu">
-				<li><a class="footer_social_menu_fb" href="#"></a></li>
-				<li><a class="footer_social_menu_tw" href="#"></a></li>
-				<li><a class="footer_social_menu_be" href="#"></a></li>
-				<li><a class="footer_social_menu_in" href="#"></a></li>
+		<!-- <div class="footer_social footer-social"> -->
+			<ul class="social-list">
+				<li class="social-list__item"><a class="social-list__link social-list__link_fb" href="#"></a></li>
+				<li class="social-list__item"><a class="social-list__link social-list__link_tw footer_social_menu_tw" href="#"></a></li>
+				<li class="social-list__item"><a class="social-list__link social-list__link_be footer_social_menu_be" href="#"></a></li>
+				<li class="social-list__item"><a class="social-list__link social-list__link_in footer_social_menu_in" href="#"></a></li>
 			</ul>
-		</div>
-		<div class="footer_copyright">
-			<p>2015 Hakan Ertan. All right reserved</p>
+		<!-- </div> -->
+		<div class="copyright">
+			<p class="copyright__content">2015 Hakan Ertan. All right reserved</p>
 		</div>
 	</div>
 </body>
