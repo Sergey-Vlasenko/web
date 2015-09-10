@@ -56,12 +56,11 @@ html {
 	transition: 0.5s ease;
 }
 .slide__info {
-    position: absolute;
-    top: 200px;
-	/*top:28%;*/
+	position: absolute;
     left: 50%;
     width: 650px;
-    margin: 0 0 0 -325px;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .caption_slide {
 	color:#c9cbce;
@@ -623,6 +622,20 @@ html {
 	color:#bbc1c9;
 	font-size: 13px;
 	padding: 15px 0 20px 0px;
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 992px){
+	.slide__info {
+	    transform: translate(-50%, -20%);
+	}
+}
+@media screen and (max-width: 1382px){
+
 }
 /*ссылки сделать линк в sass цвет по ховер для переменной темнее на 20%*/
 
