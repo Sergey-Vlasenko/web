@@ -220,7 +220,7 @@ html {
 	font-family:'Verdana';
 	fill:#546373;
 }
-.menu-svg__item_active{
+.menu-svg__text .menu-svg__item_active{
 	fill:#0E75EA;
 }
 .menu-svg__text tspan:hover {
@@ -603,7 +603,7 @@ html {
 	transform:scale(1.1);
 	transition:0.2s ease;
 }
-.footer_social_menu li:first-child {
+.social-list__item:first-child {
 	padding-left:0;
 }
 .social-list__link_fb {
