@@ -154,7 +154,7 @@ html {
 	border-radius:3px;
 	box-shadow: 1px 1px 1px 0 #393b40, 2px 2px 2px 0 #181a1d inset;
 }
-#toogle__control:after{
+.toogle__control:after{
 	content:'';
 	position:absolute;
 	height:11px;
@@ -187,19 +187,19 @@ html {
 	z-index:2;
 }
 /***SVG header menu***/
-.menu-bg0{
+.menu-svg__bg0{
 	fill:#273C53;
 }
-.menu-bg1{
+.menu-svg__bg1{
 	fill:#405D7B;
 }
-.menu-bg {
+.menu-svg__bg {
 	fill:#E8E8E8;
 }
-.menu-text-way {
+.menu-svg__text-way {
 	fill:none;
 }
-.menu-dotted-line{
+.menu-svg__dotted-line{
 	fill:none;
 	stroke:#5D748C;
 	stroke-linecap:square;
@@ -207,7 +207,7 @@ html {
 	stroke-miterlimit:10;
 	stroke-dasharray:1.9,3.8;
 }
-.menu-logo{
+.menu-svg__logo{
 	fill:#D3E3F4;
 }
 .menu-svg__text tspan{
@@ -220,7 +220,7 @@ html {
 	font-family:'Verdana';
 	fill:#546373;
 }
-.menu-svg__text .menu_item-active {
+.menu-svg__item_active{
 	fill:#0E75EA;
 }
 .menu-svg__text tspan:hover {
@@ -632,6 +632,9 @@ html {
 @media screen and (max-width: 992px){
 	.slide__info {
 	    transform: translate(-50%, -20%);
+	}
+	.slogan__text {
+		width: 90%;
 	}
 }
 @media screen and (max-width: 1382px){

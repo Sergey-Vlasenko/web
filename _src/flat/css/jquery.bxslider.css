@@ -3,6 +3,11 @@
     display: inline-block;
     margin: 0 auto;
 }
+.slider_promo .bx-pager {
+    position: absolute;
+    bottom: 20px;
+    right: 9%;
+}
 .slider_promo .bx-pager-item a{
 	background: #adadad;
 	text-indent: -9999px;
@@ -105,7 +110,6 @@
     bottom: 20px;
     right: 50px;
 }
-
 /* LOADER */
 
 .bx-wrapper .bx-loading {
@@ -130,11 +134,11 @@
 	padding-top: 20px;
 }
 
-.bx-wrapper .bx-pager .bx-pager-item,
-.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+.bx-wrapper  .bx-pager-item,
+.bx-wrapper  .bx-controls-auto-item {
 	display: inline-block;
 }
-
+/*no CSS*/
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
