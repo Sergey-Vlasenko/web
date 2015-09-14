@@ -147,7 +147,6 @@ html {
 }
 .content{
 	&_atom {
-		overflow: hidden;
 		padding: 0 5px;
 		margin: 0 0 75px 0;
 	}
@@ -209,7 +208,7 @@ html {
     transform: translate(-50%, 0);
 	z-index:2;
 		@media screen and (max-width: 992px){
-			width:48%;
+			width:50%;
 		}
 }
 .menu-svg {
@@ -382,6 +381,8 @@ html {
 	}
 	&_center{
 		width:44%;
+		position: relative;
+    	z-index: 1;
 	}
 	&__images{
 		max-width: 100%;
@@ -431,7 +432,7 @@ html {
 .box {
 	&_social {
 		margin: 33% 15px 0 0;
-		@media screen and (max-width: 768px){
+		@media screen and (max-width: 992px){
 			margin: 20% 15px 6% 0;
 		}
 	}
@@ -465,6 +466,8 @@ html {
 	p{
 		font: 12px 'Open Sans', sans-serif;
 		color:#7f8081;
+		height:100%;
+		overflow: hidden;
 	}
 }
 
@@ -689,7 +692,7 @@ html {
 @media screen and (max-width: 768px){
 
 }
-@media screen and (max-width: 992px){
+/*@media screen and (max-width: 992px){
 	.slide__info {
 	    transform: translate(-50%, -20%);
 	}
@@ -708,7 +711,7 @@ html {
 	.menu-top {
 		width:48%;
 	}
-}
+}*/
 @media screen and (max-width: 1382px){
 
 }
