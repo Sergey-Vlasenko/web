@@ -35,7 +35,10 @@ html {
 .wraper{
 	/*width:1180px;*/
 	margin:0 auto;
-	width: 82%;
+	width: 84%;
+		@media screen and (max-width: 992px){
+			width: 92%;
+		}
 	&_portfolio {
 		margin: 40px auto 55px;
 	}
@@ -50,6 +53,9 @@ html {
 		font: 13px 'Ubuntu Condensed', Tahoma, serif;
 		text-transform:uppercase;
 		margin: 0 11px 0 0;
+			@media screen and (max-width: 992px){
+				display: none;
+			}
 	}
 	&_slide {
 		color:#c9cbce;
@@ -159,6 +165,9 @@ html {
 		color:#5a5a5a;
 		font:14px 'Open Sans', sans-serif;
 		line-height: 21px;
+			@media screen and (max-width: 992px){
+				width: 90%;
+			}
 	}
 	&_atom {
 		margin: 0 0 35px 0;
@@ -194,11 +203,14 @@ html {
 /*****Head_menu******/
 .menu-top {
     position: absolute;
-    width: 46%;
+    width: 40%;
     margin: 0 auto;
     left: 50%;
     transform: translate(-50%, 0);
 	z-index:2;
+		@media screen and (max-width: 992px){
+			width:48%;
+		}
 }
 .menu-svg {
 	&__bg0{
@@ -341,6 +353,9 @@ html {
 		width: 650px;
 		top: 50%;
 		transform: translate(-50%, -50%);
+			@media screen and (max-width: 992px){
+				transform: translate(-50%, -20%);
+			}
 	}
 	&__text {
 		color:#92959a;
@@ -416,12 +431,17 @@ html {
 .box {
 	&_social {
 		margin: 33% 15px 0 0;
+		@media screen and (max-width: 768px){
+			margin: 20% 15px 6% 0;
+		}
 	}
 	&_shop {
 		margin: 33% 0px 0 15px;
+		@media screen and (max-width: 992px){
+			margin: 20% 0 6% 15px;
+		}
 	}
 }
-
 .box__content {
 	position:relative;
 	margin: -15px 0 0 0;
@@ -454,7 +474,10 @@ html {
 	font: 18px 'Ubuntu Condensed', sans-serif;
 	position:relative;
 	z-index:1;
-
+		@media screen and (max-width: 992px){
+			width:75%;
+			white-space: nowrap;
+		}
 	&:before {
 		content:"";
 		position:absolute;
@@ -681,6 +704,9 @@ html {
 	}
 	.caption_social {
 		display: none;
+	}
+	.menu-top {
+		width:48%;
 	}
 }
 @media screen and (max-width: 1382px){
