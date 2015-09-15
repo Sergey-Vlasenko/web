@@ -32,6 +32,11 @@ html {
          url('../font/HelveticaLTStdLight.ttf') format('truetype'),
          url('../font/HelveticaLTStdLight.svg#HelveticaLTStdLight') format('svg');
 }
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em
+}
 .wraper{
 	/*width:1180px;*/
 	margin:0 auto;
@@ -50,7 +55,7 @@ html {
 	&_social {
 		display:inline-block;
 		color:#9d9d9d;
-		font: 13px 'Ubuntu Condensed', Tahoma, serif;
+		font: em(13) 'Ubuntu Condensed', Tahoma, serif;
 		text-transform:uppercase;
 		margin: 0 11px 0 0;
 			@media screen and (max-width: 992px){
@@ -59,13 +64,13 @@ html {
 	}
 	&_slide {
 		color:#c9cbce;
-		font: 60px 'Bebas_neuebold', Arial, sans-serif;
+		font: em(60) 'Bebas_neuebold', Arial, sans-serif;
 		text-transform:uppercase;
 		line-height:1;
 		margin: 0 0 13px 0;
 	}
 	&_atom {
-	  font: 80px 'Bebas_neuebold', Arial, sans-serif;
+	  font: em(80) 'Bebas_neuebold', Arial, sans-serif;
 	  color: #4b7db0;
 	  letter-spacing: -2px;
 	  border-bottom: 1px solid #ccc;
@@ -74,12 +79,12 @@ html {
 	}
 	&_portfolio{
 		color:#dd574b;
-		font: 35px 'Bree Serif', sans-serif;
+		font: em(35) 'Bree Serif', sans-serif;
 		display: inline-block;
 	}
 	&_slogan-testimonials {
 		color: #446f9b;
-		font: 32px 'Bebas_neuebold', sans-serif;
+		font: em(32) 'Bebas_neuebold', sans-serif;
 		border-bottom:1px solid #8ec5de;
 		text-transform: uppercase;
 		margin: 0 0 46px 0;
@@ -87,58 +92,50 @@ html {
 	}
 	&_content-testimonials {
 		color:#f98561;
-		font: 14px 'Open Sans', sans-serif;
+		font: em(14) 'Open Sans', sans-serif;
 		margin: 0 0 25px 0;
 	}
 	&_slogan-footer{
 		color:#2e3e4f;
-		font-size: 32px;
+		font-size: em(32);
 		letter-spacing: -2px;
 		font-weight: 300;
 	}
 }
 .button {
-	&_promo {
 		display: inline-block;
+		border-radius: 5px;
+		transition: 0.5s ease;
+	&_promo {
 		color: #ffebca;
 		text-transform: uppercase;
-		font: 20px 'Open Sans', sans-serif;
+		font: em(20) 'Open Sans', sans-serif;
 		word-spacing: 3px;
 		padding: 10px 60px;
 		background: #dd574b;
-		border-radius: 5px;
-		transition: 0.5s ease;
 	}
 	&_atom {
-		display:inline-block;
 		background:#dd574b;
 		color:#ffebca;
-		font: 22px 'Open Sans', sans-serif;
+		font: em(22) 'Open Sans', sans-serif;
 		padding: 10px 40px;
-		border-radius:5px;
 		letter-spacing: -1px;
-		transition: 0.5s ease;
 	}
 	&_portfolio {
-		display:inline-block;
-		font: 20px 'Ubuntu Condensed', sans-serif;
+		font: em(20) 'Ubuntu Condensed', sans-serif;
 		color: #fff;
 		background: #dd574b;
 		padding: 10px 25px;
-		border-radius: 5px;
-		transition: 0.5s ease;
+
 	}
 	&_footer{
-		display:inline-block;
 		padding: 10px 60px;
-		border-radius:5px;
 		background:#dd574b;
 		color:#ffebca;
-		font-size: 24px;
+		font-size: em(24);
 		font-weight: 300;
 		letter-spacing: -1px;
 		margin: 25px 0 0 0;
-		transition:0.5s ease;
 	}
 	&:hover {
 		background:#2190C2;
@@ -147,7 +144,6 @@ html {
 }
 .content{
 	&_atom {
-		overflow: hidden;
 		padding: 0 5px;
 		margin: 0 0 75px 0;
 	}
@@ -163,7 +159,7 @@ html {
 		width: 70%;
 		margin: 0 auto;
 		color:#5a5a5a;
-		font:14px 'Open Sans', sans-serif;
+		font:em(14) 'Open Sans', sans-serif;
 		line-height: 21px;
 			@media screen and (max-width: 992px){
 				width: 90%;
@@ -175,7 +171,7 @@ html {
 	&_testimonals {
 		margin: 0 0 35px 0;
 		color: #515862;
-		font: 25px 'Bree Serif', serif;
+		font: em(25) 'Bree Serif', serif;
 	}
 	&_footer {
 		background:#f2f2f2;
@@ -237,10 +233,10 @@ html {
 		fill:#D3E3F4;
 	}
 	&__text tspan{
-		font-size:14px;
+		font-size:em(14);
 	}
 	&__separator text {
-		font-size:24px;
+		font-size:em(24);
 	}
 	& &__item_active{
 		fill:#0E75EA;
@@ -271,7 +267,7 @@ html {
 
 	&__item {
 		color:#9d9d9d;
-		font: 13px 'Ubuntu Condensed', Tahoma, serif;
+		font: em(13) 'Ubuntu Condensed', Tahoma, serif;
 		text-transform:uppercase;
 		transition: 0.5s ease;
 		&:hover{
@@ -337,7 +333,7 @@ html {
 		color:#bcbcbc;
 		text-align: center;
 		line-height: 25px;
-		font-size: 12px;
+		font-size: em(12);
 		transition: 0.5s ease;
 	}
 }
@@ -359,7 +355,7 @@ html {
 	}
 	&__text {
 		color:#92959a;
-		font: 14px 'Open Sans', sans-serif;
+		font: em(14) 'Open Sans', sans-serif;
 		margin: 0 0 31px 0px;
 	}
 }
@@ -463,15 +459,17 @@ html {
 		border-left:none;
 	}
 	p{
-		font: 12px 'Open Sans', sans-serif;
+		font: em(12) 'Open Sans', sans-serif;
 		color:#7f8081;
+		height:100%;
+		overflow:hidden;
 	}
 }
 
 .box__header {
 	display:inline-block;
 	width: 67%;
-	font: 18px 'Ubuntu Condensed', sans-serif;
+	font: em(18) 'Ubuntu Condensed', sans-serif;
 	position:relative;
 	z-index:1;
 		@media screen and (max-width: 992px){
@@ -509,7 +507,7 @@ html {
 }
 
 .box__details{
-	font: 14px 'Bree Serif', sans-serif;
+	font: em(14) 'Bree Serif', sans-serif;
 
 	&_shop {
 		color:#8da552;
@@ -533,6 +531,7 @@ html {
 .case {
 	width: 20%;
 	display: inline-block;
+	vertical-align:top;
 	&__item {
 		display: inline-block;
 		position:relative;
@@ -566,7 +565,7 @@ html {
 	}
 	&__header {
 		color:#f98561;
-		font: 17.5px 'Bree Serif', serif;
+		font: em(17.5) 'Bree Serif', serif;
 		margin: 0 0 5px 0;
 	}
 	&:last-child {
@@ -574,7 +573,7 @@ html {
 	}
 	p {
 		color:#cfd5d7;
-		font: 12px 'Open Sans', sans-serif;
+		font: em(12) 'Open Sans', sans-serif;
 		text-align: left;
 	}
 }
@@ -590,7 +589,7 @@ html {
     transform: translate(0%, -50%);
 	&__details {
 	    color: #fbfbfb;
-	    font: 16px 'Open Sans', sans-serif;
+	    font: em(16) 'Open Sans', sans-serif;
 	    display: inline-block;
 	    padding: 10px 20px 10px 70px;
 	    border: 1px solid #fbfbfb;
@@ -600,7 +599,7 @@ html {
 	}
 	&__header {
 		color:#f98561;
-		font: 17.5px 'Bree Serif', serif;
+		font: em(17.5) 'Bree Serif', serif;
 		margin: 0 0 5px 0;
 	}
 	p {
@@ -631,7 +630,7 @@ html {
 	}
 	&__link {
 		text-decoration:none;
-		font-size: 15px;
+		font-size: em(15);
 		color:#808b96;
 		&_active {
 			color:#4f97e9;
@@ -679,39 +678,39 @@ html {
 }
 .copyright {
 	color:#bbc1c9;
-	font-size: 13px;
+	font-size: em(13);
 	padding: 15px 0 20px 0px;
 }
 
-@media screen and (max-width: 480px) {
-
-}
-@media screen and (max-width: 768px){
-
-}
-@media screen and (max-width: 992px){
-	.slide__info {
-	    transform: translate(-50%, -20%);
-	}
-	.slogan__text {
-		width: 90%;
-	}
-	.wraper_navigation {
-		width:96%;
-	}
-	.wraper{
-		width: 92%;
-	}
-	.caption_social {
-		display: none;
-	}
-	.menu-top {
-		width:48%;
-	}
-}
-@media screen and (max-width: 1382px){
-
-}
+//@media screen and (max-width: 480px) {
+//
+//}
+//@media screen and (max-width: 768px){
+//
+//}
+//@media screen and (max-width: 992px){
+//	.slide__info {
+//	    transform: translate(-50%, -20%);
+//	}
+//	.slogan__text {
+//		width: 90%;
+//	}
+//	.wraper_navigation {
+//		width:96%;
+//	}
+//	.wraper{
+//		width: 92%;
+//	}
+//	.caption_social {
+//		display: none;
+//	}
+//	.menu-top {
+//		width:48%;
+//	}
+//}
+//@media screen and (max-width: 1382px){
+//
+//}
 /*������ ������� ���� � sass ���� �� ����� ��� ���������� ������ �� 20%*/
 ///***********/
 ///*.menu:after {

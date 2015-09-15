@@ -28,7 +28,10 @@ html {
 .wraper {
   /*width:1180px;*/
   margin: 0 auto;
-  width: 82%; }
+  width: 84%; }
+  @media screen and (max-width: 992px) {
+    .wraper {
+      width: 92%; } }
   .wraper_portfolio {
     margin: 40px auto 55px; }
   .wraper_testimonials {
@@ -37,19 +40,22 @@ html {
 .caption_social {
   display: inline-block;
   color: #9d9d9d;
-  font: 13px 'Ubuntu Condensed', Tahoma, serif;
+  font: 0.8125em "Ubuntu Condensed", Tahoma, serif;
   text-transform: uppercase;
   margin: 0 11px 0 0; }
+  @media screen and (max-width: 992px) {
+    .caption_social {
+      display: none; } }
 
 .caption_slide {
   color: #c9cbce;
-  font: 60px 'Bebas_neuebold', Arial, sans-serif;
+  font: 3.75em "Bebas_neuebold", Arial, sans-serif;
   text-transform: uppercase;
   line-height: 1;
   margin: 0 0 13px 0; }
 
 .caption_atom {
-  font: 80px 'Bebas_neuebold', Arial, sans-serif;
+  font: 5em "Bebas_neuebold", Arial, sans-serif;
   color: #4b7db0;
   letter-spacing: -2px;
   border-bottom: 1px solid #ccc;
@@ -58,12 +64,12 @@ html {
 
 .caption_portfolio {
   color: #dd574b;
-  font: 35px 'Bree Serif', sans-serif;
+  font: 2.1875em "Bree Serif", sans-serif;
   display: inline-block; }
 
 .caption_slogan-testimonials {
   color: #446f9b;
-  font: 32px 'Bebas_neuebold', sans-serif;
+  font: 2em "Bebas_neuebold", sans-serif;
   border-bottom: 1px solid #8ec5de;
   text-transform: uppercase;
   margin: 0 0 46px 0;
@@ -71,63 +77,50 @@ html {
 
 .caption_content-testimonials {
   color: #f98561;
-  font: 14px 'Open Sans', sans-serif;
+  font: 0.875em "Open Sans", sans-serif;
   margin: 0 0 25px 0; }
 
 .caption_slogan-footer {
   color: #2e3e4f;
-  font-size: 32px;
+  font-size: 2em;
   letter-spacing: -2px;
   font-weight: 300; }
 
-.button_promo {
+.button {
   display: inline-block;
-  color: #ffebca;
-  text-transform: uppercase;
-  font: 20px 'Open Sans', sans-serif;
-  word-spacing: 3px;
-  padding: 10px 60px;
-  background: #dd574b;
   border-radius: 5px;
   transition: 0.5s ease; }
-
-.button_atom {
-  display: inline-block;
-  background: #dd574b;
-  color: #ffebca;
-  font: 22px 'Open Sans', sans-serif;
-  padding: 10px 40px;
-  border-radius: 5px;
-  letter-spacing: -1px;
-  transition: 0.5s ease; }
-
-.button_portfolio {
-  display: inline-block;
-  font: 20px 'Ubuntu Condensed', sans-serif;
-  color: #fff;
-  background: #dd574b;
-  padding: 10px 25px;
-  border-radius: 5px;
-  transition: 0.5s ease; }
-
-.button_footer {
-  display: inline-block;
-  padding: 10px 60px;
-  border-radius: 5px;
-  background: #dd574b;
-  color: #ffebca;
-  font-size: 24px;
-  font-weight: 300;
-  letter-spacing: -1px;
-  margin: 25px 0 0 0;
-  transition: 0.5s ease; }
-
-.button:hover {
-  background: #2190C2;
-  transition: 0.5s ease; }
+  .button_promo {
+    color: #ffebca;
+    text-transform: uppercase;
+    font: 1.25em "Open Sans", sans-serif;
+    word-spacing: 3px;
+    padding: 10px 60px;
+    background: #dd574b; }
+  .button_atom {
+    background: #dd574b;
+    color: #ffebca;
+    font: 1.375em "Open Sans", sans-serif;
+    padding: 10px 40px;
+    letter-spacing: -1px; }
+  .button_portfolio {
+    font: 1.25em "Ubuntu Condensed", sans-serif;
+    color: #fff;
+    background: #dd574b;
+    padding: 10px 25px; }
+  .button_footer {
+    padding: 10px 60px;
+    background: #dd574b;
+    color: #ffebca;
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin: 25px 0 0 0; }
+  .button:hover {
+    background: #2190C2;
+    transition: 0.5s ease; }
 
 .content_atom {
-  overflow: hidden;
   padding: 0 5px;
   margin: 0 0 75px 0; }
 
@@ -141,8 +134,11 @@ html {
   width: 70%;
   margin: 0 auto;
   color: #5a5a5a;
-  font: 14px 'Open Sans', sans-serif;
+  font: 0.875em "Open Sans", sans-serif;
   line-height: 21px; }
+  @media screen and (max-width: 992px) {
+    .slogan__text {
+      width: 90%; } }
 
 .slogan_atom {
   margin: 0 0 35px 0; }
@@ -150,7 +146,7 @@ html {
 .slogan_testimonals {
   margin: 0 0 35px 0;
   color: #515862;
-  font: 25px 'Bree Serif', serif; }
+  font: 1.5625em "Bree Serif", serif; }
 
 .slogan_footer {
   background: #f2f2f2;
@@ -176,11 +172,14 @@ html {
 /*****Head_menu******/
 .menu-top {
   position: absolute;
-  width: 46%;
+  width: 40%;
   margin: 0 auto;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 2; }
+  @media screen and (max-width: 992px) {
+    .menu-top {
+      width: 48%; } }
 
 .menu-svg__bg0 {
   fill: #273C53; }
@@ -206,10 +205,10 @@ html {
   fill: #D3E3F4; }
 
 .menu-svg__text tspan {
-  font-size: 14px; }
+  font-size: 0.875em; }
 
 .menu-svg__separator text {
-  font-size: 24px; }
+  font-size: 1.5em; }
 
 .menu-svg .menu-svg__item_active {
   fill: #0E75EA; }
@@ -237,7 +236,7 @@ html {
   margin: 0 0 0 2px; }
   .toogle__item {
     color: #9d9d9d;
-    font: 13px 'Ubuntu Condensed', Tahoma, serif;
+    font: 0.8125em "Ubuntu Condensed", Tahoma, serif;
     text-transform: uppercase;
     transition: 0.5s ease; }
     .toogle__item:hover {
@@ -290,7 +289,7 @@ html {
     color: #bcbcbc;
     text-align: center;
     line-height: 25px;
-    font-size: 12px;
+    font-size: 0.75em;
     transition: 0.5s ease; }
 
 .promo {
@@ -302,10 +301,13 @@ html {
   width: 650px;
   top: 50%;
   transform: translate(-50%, -50%); }
+  @media screen and (max-width: 992px) {
+    .slide__info {
+      transform: translate(-50%, -20%); } }
 
 .slide__text {
   color: #92959a;
-  font: 14px 'Open Sans', sans-serif;
+  font: 0.875em "Open Sans", sans-serif;
   margin: 0 0 31px 0px; }
 
 .atom {
@@ -354,10 +356,16 @@ html {
   transform: rotate(135deg); }
 
 .box_social {
-  margin: 138px 15px 0 0; }
+  margin: 33% 15px 0 0; }
+  @media screen and (max-width: 768px) {
+    .box_social {
+      margin: 20% 15px 6% 0; } }
 
 .box_shop {
-  margin: 138px 0px 0 15px; }
+  margin: 33% 0px 0 15px; }
+  @media screen and (max-width: 992px) {
+    .box_shop {
+      margin: 20% 0 6% 15px; } }
 
 .box__content {
   position: relative;
@@ -378,15 +386,21 @@ html {
     border-top: none;
     border-left: none; }
   .box__content p {
-    font: 12px 'Open Sans', sans-serif;
-    color: #7f8081; }
+    font: 0.75em "Open Sans", sans-serif;
+    color: #7f8081;
+    height: 100%;
+    overflow: hidden; }
 
 .box__header {
   display: inline-block;
   width: 67%;
-  font: 18px 'Ubuntu Condensed', sans-serif;
+  font: 1.125em "Ubuntu Condensed", sans-serif;
   position: relative;
   z-index: 1; }
+  @media screen and (max-width: 992px) {
+    .box__header {
+      width: 75%;
+      white-space: nowrap; } }
   .box__header:before {
     content: "";
     position: absolute;
@@ -412,7 +426,7 @@ html {
     color: #e9eedf; }
 
 .box__details {
-  font: 14px 'Bree Serif', sans-serif; }
+  font: 0.875em "Bree Serif", sans-serif; }
   .box__details_shop {
     color: #8da552; }
   .box__details_search {
@@ -429,7 +443,8 @@ html {
 
 .case {
   width: 20%;
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: top; }
   .case__item {
     display: inline-block;
     position: relative;
@@ -458,13 +473,13 @@ html {
     box-sizing: border-box; }
   .case__header {
     color: #f98561;
-    font: 17.5px 'Bree Serif', serif;
+    font: 1.09375em "Bree Serif", serif;
     margin: 0 0 5px 0; }
   .case:last-child {
     margin: 0; }
   .case p {
     color: #cfd5d7;
-    font: 12px 'Open Sans', sans-serif;
+    font: 0.75em "Open Sans", sans-serif;
     text-align: left; }
 
 .info {
@@ -478,7 +493,7 @@ html {
   transform: translate(0%, -50%); }
   .info__details {
     color: #fbfbfb;
-    font: 16px 'Open Sans', sans-serif;
+    font: 1em "Open Sans", sans-serif;
     display: inline-block;
     padding: 10px 20px 10px 70px;
     border: 1px solid #fbfbfb;
@@ -487,7 +502,7 @@ html {
     background: url(../images/icon-eye.png) no-repeat 15px center; }
   .info__header {
     color: #f98561;
-    font: 17.5px 'Bree Serif', serif;
+    font: 1.09375em "Bree Serif", serif;
     margin: 0 0 5px 0; }
   .info p {
     text-align: center; }
@@ -512,7 +527,7 @@ html {
       padding-left: 0; }
   .menu__link {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 0.9375em;
     color: #808b96; }
     .menu__link_active {
       color: #4f97e9; }
@@ -547,20 +562,8 @@ html {
 
 .copyright {
   color: #bbc1c9;
-  font-size: 13px;
+  font-size: 0.8125em;
   padding: 15px 0 20px 0px; }
-
-@media screen and (max-width: 992px) {
-  .slide__info {
-    transform: translate(-50%, -20%); }
-  .slogan__text {
-    width: 90%; }
-  .wraper_navigation {
-    width: 96%; }
-  .wraper {
-    width: 92%; }
-  .caption_social {
-    display: none; } }
 
 /*������ ������� ���� � sass ���� �� ����� ��� ���������� ������ �� 20%*/
 
