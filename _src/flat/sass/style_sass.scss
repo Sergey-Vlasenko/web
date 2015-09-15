@@ -70,6 +70,7 @@ $browser-context: 16; // Default
 		margin: 0 0 13px 0;
 	}
 	&_atom {
+
 	  font: em(80) 'Bebas_neuebold', Arial, sans-serif;
 	  color: #4b7db0;
 	  letter-spacing: -2px;
@@ -79,11 +80,13 @@ $browser-context: 16; // Default
 	}
 	&_portfolio{
 		color:#dd574b;
+
 		font: em(35) 'Bree Serif', sans-serif;
 		display: inline-block;
 	}
 	&_slogan-testimonials {
 		color: #446f9b;
+
 		font: em(32) 'Bebas_neuebold', sans-serif;
 		border-bottom:1px solid #8ec5de;
 		text-transform: uppercase;
@@ -92,11 +95,13 @@ $browser-context: 16; // Default
 	}
 	&_content-testimonials {
 		color:#f98561;
+
 		font: em(14) 'Open Sans', sans-serif;
 		margin: 0 0 25px 0;
 	}
 	&_slogan-footer{
 		color:#2e3e4f;
+
 		font-size: em(32);
 		letter-spacing: -2px;
 		font-weight: 300;
@@ -107,35 +112,48 @@ $browser-context: 16; // Default
 		border-radius: 5px;
 		transition: 0.5s ease;
 	&_promo {
+
 		color: #ffebca;
 		text-transform: uppercase;
+
 		font: em(20) 'Open Sans', sans-serif;
 		word-spacing: 3px;
 		padding: 10px 60px;
 		background: #dd574b;
+
 	}
 	&_atom {
+
 		background:#dd574b;
 		color:#ffebca;
+
 		font: em(22) 'Open Sans', sans-serif;
 		padding: 10px 40px;
+
 		letter-spacing: -1px;
+
 	}
 	&_portfolio {
+
 		font: em(20) 'Ubuntu Condensed', sans-serif;
 		color: #fff;
 		background: #dd574b;
 		padding: 10px 25px;
 
+
 	}
 	&_footer{
+
 		padding: 10px 60px;
+
 		background:#dd574b;
 		color:#ffebca;
+
 		font-size: em(24);
 		font-weight: 300;
 		letter-spacing: -1px;
 		margin: 25px 0 0 0;
+
 	}
 	&:hover {
 		background:#2190C2;
@@ -144,6 +162,7 @@ $browser-context: 16; // Default
 }
 .content{
 	&_atom {
+
 		padding: 0 5px;
 		margin: 0 0 75px 0;
 	}
@@ -159,6 +178,7 @@ $browser-context: 16; // Default
 		width: 70%;
 		margin: 0 auto;
 		color:#5a5a5a;
+
 		font:em(14) 'Open Sans', sans-serif;
 		line-height: 21px;
 			@media screen and (max-width: 992px){
@@ -171,6 +191,7 @@ $browser-context: 16; // Default
 	&_testimonals {
 		margin: 0 0 35px 0;
 		color: #515862;
+
 		font: em(25) 'Bree Serif', serif;
 	}
 	&_footer {
@@ -205,7 +226,8 @@ $browser-context: 16; // Default
     transform: translate(-50%, 0);
 	z-index:2;
 		@media screen and (max-width: 992px){
-			width:48%;
+
+			width:50%;
 		}
 }
 .menu-svg {
@@ -233,9 +255,11 @@ $browser-context: 16; // Default
 		fill:#D3E3F4;
 	}
 	&__text tspan{
+
 		font-size:em(14);
 	}
 	&__separator text {
+
 		font-size:em(24);
 	}
 	& &__item_active{
@@ -267,6 +291,7 @@ $browser-context: 16; // Default
 
 	&__item {
 		color:#9d9d9d;
+
 		font: em(13) 'Ubuntu Condensed', Tahoma, serif;
 		text-transform:uppercase;
 		transition: 0.5s ease;
@@ -333,6 +358,7 @@ $browser-context: 16; // Default
 		color:#bcbcbc;
 		text-align: center;
 		line-height: 25px;
+
 		font-size: em(12);
 		transition: 0.5s ease;
 	}
@@ -355,6 +381,7 @@ $browser-context: 16; // Default
 	}
 	&__text {
 		color:#92959a;
+
 		font: em(14) 'Open Sans', sans-serif;
 		margin: 0 0 31px 0px;
 	}
@@ -378,6 +405,8 @@ $browser-context: 16; // Default
 	}
 	&_center{
 		width:44%;
+		position: relative;
+    	z-index: 1;
 	}
 	&__images{
 		max-width: 100%;
@@ -427,7 +456,8 @@ $browser-context: 16; // Default
 .box {
 	&_social {
 		margin: 33% 15px 0 0;
-		@media screen and (max-width: 768px){
+
+		@media screen and (max-width: 992px){
 			margin: 20% 15px 6% 0;
 		}
 	}
@@ -462,8 +492,7 @@ $browser-context: 16; // Default
 		font: em(12) 'Open Sans', sans-serif;
 		color:#7f8081;
 		height:100%;
-		overflow:hidden;
-	}
+		overflow: hidden;	}
 }
 
 .box__header {
@@ -682,35 +711,6 @@ $browser-context: 16; // Default
 	padding: 15px 0 20px 0px;
 }
 
-//@media screen and (max-width: 480px) {
-//
-//}
-//@media screen and (max-width: 768px){
-//
-//}
-//@media screen and (max-width: 992px){
-//	.slide__info {
-//	    transform: translate(-50%, -20%);
-//	}
-//	.slogan__text {
-//		width: 90%;
-//	}
-//	.wraper_navigation {
-//		width:96%;
-//	}
-//	.wraper{
-//		width: 92%;
-//	}
-//	.caption_social {
-//		display: none;
-//	}
-//	.menu-top {
-//		width:48%;
-//	}
-//}
-//@media screen and (max-width: 1382px){
-//
-//}
 /*������ ������� ���� � sass ���� �� ����� ��� ���������� ������ �� 20%*/
 ///***********/
 ///*.menu:after {
