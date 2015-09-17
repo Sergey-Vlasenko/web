@@ -130,7 +130,7 @@
 					</ul>
 				</div>
 				<div class="logo">
-					<svg class="logo menu-svg" baseProfile="full" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="241 40 149 36" text-rendering="optimizeLegibility">
+					<svg class="logo-svg menu-svg" baseProfile="full" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="241 40 149 36" text-rendering="optimizeLegibility">
 						<g>
 							<g class="menu-svg__logo">
 								<path class="menu-svg__logo" d="M251.2,58.7c1.1,0,1.6,0.9,1.7,1.1c0.2,0.7,1,1.2,1.7,1.2c1.1,0,2-0.8,2-1.9c0-1.3-1.6-3.8-5.4-3.8
@@ -436,12 +436,12 @@ $(function(){
     $(".mobile-control").on("click", function(e){
         $(".mobile-nav__wrap").slideToggle(300);
 		e.stopPropagation(); //предотвращения передачу события внутри блока
-		return false; 
+		return false;
         <!--$(this).toggleClass("active");-->
     });
 	$(".mobile-nav__wrap").on("click", function(p){
 		p.stopPropagation(); //предотвращения передачу события внутри блока
-		return false; 
+		return false;
 	});
 	$(document).click(function () {
 		$(".mobile-nav__wrap").slideUp(300);

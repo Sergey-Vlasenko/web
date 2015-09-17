@@ -36,6 +36,19 @@ $navigation: 45px;
 $color-head:#23252a;
 $browser-context: 16; // Default
 $icon:url(../images/icon.png) no-repeat 0px;
+
+@mixin icon($y-position){
+	&:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translate(0%, -50%);
+	background:$icon #{$y-position}px;
+	}
+}
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em
 }
@@ -206,6 +219,10 @@ $icon:url(../images/icon.png) no-repeat 0px;
 }
 .logo {
 	display:none;
+}
+.logo-svg {
+	width: 100%;
+	height: 100%;
 }
 /*****Head_menu******/
 .menu-top {
@@ -418,7 +435,7 @@ $icon:url(../images/icon.png) no-repeat 0px;
 	&__info {
 		position: absolute;
 		left: 50%;
-		width: 650/1180*100%;
+		width: 650px;
 		top: 50%;
 		transform: translate(-50%, -50%);
 			@media screen and (max-width: 992px){
@@ -625,14 +642,10 @@ $icon:url(../images/icon.png) no-repeat 0px;
 			left:-100%;
 			transition: 0.5s ease;
 		}
-		&:hover .info {
+		&:hover .info, &:hover:before {
 			left:0;
 			transition: 0.5s ease;
 		}
-		&:hover:before {
-		   left:0;
-		   transition: 0.5s ease;
-	   }
 	}
 	&__images {
 		max-width: 100%;
@@ -769,7 +782,7 @@ $icon:url(../images/icon.png) no-repeat 0px;
 		position: absolute;
 		display: block;
 		width: 50%;
-		height: 100%;
+		height: 90%;
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
@@ -852,24 +865,28 @@ $icon:url(../images/icon.png) no-repeat 0px;
 		}
 	}
 	.box {
+		position: relative;
 		border-bottom:1px solid #dcc1c9;
-		padding: 0 0 0 100px;
+		padding: 10px 0 10px 100px;
 		&:first-child {
 			border-top:1px solid #dcc1c9;
 		}
 		&_social {
 			margin: 0 0 0 0;
-			background:$icon -306px;
+			@include icon(-322)
 		}
 		&_shop {
 			margin: 0 0 0 0;
-			background:$icon -206px;
+			@include icon(-221)
 		}
 		&_desing {
-			background:$icon -4px;
+			@include icon(-19)
 		}
 		&_search {
-			background:$icon -106px;
+			@include icon(-121)
+		}
+		&__details{
+			display: none;
 		}
 	}
 	.box__content {
@@ -885,7 +902,7 @@ $icon:url(../images/icon.png) no-repeat 0px;
 			font: em(14) 'Open Sans', sans-serif;
 			color:#7f8081;
 			height:100%;
-			overflow: hidden;	
+			overflow: hidden;
 		}
 	}
 	.box__header {
@@ -915,18 +932,20 @@ $icon:url(../images/icon.png) no-repeat 0px;
 	.case {
 		width:46%;
 		margin:0 0 30px 0;
-		&_item{
-			margin:0;
+		&__item{
+			&:hover .info, &:hover:before {
+				left:-100%;
+			}
 		}
 		p{
 			font-size:em(14);
 		}
 	}
 	.wraper_portfolio {
-		margin: 3% auto 8%;
+		margin: 4% auto 8%;
 	}
 	.content_portfolio {
-		margin: 4% 0 0 0;
+		margin: 5% 0 0 0;
 	}
 	.title_portfolio{
 		text-align:center;
