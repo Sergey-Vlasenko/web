@@ -187,6 +187,17 @@
 				</div>
 			</div>
 		</div>
+		<div class="mobile-nav">
+			<div class="mobile-control"></div>
+			<div class="mobile-nav__wrap">
+				<ul class="mobile-menu justify">
+					<li class="mobile-menu__item"><a class="mobile-menu__link" href="#">НОМЕ</a></li>
+					<li class="mobile-menu__item"><a class="mobile-menu__link" href="#">ABOUT US</a></li>
+					<li class="mobile-menu__item"><a class="mobile-menu__link" href="#">PORTFOLIO</a></li>
+					<li class="mobile-menu__item"><a class="mobile-menu__link" href="#">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<div class="promo">
 		<div class="slider slider_promo">
@@ -419,6 +430,24 @@
 		$('.head_menu_contact a').show().arctext({radius: 300, dir: -1});
 	});
 </script>-->
+<!--мобильное меню-->
+ <script type="text/javascript">
+$(function(){
+    $(".mobile-control").on("click", function(e){
+        $(".mobile-nav__wrap").slideToggle(300);
+		e.stopPropagation(); //предотвращения передачу события внутри блока
+		return false; 
+        <!--$(this).toggleClass("active");-->
+    });
+	$(".mobile-nav__wrap").on("click", function(p){
+		p.stopPropagation(); //предотвращения передачу события внутри блока
+		return false; 
+	});
+	$(document).click(function () {
+		$(".mobile-nav__wrap").slideUp(300);
+	});
+});
+ </script>
 <!--Слайдер content-->
 <script>
 $(function(){
