@@ -172,7 +172,8 @@ html {
   position: relative;
   background: #272b34;
   background-size: cover;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: -53px; }
 
 .logo {
   display: none; }
@@ -288,7 +289,6 @@ html {
   background: #23252a;
   border-bottom: 2px dashed #37393d;
   box-shadow: 0 3px 0 0 #23252a;
-  margin-bottom: -53px;
   z-index: 1; }
 
 .toogle {
@@ -626,6 +626,8 @@ html {
   padding: 15px 0 20px 0px; }
 
 @media screen and (max-width: 768px) {
+  .head {
+    margin-bottom: 0; }
   .logo {
     position: absolute;
     display: block;
@@ -647,11 +649,14 @@ html {
     display: block; }
   .slide__info {
     width: 95%;
-    transform: translate(-50%, -35%); }
+    transform: translate(-50%, -50%); }
   .atom {
-    margin: 0px 0 5% 0; }
+    margin: 0px 0 5% 0;
+    padding: 10px 0 0 0; }
   .slogan__text {
     width: 98%; }
+  .slogan_atom {
+    margin: 0 0 10px 0; }
   .column_center {
     display: none; }
   .column {
@@ -780,7 +785,85 @@ html {
     position: absolute;
     left: 50%;
     bottom: 20px;
-    transform: translate(-50%, 0); } }
+    transform: translate(-50%, 0); }
+  .caption_slide {
+    font-size: 3em; }
+  .caption_atom {
+    font-size: 3em;
+    letter-spacing: 0px;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0; }
+  .caption_portfolio {
+    font-size: 2.1875em; }
+  .caption_slogan-testimonials {
+    font-size: 2em; }
+  .caption_content-testimonials {
+    font-size: 0.875em; }
+  .caption_slogan-footer {
+    font-size: 2em; } }
+
+@media screen and (max-width: 640px) {
+  .caption_slide {
+    font-size: 2.25em; }
+  .caption_atom {
+    font-size: 5em; }
+  .caption_portfolio {
+    font-size: 2.1875em; }
+  .caption_slogan-testimonials {
+    font-size: 2em; }
+  .caption_content-testimonials {
+    font-size: 0.875em; }
+  .caption_slogan-footer {
+    font-size: 2em; }
+  .slide__text {
+    margin: 0 0 10px 0px; }
+  .button_promo {
+    font-size: 1em;
+    padding: 7px 35px; }
+  .button_atom {
+    font-size: 1.375em;
+    padding: 10px 40px; }
+  .button_portfolio {
+    font-size: 1.25em;
+    padding: 10px 25px; }
+  .button_footer {
+    font-size: 1.5em;
+    padding: 10px 60px; } }
+
+@media screen and (max-width: 480px) {
+  .navigation {
+    height: 55px; }
+  .caption_slide {
+    font-size: 1.875em; }
+  .caption_atom {
+    font-size: 2em; }
+  .caption_portfolio {
+    font-size: 2.1875em; }
+  .caption_slogan-testimonials {
+    font-size: 2em; }
+  .caption_content-testimonials {
+    font-size: 0.875em; }
+  .caption_slogan-footer {
+    font-size: 2em; }
+  .button_promo {
+    font-size: 0.875em;
+    padding: 7px 30px; }
+  .button_atom {
+    font-size: 1.375em;
+    padding: 10px 40px; }
+  .button_portfolio {
+    font-size: 1.25em;
+    padding: 10px 25px; }
+  .button_footer {
+    font-size: 1.5em;
+    padding: 10px 60px; } }
+
+@media screen and (max-width: 380px) {
+  .slide__text {
+    height: 54px;
+    overflow: hidden; }
+  .caption_slide {
+    margin: 0; } }
 
 /*������ ������� ���� � sass ���� �� ����� ��� ���������� ������ �� 20%*/
 

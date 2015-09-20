@@ -100,7 +100,6 @@ $icon:url(../images/icon.png) no-repeat 0px;
 	}
 	&_slogan-testimonials {
 		color: #446f9b;
-
 		font: em(32) 'Bebas_neuebold', sans-serif;
 		border-bottom:1px solid #8ec5de;
 		text-transform: uppercase;
@@ -109,13 +108,11 @@ $icon:url(../images/icon.png) no-repeat 0px;
 	}
 	&_content-testimonials {
 		color:#f98561;
-
 		font: em(14) 'Open Sans', sans-serif;
 		margin: 0 0 25px 0;
 	}
 	&_slogan-footer{
 		color:#2e3e4f;
-
 		font-size: em(32);
 		letter-spacing: -2px;
 		font-weight: 300;
@@ -220,6 +217,7 @@ $icon:url(../images/icon.png) no-repeat 0px;
 	background: #272b34;
 	background-size: cover;
 	text-align: center;
+	margin-bottom: -53px;
 }
 .logo {
 	display:none;
@@ -348,7 +346,6 @@ $icon:url(../images/icon.png) no-repeat 0px;
 	background:$color-head;
 	border-bottom:2px dashed #37393d;
 	box-shadow:0 3px 0 0 $color-head;
-	margin-bottom: -53px;
     z-index: 1;
 }
 
@@ -774,14 +771,17 @@ $icon:url(../images/icon.png) no-repeat 0px;
 	font-size: em(13);
 	padding: 15px 0 20px 0px;
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1382px){
+}
+@media screen and (max-width: 992px){
+
 }
 @media screen and (max-width: 768px){
 	$browser-context: 12;
 	$navigation: 75px;
-	//.menu-svg__border, .menu-svg__bg-full, .menu-svg__bg-menu, .menu-svg__dotted-line, .menu-svg__text, .menu-svg__separator {
-	//	display:none;
-	//}
+	.head{
+		margin-bottom: 0;
+	}
 	.logo {
 		position: absolute;
 		display: block;
@@ -811,13 +811,17 @@ $icon:url(../images/icon.png) no-repeat 0px;
 	}
 	.slide__info {
 		width:95%;
-		transform: translate(-50%, -35%);
+		transform: translate(-50%, -50%);
 	}
 	.atom {
 		margin: 0px 0 5% 0;
+		padding: 10px 0 0 0;
 	}
 	.slogan__text {
 		width: 98%;
+	}
+	.slogan_atom {
+		margin: 0 0 10px 0;
 	}
 	.column_center {
 		display:none;
@@ -960,11 +964,147 @@ $icon:url(../images/icon.png) no-repeat 0px;
 		bottom: 20px;
 		transform: translate(-50%, 0);
 	}
+	.caption{
+		&_slide {
+			font-size: em(48);
+		}
+		&_atom {
+			font-size: em(48);
+			letter-spacing: 0px;
+			margin: 0 0 10px 0;
+			padding: 0 0 10px 0;
+		}
+		&_portfolio{
+			font-size: em(35);
+		}
+		&_slogan-testimonials{
+			font-size: em(32);
+		}
+		&_content-testimonials {
+			font-size: em(14);
+		}
+		&_slogan-footer{
+			font-size: em(32);
+		}
+	}
+	.button {
+		&_promo {
+			font-size: em(16);
+			padding: 7px 35px;
+		}
+		&_atom {
+			font-size: em(18);
+			padding: 10px 40px;
+		}
+		&_portfolio {
+			font-size: em(18);
+			padding: 10px 25px;
+		}
+		&_footer{
+			font-size: em(20);
+			padding: 10px 60px;
+		}
+	}
 }
-@media screen and (max-width: 992px){
+}
+@media screen and (max-width: 640px){
+	.caption{
+		&_slide {
+			font-size: em(36);
+		}
+		&_atom {
+			font-size: em(80);
+		}
+		&_portfolio{
+			font-size: em(35);
+		}
+		&_slogan-testimonials{
+			font-size: em(32);
+		}
+		&_content-testimonials {
+			font-size: em(14);
+		}
+		&_slogan-footer{
+			font-size: em(32);
+		}
+	}
+	.slide__text{
+		margin: 0 0 10px 0px;
+	}
+	.button {
+		&_promo {
+			font-size: em(16);
+			padding: 7px 35px;
+		}
+		&_atom {
+			font-size: em(22);
+			padding: 10px 40px;
+		}
+		&_portfolio {
+			font-size: em(20);
+			padding: 10px 25px;
+		}
+		&_footer{
+			font-size: em(24);
+			padding: 10px 60px;
+		}
+	}
+}
+@media screen and (max-width: 480px){
+	$navigation: 55px;
+	.navigation {
+		height:$navigation;
+	}
+	.caption{
+		&_slide {
+			font-size: em(30);
+		}
+		&_atom {
+			font-size: em(32);
+		}
+		&_portfolio{
+			font-size: em(35);
+		}
+		&_slogan-testimonials{
+			font-size: em(32);
+		}
+		&_content-testimonials {
+			font-size: em(14);
+		}
+		&_slogan-footer{
+			font-size: em(32);
+		}
+	}
+	.button {
+		&_promo {
+			font-size: em(14);
+			padding: 7px 30px;
+		}
+		&_atom {
+			font-size: em(22);
+			padding: 10px 40px;
+		}
+		&_portfolio {
+			font-size: em(20);
+			padding: 10px 25px;
+		}
+		&_footer{
+			font-size: em(24);
+			padding: 10px 60px;
+		}
+	}
+}
+@media screen and (max-width: 380px){
+	.slide__text{
+		height:54px;
+		overflow:hidden;
+	}
+	.caption_slide{
+		margin:0;
+	}
+}
+@media screen and (max-width: 320px){
 
-}
-@media screen and (max-width: 1382px){
 }
 /*������ ������� ���� � sass ���� �� ����� ��� ���������� ������ �� 20%*/
 ///***********/
