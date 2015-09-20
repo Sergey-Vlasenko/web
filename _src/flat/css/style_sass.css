@@ -147,11 +147,6 @@ html {
 .slogan_atom {
   margin: 0 0 35px 0; }
 
-.slogan_testimonals {
-  margin: 0 0 35px 0;
-  color: #515862;
-  /*font: em(25) 'Bree Serif', serif;*/ }
-
 .slogan_footer {
   background: #f2f2f2;
   padding: 50px 0 45px 0;
@@ -250,9 +245,9 @@ html {
 
 .mobile-control {
   position: absolute;
-  top: 50%;
+  top: 30px;
   right: 30px;
-  transform: translate(0%, -50%);
+  /*transform: translate(0%, -50%);*/
   width: 20px;
   height: 20px;
   background: #D3E3F4;
@@ -263,12 +258,12 @@ html {
     top: 20%; }
 
 .mobile-nav__wrap {
-  position: absolute;
+  /*position: absolute;*/
   display: none;
   background: #23252a;
   width: 100%;
-  top: 80px;
-  z-index: 1; }
+  /*top: 80px;
+		z-index: 1;*/ }
 
 .mobile-menu {
   width: 92%;
@@ -626,6 +621,10 @@ html {
   padding: 15px 0 20px 0px; }
 
 @media screen and (max-width: 768px) {
+  .slogan_atom {
+    margin: 0 0 10px 0; }
+  .slogan_footer {
+    padding: 25px 0 30px 0; }
   .head {
     margin-bottom: 0; }
   .logo {
@@ -655,8 +654,6 @@ html {
     padding: 10px 0 0 0; }
   .slogan__text {
     width: 98%; }
-  .slogan_atom {
-    margin: 0 0 10px 0; }
   .column_center {
     display: none; }
   .column {
@@ -737,7 +734,15 @@ html {
       transform: translate(0%, -50%);
       background: url(../images/icon.png) no-repeat 0px -121px; }
     .box__details {
-      display: none; }
+      position: absolute;
+      top: -27px;
+      right: 0;
+      display: inline-block;
+      border-radius: 5px;
+      transition: 0.5s ease;
+      background: #4b7db0;
+      color: #fff;
+      padding: 4px 15px; }
   .box__content {
     margin: 0;
     padding: 5px 0 0 0;
@@ -770,13 +775,15 @@ html {
       color: #93999f; }
   .case {
     width: 46%;
-    margin: 0 0 30px 0; }
+    margin: 0 0 20px 0; }
     .case__item:hover .info, .case__item:hover:before {
       left: -100%; }
     .case p {
       font-size: 0.875em; }
+  .info {
+    display: none; }
   .wraper_portfolio {
-    margin: 4% auto 8%; }
+    margin: 4% auto 45px; }
   .content_portfolio {
     margin: 5% 0 0 0; }
   .title_portfolio {
@@ -786,6 +793,10 @@ html {
     left: 50%;
     bottom: 20px;
     transform: translate(-50%, 0); }
+  .content_testimonials {
+    margin: 25px 0 0 0; }
+  .slogan__text_testimonials {
+    font-size: 1em; }
   .caption_slide {
     font-size: 3em; }
   .caption_atom {
@@ -796,11 +807,24 @@ html {
   .caption_portfolio {
     font-size: 2.1875em; }
   .caption_slogan-testimonials {
-    font-size: 2em; }
+    font-size: 2em;
+    margin: 0 0 10px 0; }
   .caption_content-testimonials {
     font-size: 0.875em; }
   .caption_slogan-footer {
-    font-size: 2em; } }
+    font-size: 2em; }
+  .button_promo {
+    font-size: 1em;
+    padding: 7px 35px; }
+  .button_atom {
+    font-size: 1.125em;
+    padding: 10px 40px; }
+  .button_portfolio {
+    font-size: 1.125em;
+    padding: 10px 25px; }
+  .button_footer {
+    font-size: 1.25em;
+    padding: 10px 60px; } }
 
 @media screen and (max-width: 640px) {
   .caption_slide {
@@ -833,29 +857,49 @@ html {
 @media screen and (max-width: 480px) {
   .navigation {
     height: 55px; }
+  .box_social {
+    margin: 0 0 0 0; }
+    .box_social:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 80px;
+      height: 80px;
+      transform: translate(0%, -50%);
+      background: url(../images/icon.png) no-repeat 0px -322px; }
+  .box__details {
+    top: 57px;
+    left: -97px; }
+  .case {
+    margin: 0 0 15px 0; }
+    .case p {
+      display: none; }
+  .mobile-control {
+    top: 20px; }
   .caption_slide {
     font-size: 1.875em; }
   .caption_atom {
-    font-size: 2em; }
+    font-size: 2.25em; }
   .caption_portfolio {
-    font-size: 2.1875em; }
+    font-size: 1.875em; }
   .caption_slogan-testimonials {
     font-size: 2em; }
   .caption_content-testimonials {
     font-size: 0.875em; }
   .caption_slogan-footer {
-    font-size: 2em; }
+    font-size: 1.75em; }
   .button_promo {
     font-size: 0.875em;
     padding: 7px 30px; }
   .button_atom {
-    font-size: 1.375em;
+    font-size: 1.125em;
     padding: 10px 40px; }
   .button_portfolio {
-    font-size: 1.25em;
+    font-size: 1em;
     padding: 10px 25px; }
   .button_footer {
-    font-size: 1.5em;
+    font-size: 1.25em;
     padding: 10px 60px; } }
 
 @media screen and (max-width: 380px) {
@@ -865,6 +909,15 @@ html {
   .caption_slide {
     margin: 0; } }
 
-/*������ ������� ���� � sass ���� �� ����� ��� ���������� ������ �� 20%*/
+@media screen and (max-width: 320px) {
+  .case {
+    width: 100%; }
+  .caption_portfolio {
+    font-size: 24px; }
+  .button_portfolio {
+    bottom: 13px; } }
 
-/*# sourceMappingURL=../../flat/sass/style_sass.css.map */
+/*������ ������� ���� � sass ���� �� ����� ��� ���������� ������ �� 20%*/
+/*kfkfk*/
+
+/*# sourceMappingURL=../../flat/css/style_sass.css.map */

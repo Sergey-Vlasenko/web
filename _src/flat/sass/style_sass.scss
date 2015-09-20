@@ -35,14 +35,16 @@ html {
 $navigation: 45px;
 $color-head:#23252a;
 $browser-context: 16; // Default
+
 $icon:url(../images/icon.png) no-repeat 0px;
+$position-bg: 50%;
 
 @mixin icon($y-position){
 	&:before{
 	content: '';
 	position: absolute;
 	left: 0;
-	top: 50%;
+	top: $position-bg;
     width: 80px;
     height: 80px;
     transform: translate(0%, -50%);
@@ -190,9 +192,6 @@ $icon:url(../images/icon.png) no-repeat 0px;
 		margin: 0 0 35px 0;
 	}
 	&_testimonals {
-		margin: 0 0 35px 0;
-		color: #515862;
-		/*font: em(25) 'Bree Serif', serif;*/
 	}
 	&_footer {
 		background:#f2f2f2;
@@ -300,9 +299,9 @@ $icon:url(../images/icon.png) no-repeat 0px;
 .mobile{
 	&-control{
 		position: absolute;
-		top: 50%;
+		top: 30px;
 		right: 30px;
-	    transform: translate(0%, -50%);
+	    /*transform: translate(0%, -50%);*/
 		width: 20px;
 		height: 20px;
 		background:#D3E3F4;
@@ -317,12 +316,12 @@ $icon:url(../images/icon.png) no-repeat 0px;
 		}
 	}
 	&-nav__wrap{
-		position: absolute;
+		/*position: absolute;*/
 		display: none;
 		background:$color-head;
 		width: 100%;
-		top: 80px;
-		z-index: 1;
+		/*top: 80px;
+		z-index: 1;*/
 	}
 }
 .mobile-menu{
@@ -779,6 +778,14 @@ $icon:url(../images/icon.png) no-repeat 0px;
 @media screen and (max-width: 768px){
 	$browser-context: 12;
 	$navigation: 75px;
+	.slogan{
+		&_atom {
+			margin: 0 0 10px 0;
+		}
+		&_footer {
+			padding: 25px 0 30px 0;
+		}
+	}
 	.head{
 		margin-bottom: 0;
 	}
@@ -819,9 +826,6 @@ $icon:url(../images/icon.png) no-repeat 0px;
 	}
 	.slogan__text {
 		width: 98%;
-	}
-	.slogan_atom {
-		margin: 0 0 10px 0;
 	}
 	.column_center {
 		display:none;
@@ -894,7 +898,15 @@ $icon:url(../images/icon.png) no-repeat 0px;
 			@include icon(-121)
 		}
 		&__details{
-			display: none;
+			position: absolute;
+		    top: -27px;
+		    right: 0;
+		    display: inline-block;
+		    border-radius: 5px;
+		    transition: 0.5s ease;
+		    background: #4b7db0;
+		    color: #fff;
+		    padding: 4px 15px;
 		}
 	}
 	.box__content {
@@ -939,7 +951,7 @@ $icon:url(../images/icon.png) no-repeat 0px;
 	}
 	.case {
 		width:46%;
-		margin:0 0 30px 0;
+		margin:0 0 20px 0;
 		&__item{
 			&:hover .info, &:hover:before {
 				left:-100%;
@@ -949,8 +961,11 @@ $icon:url(../images/icon.png) no-repeat 0px;
 			font-size:em(14);
 		}
 	}
+	.info{
+		display: none;
+	}
 	.wraper_portfolio {
-		margin: 4% auto 8%;
+		margin: 4% auto 45px;
 	}
 	.content_portfolio {
 		margin: 5% 0 0 0;
@@ -963,6 +978,12 @@ $icon:url(../images/icon.png) no-repeat 0px;
 		left: 50%;
 		bottom: 20px;
 		transform: translate(-50%, 0);
+	}
+	.content_testimonials {
+    	margin: 25px 0 0 0;
+	}
+	.slogan__text_testimonials {
+		font-size: em(16);
 	}
 	.caption{
 		&_slide {
@@ -979,6 +1000,7 @@ $icon:url(../images/icon.png) no-repeat 0px;
 		}
 		&_slogan-testimonials{
 			font-size: em(32);
+			margin: 0 0 10px 0;
 		}
 		&_content-testimonials {
 			font-size: em(14);
@@ -1005,7 +1027,6 @@ $icon:url(../images/icon.png) no-repeat 0px;
 			padding: 10px 60px;
 		}
 	}
-}
 }
 @media screen and (max-width: 640px){
 	.caption{
@@ -1051,19 +1072,39 @@ $icon:url(../images/icon.png) no-repeat 0px;
 	}
 }
 @media screen and (max-width: 480px){
+	$position-bg: 37%;
 	$navigation: 55px;
 	.navigation {
 		height:$navigation;
+	}
+	.box {
+		&_social {
+			margin: 0 0 0 0;
+			@include icon(-322)
+		}
+	}
+	.box__details {
+    	top: 57px;
+    	left: -97px;
+	}
+	.case{
+		margin: 0 0 15px 0;
+		p {
+    		display: none;
+		}
+	}
+	.mobile-control {
+	    top: 20px;
 	}
 	.caption{
 		&_slide {
 			font-size: em(30);
 		}
 		&_atom {
-			font-size: em(32);
+			font-size: em(36);
 		}
 		&_portfolio{
-			font-size: em(35);
+			font-size: em(30);
 		}
 		&_slogan-testimonials{
 			font-size: em(32);
@@ -1072,7 +1113,7 @@ $icon:url(../images/icon.png) no-repeat 0px;
 			font-size: em(14);
 		}
 		&_slogan-footer{
-			font-size: em(32);
+			font-size: em(28);
 		}
 	}
 	.button {
@@ -1081,15 +1122,15 @@ $icon:url(../images/icon.png) no-repeat 0px;
 			padding: 7px 30px;
 		}
 		&_atom {
-			font-size: em(22);
+			font-size: em(18);
 			padding: 10px 40px;
 		}
 		&_portfolio {
-			font-size: em(20);
+			font-size: em(16);
 			padding: 10px 25px;
 		}
 		&_footer{
-			font-size: em(24);
+			font-size: em(20);
 			padding: 10px 60px;
 		}
 	}
@@ -1104,7 +1145,15 @@ $icon:url(../images/icon.png) no-repeat 0px;
 	}
 }
 @media screen and (max-width: 320px){
-
+	.case {
+	    width: 100%;
+	}
+	.caption_portfolio {
+    	font-size: 24px;
+	}
+	.button_portfolio {
+    	bottom: 13px;
+	}
 }
 /*������ ������� ���� � sass ���� �� ����� ��� ���������� ������ �� 20%*/
 ///***********/
@@ -1314,3 +1363,4 @@ $icon:url(../images/icon.png) no-repeat 0px;
 //}
 //*/
 //
+/*kfkfk*/

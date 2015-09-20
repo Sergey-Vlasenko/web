@@ -18,10 +18,10 @@ gulp.task('sass', /*['css'],*/ function(){
 	gulp.src(SRC + '**/sass/**/*.scss')
 		.pipe(sourcemaps.init())
 			.pipe(sass().on('error', sass.logError))
-			.pipe(sourcemaps.write('./'))
 		.pipe(rename(function(path){
 			path.dirname = path.dirname.replace(/[^\\]+\\?$/i,'') + 'css';
 		}))
+		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest(SRC))
 		.pipe(livereload());
 });
