@@ -37,18 +37,18 @@ $color-head:#23252a;
 $browser-context: 16; // Default
 
 $icon:url(../images/icon.png) no-repeat 0px;
-$position-bg: 50%;
+$position-y: 50%;
 
-@mixin icon($y-position){
+@mixin icon($position-bg){
 	&:before{
 	content: '';
 	position: absolute;
 	left: 0;
-	top: $position-bg;
+	top: $position-y;
     width: 80px;
     height: 80px;
     transform: translate(0%, -50%);
-	background:$icon #{$y-position}px;
+	background:$icon #{$position-bg}px;
 	}
 }
 @function em($pixels, $context: $browser-context) {
@@ -900,7 +900,8 @@ $position-bg: 50%;
 		&__details{
 			position: absolute;
 		    top: -27px;
-		    right: 0;
+			left: 100%;
+			transform: translate(-100%, 0);
 		    display: inline-block;
 		    border-radius: 5px;
 		    transition: 0.5s ease;
@@ -1078,19 +1079,32 @@ $position-bg: 50%;
 		height:$navigation;
 	}
 	.box {
+		$position-y: 37% !global;
 		&_social {
-			margin: 0 0 0 0;
 			@include icon(-322)
+		}
+		&_shop {
+			@include icon(-221)
+		}
+		&_desing {
+			@include icon(-19)
+		}
+		&_search {
+			@include icon(-121)
 		}
 	}
 	.box__details {
     	top: 57px;
-    	left: -97px;
+    	left: -94px;
+		transform: translate(0);
 	}
 	.case{
 		margin: 0 0 15px 0;
 		p {
     		display: none;
+		}
+		&__images {
+			border: 5px solid #fff;
 		}
 	}
 	.mobile-control {
@@ -1134,14 +1148,22 @@ $position-bg: 50%;
 			padding: 10px 60px;
 		}
 	}
+	.slide__link{
+		display:inline-block;
+		width:32%;
+	}
 }
 @media screen and (max-width: 380px){
 	.slide__text{
 		height:54px;
 		overflow:hidden;
+		font-size: 13px;
 	}
 	.caption_slide{
 		margin:0;
+	}
+	.case__header {
+		font-size: 16px;
 	}
 }
 @media screen and (max-width: 320px){
@@ -1153,6 +1175,20 @@ $position-bg: 50%;
 	}
 	.button_portfolio {
     	bottom: 13px;
+	}
+	.mobile-menu__link {
+		font-size: 12px;
+	}
+	.slogan {
+		&__text_atom {
+			font-size: em(13);
+		}
+		&__text_testimonials {
+			font-size: 13px;
+		}
+	}
+	.box__content p {
+		font-size: em(13);
 	}
 }
 /*������ ������� ���� � sass ���� �� ����� ��� ���������� ������ �� 20%*/

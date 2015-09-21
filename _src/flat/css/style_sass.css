@@ -736,7 +736,8 @@ html {
     .box__details {
       position: absolute;
       top: -27px;
-      right: 0;
+      left: 100%;
+      transform: translate(-100%, 0);
       display: inline-block;
       border-radius: 5px;
       transition: 0.5s ease;
@@ -857,24 +858,52 @@ html {
 @media screen and (max-width: 480px) {
   .navigation {
     height: 55px; }
-  .box_social {
-    margin: 0 0 0 0; }
-    .box_social:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 80px;
-      height: 80px;
-      transform: translate(0%, -50%);
-      background: url(../images/icon.png) no-repeat 0px -322px; }
+  .box_social:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 37%;
+    width: 80px;
+    height: 80px;
+    transform: translate(0%, -50%);
+    background: url(../images/icon.png) no-repeat 0px -322px; }
+  .box_shop:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 37%;
+    width: 80px;
+    height: 80px;
+    transform: translate(0%, -50%);
+    background: url(../images/icon.png) no-repeat 0px -221px; }
+  .box_desing:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 37%;
+    width: 80px;
+    height: 80px;
+    transform: translate(0%, -50%);
+    background: url(../images/icon.png) no-repeat 0px -19px; }
+  .box_search:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 37%;
+    width: 80px;
+    height: 80px;
+    transform: translate(0%, -50%);
+    background: url(../images/icon.png) no-repeat 0px -121px; }
   .box__details {
     top: 57px;
-    left: -97px; }
+    left: -94px;
+    transform: translate(0); }
   .case {
     margin: 0 0 15px 0; }
     .case p {
       display: none; }
+    .case__images {
+      border: 5px solid #fff; }
   .mobile-control {
     top: 20px; }
   .caption_slide {
@@ -900,14 +929,20 @@ html {
     padding: 10px 25px; }
   .button_footer {
     font-size: 1.25em;
-    padding: 10px 60px; } }
+    padding: 10px 60px; }
+  .slide__link {
+    display: inline-block;
+    width: 32%; } }
 
 @media screen and (max-width: 380px) {
   .slide__text {
     height: 54px;
-    overflow: hidden; }
+    overflow: hidden;
+    font-size: 13px; }
   .caption_slide {
-    margin: 0; } }
+    margin: 0; }
+  .case__header {
+    font-size: 16px; } }
 
 @media screen and (max-width: 320px) {
   .case {
@@ -915,7 +950,15 @@ html {
   .caption_portfolio {
     font-size: 24px; }
   .button_portfolio {
-    bottom: 13px; } }
+    bottom: 13px; }
+  .mobile-menu__link {
+    font-size: 12px; }
+  .slogan__text_atom {
+    font-size: 0.8125em; }
+  .slogan__text_testimonials {
+    font-size: 13px; }
+  .box__content p {
+    font-size: 0.8125em; } }
 
 /*������ ������� ���� � sass ���� �� ����� ��� ���������� ������ �� 20%*/
 /*kfkfk*/
