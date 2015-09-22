@@ -391,14 +391,12 @@
 			<li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
 			<li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
 		</ul>
-		<!-- <div class="footer_social footer-social"> -->
 			<ul class="social-list">
 				<li class="social-list__item"><a class="social-list__link social-list__link_fb" href="#"></a></li>
 				<li class="social-list__item"><a class="social-list__link social-list__link_tw footer_social_menu_tw" href="#"></a></li>
 				<li class="social-list__item"><a class="social-list__link social-list__link_be footer_social_menu_be" href="#"></a></li>
 				<li class="social-list__item"><a class="social-list__link social-list__link_in footer_social_menu_in" href="#"></a></li>
 			</ul>
-		<!-- </div> -->
 		<div class="copyright">
 			<p class="copyright__content">2015 Hakan Ertan. All right reserved</p>
 		</div>
@@ -411,7 +409,7 @@
 <script>
  $(function(){
   $('.slider__content_promo').bxSlider({
-	auto: false,
+	auto: true,
 	pause: 4000,
 	minSlides: 1,
 	mode:'fade',
@@ -421,26 +419,17 @@
   });
  });
 </script>
-<!--Поворот текста Head_menu-->
-<!--<script type="text/javascript">
-	$(function() {
-		$('.head_menu_home a ').show().arctext({radius: 200, dir: -1});
-		$('.head_menu_about a').show().arctext({radius: 300, dir: -1});
-		$('.head_menu_portfolio a').show().arctext({radius: 400, dir: -1});
-		$('.head_menu_contact a').show().arctext({radius: 300, dir: -1});
-	});
-</script>-->
 <!--мобильное меню-->
  <script type="text/javascript">
 $(function(){
     $(".mobile-control").on("click", function(e){
         $(".mobile-nav__wrap").slideToggle(300);
-		e.stopPropagation(); //предотвращения передачу события внутри блока
+		e.stopPropagation(); //предотвращение передачи события внутри блока
 		return false;
         <!--$(this).toggleClass("active");-->
     });
 	$(".mobile-nav__wrap").on("click", function(p){
-		p.stopPropagation(); //предотвращения передачу события внутри блока
+		p.stopPropagation(); //предотвращение передачи события внутри блока
 		return false;
 	});
 	$(document).click(function () {

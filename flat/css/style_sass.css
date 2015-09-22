@@ -630,8 +630,8 @@ html {
   .logo {
     position: absolute;
     display: block;
-    width: 50%;
-    height: 90%;
+    width: 45%;
+    height: 75%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -798,6 +798,8 @@ html {
     margin: 25px 0 0 0; }
   .slogan__text_testimonials {
     font-size: 1em; }
+  .social-list__link:hover {
+    transform: none; }
   .caption_slide {
     font-size: 3em; }
   .caption_atom {
@@ -932,7 +934,11 @@ html {
     padding: 10px 60px; }
   .slide__link {
     display: inline-block;
-    width: 32%; } }
+    width: 32%; }
+  .menu {
+    padding: 10px 0; }
+    .menu__item {
+      padding: 0 5px; } }
 
 @media screen and (max-width: 380px) {
   .slide__text {
