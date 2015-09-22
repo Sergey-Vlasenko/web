@@ -792,8 +792,8 @@ $position-y: 50%;
 	.logo {
 		position: absolute;
 		display: block;
-		width: 50%;
-		height: 90%;
+		width: 45%;
+		height: 75%;
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
@@ -986,6 +986,9 @@ $position-y: 50%;
 	.slogan__text_testimonials {
 		font-size: em(16);
 	}
+	.social-list__link:hover {
+	    transform: none;
+	}
 	.caption{
 		&_slide {
 			font-size: em(48);
@@ -1151,6 +1154,12 @@ $position-y: 50%;
 	.slide__link{
 		display:inline-block;
 		width:32%;
+	}
+	.menu{
+		padding: 10px 0;
+		&__item{
+			padding: 0 5px;
+		}
 	}
 }
 @media screen and (max-width: 380px){
