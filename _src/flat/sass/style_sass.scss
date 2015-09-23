@@ -36,7 +36,7 @@ $navigation: 45px;
 $color-head:#23252a;
 $browser-context: 16; // Default
 
-$icon:url(../images/icon.png) no-repeat 0px;
+$icon:url(../img/icon.png) no-repeat 0px;
 $position-y: 50%;
 
 @mixin icon($position-bg){
@@ -684,7 +684,7 @@ $position-y: 50%;
 	    border: 1px solid #fbfbfb;
 	    border-radius: 5px;
 	    margin: 20px 0 0 0;
-	    background: url(../images/icon-eye.png) no-repeat 15px center
+	    background: url(../img/icon-eye.png) no-repeat 15px center
 	}
 	&__header {
 		color:#f98561;
@@ -748,16 +748,16 @@ $position-y: 50%;
 		height:45px;
 		transition:0.2s ease;
 		&_fb {
-			background:url(../images/social_footer.png) no-repeat -3px -3px;
+			background:url(../img/social_footer.png) no-repeat -3px -3px;
 		}
 		&_tw {
-			background:url(../images/social_footer.png) no-repeat -65px -3px;
+			background:url(../img/social_footer.png) no-repeat -65px -3px;
 		}
 		&_be {
-			background:url(../images/social_footer.png) no-repeat -133px -3px;
+			background:url(../img/social_footer.png) no-repeat -133px -3px;
 		}
 		&_in {
-			background: url(../images/social_footer.png) no-repeat -195px -3px;
+			background: url(../img/social_footer.png) no-repeat -195px -3px;
 		}
 		&:hover {
 			transform:scale(1.1);
