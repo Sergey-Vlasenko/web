@@ -109,9 +109,15 @@ $browser-context: 16; // Default
     text-align: center;
 	vertical-align: top;
 }
+.mobile-wraper{
+	position: relative;
+	width: 765px;
+	z-index: 2;
+}
 /*mobile menu top*/
 .mobile-menu {
 	position: relative;
+	width: 100%;
 	z-index: 104;
 	background: #230B0D;
 	margin: 0;
@@ -169,6 +175,7 @@ $browser-context: 16; // Default
 }
 .header .menu.open-sidebar {
     transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
 }
 /*Кнопка меню*/
 .mobilepanel_toggle {
@@ -183,12 +190,14 @@ $browser-context: 16; // Default
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
     left: -25px;
     width: 30px;
     height: 30px;
 }
 .mobilepanel_toggle span {
     transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
 }
 .mobilepanel_toggle span:after, .mobilepanel_toggle span:before, .mobilepanel_toggle span {
     width: 24px;
@@ -216,15 +225,19 @@ $browser-context: 16; // Default
 }
 .mobilepanel_toggle span:before, .mobilepanel_toggle span:after {
     transform-origin: 1.71429px center;
+	-webkit-transform-origin: 1.71429px center;
 }
 .mobilepanel_toggle.active span {
     transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
 }
 .mobilepanel_toggle.active span:before {
     transform: rotate3d(0, 0, 1, -40deg);
+	-webkit-transform: rotate3d(0, 0, 1, -40deg);
 }
 .mobilepanel_toggle.active span:after {
     transform: rotate3d(0, 0, 1, 40deg);
+	-webkit-transform: rotate3d(0, 0, 1, 40deg);
 }
 .mobilepanel_toggle.active span:before, .mobilepanel_toggle.active span:after {
     top: 0;
@@ -237,11 +250,12 @@ $browser-context: 16; // Default
     position: absolute;
     z-index: 101;
     left: 0;
-    top: 148px;
+    top: 41px;
 	width: 300px;
     height: auto;
     transition: 0.5s ease;
 	transform: translate(-110%, 0);
+	-webkit-transform: translate(-110%, 0);
     box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 	background: #230B0D;
@@ -301,9 +315,11 @@ $browser-context: 16; // Default
 .menu.open-sidebar {
     display: block;
     transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
 }
 .menu li a.active~.rd-submenu-toggle {
     transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
 }
 .rd-submenu-toggle {
     position: absolute;
@@ -373,7 +389,7 @@ $browser-context: 16; // Default
 	&__header {
 	    font-size: 20px;
 	    color: #444;
-	    padding: 15px 0;
+	    padding: 10px 0 30px 0;
 	}
 }
 .manufacture{
@@ -405,6 +421,7 @@ $browser-context: 16; // Default
 		text-align: left;
 		top: 50%;
 		transform: translate(0, -50%);
+		-webkit-transform: translate(0, -50%);
 		//background: url(../img/bg-make.jpg) repeat-x 0 0;
 		//background-size: contain;
 	}
@@ -468,6 +485,13 @@ $browser-context: 16; // Default
 }
 .caption_object {
 	padding: 0px 0 25px 0;
+}
+.slide-object__caption {
+    font-size: 20px;
+    color: #444;
+    font-weight: 700;
+    padding: 10px 0 5px 0;
+	box-sizing: border-box;
 }
 /**/
 /*Photo*/
@@ -571,6 +595,9 @@ $browser-context: 16; // Default
 	}
 }
 @media screen and (max-width: 768px){
+	.mobile-wraper{
+		width: 100%;
+	}
 	.wrapper{
 		width: auto;
 	}
@@ -681,13 +708,13 @@ $browser-context: 16; // Default
 	.caption_catalog {
 	    font-size: 22px;
 	}
-	.case__header{
+	.case__header, .slide-object__caption{
 		font-weight: 300;
 		font-size: 18px;
 	}
 }
 @media screen and (max-width: 320px){
-	.case__header{
+	.case__header, .slide-object__caption{
 		font-size: 16px;
 		font-weight: 600;
 	}

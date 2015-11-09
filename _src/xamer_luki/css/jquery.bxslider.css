@@ -65,6 +65,9 @@
     border: 1px solid #dbdbdb;
 	box-sizing: border-box;
 }
+.slider-object .bx-wrapper .bx-controls-direction .bx-next, .slider-object .bx-wrapper .bx-controls-direction .bx-prev{
+	top: 45%;
+}
 /**/
 .bx-wrapper .bx-prev, .bx-wrapper .bx-next {
 	position: absolute;
