@@ -86,9 +86,14 @@ img {
   text-align: center;
   vertical-align: top; }
 
+.mobile-wraper {
+  position: relative;
+  width: 765px; }
+
 /*mobile menu top*/
 .mobile-menu {
   position: relative;
+  width: 100%;
   z-index: 104;
   background: #230B0D;
   margin: 0;
@@ -145,7 +150,8 @@ img {
   position: relative; }
 
 .header .menu.open-sidebar {
-  transform: translate(0, 0); }
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0); }
 
 /*Кнопка меню*/
 .mobilepanel_toggle {
@@ -160,12 +166,14 @@ img {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
   left: -25px;
   width: 30px;
   height: 30px; }
 
 .mobilepanel_toggle span {
-  transform: rotate(180deg); }
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg); }
 
 .mobilepanel_toggle span:after, .mobilepanel_toggle span:before, .mobilepanel_toggle span {
   width: 24px;
@@ -192,16 +200,20 @@ img {
   top: 8px; }
 
 .mobilepanel_toggle span:before, .mobilepanel_toggle span:after {
-  transform-origin: 1.71429px center; }
+  transform-origin: 1.71429px center;
+  -webkit-transform-origin: 1.71429px center; }
 
 .mobilepanel_toggle.active span {
-  transform: rotate(360deg); }
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg); }
 
 .mobilepanel_toggle.active span:before {
-  transform: rotate3d(0, 0, 1, -40deg); }
+  transform: rotate3d(0, 0, 1, -40deg);
+  -webkit-transform: rotate3d(0, 0, 1, -40deg); }
 
 .mobilepanel_toggle.active span:after {
-  transform: rotate3d(0, 0, 1, 40deg); }
+  transform: rotate3d(0, 0, 1, 40deg);
+  -webkit-transform: rotate3d(0, 0, 1, 40deg); }
 
 .mobilepanel_toggle.active span:before, .mobilepanel_toggle.active span:after {
   top: 0;
@@ -214,11 +226,12 @@ img {
   position: absolute;
   z-index: 101;
   left: 0;
-  top: 148px;
+  top: 41px;
   width: 300px;
   height: auto;
   transition: 0.5s ease;
   transform: translate(-110%, 0);
+  -webkit-transform: translate(-110%, 0);
   box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   background: #230B0D;
@@ -277,10 +290,12 @@ img {
 
 .menu.open-sidebar {
   display: block;
-  transform: translate(0, 0); }
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0); }
 
 .menu li a.active ~ .rd-submenu-toggle {
-  transform: rotate(180deg); }
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg); }
 
 .rd-submenu-toggle {
   position: absolute;
@@ -341,7 +356,7 @@ img {
   .case__header {
     font-size: 20px;
     color: #444;
-    padding: 15px 0; }
+    padding: 10px 0 30px 0; }
 
 .manufacture {
   padding: 0; }
@@ -366,7 +381,8 @@ img {
     width: 58%;
     text-align: left;
     top: 50%;
-    transform: translate(0, -50%); }
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%); }
   .make__images {
     display: inline-block; }
 
@@ -513,6 +529,8 @@ img {
     text-decoration: underline; }
 
 @media screen and (max-width: 768px) {
+  .mobile-wraper {
+    width: 100%; }
   .wrapper {
     width: auto; }
   .menu {
