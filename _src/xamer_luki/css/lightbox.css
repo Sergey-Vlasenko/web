@@ -100,7 +100,7 @@ body:after {
   background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
 }
 
-.lb-prev, .lb-next {
+/*.lb-prev, .lb-next {
   height: 100%;
   cursor: pointer;
   display: block;
@@ -141,7 +141,7 @@ body:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-
+*/
 .lb-dataContainer {
   margin: 0 auto;
   padding-top: 5px;

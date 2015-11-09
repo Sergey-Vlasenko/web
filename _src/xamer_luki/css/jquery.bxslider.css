@@ -2,21 +2,52 @@
 
 /*.bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(../images/controls.png) no-repeat 0 -32px;
+	background: url(../img/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	/*background: url(../images/controls.png) no-repeat -43px -32px;
-
+	background: url(../img/controls.png) no-repeat -43px -32px;
+}
 .bx-wrapper .bx-prev:hover {
 	background-position: 0 0;
 }
 
 .bx-wrapper .bx-next:hover {
 	background-position: -43px 0;
+}*/
+
+.bx-wrapper .bx-controls-direction .bx-prev, .bx-wrapper .bx-controls-direction .bx-next{
+	position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translate(0, -50%);
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
+    color: rgba(50,50,50,0.4);
+    font-size: 40px;
+    text-align: center;
+	text-indent: 0;
+	margin-top:0;
 }
-*/
+.bx-wrapper .bx-next {
+	right:-25px;
+}
+.bx-wrapper .bx-prev {
+	left:-25px;
+}
+.bx-wrapper .bx-prev:before {
+    content: "\f104";
+    font-family: FontAwesome;
+}
+.bx-wrapper .bx-next:before {
+    content: "\f105";
+    font-family: FontAwesome;
+}
+
 .bx-wrapper ul li img {
 	max-width: 100%;
 	display: inline-block;
