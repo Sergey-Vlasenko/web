@@ -271,7 +271,7 @@ $browser-context: 16; // Default
     display: block;
     padding: 0px 0 0 30px;
 	box-sizing: border-box;
-    transition: 0.5s ease;
+    transition: 0.4s ease;
 	height:0;
 	width:0;
 	overflow:hidden;
@@ -627,7 +627,7 @@ $browser-context: 16; // Default
 		width: 270px;
 	}
 	.advice__submit-button{
-		font-size: 15px;
+		font-size: 18px;
 	}
 	.logo{
 		width: 59%;
@@ -643,6 +643,10 @@ $browser-context: 16; // Default
 	}
 	.footer {
 		padding: 25px 5px;
+	}
+	.copyright__item {
+	    line-height: 1.2;
+	    font-size: 14px;
 	}
 }
 @media screen and (max-width: 396px){
@@ -1093,7 +1097,7 @@ $browser-context: 16; // Default
 // }
 // .innovation {
 // 	position: relative;
-// 	
+//
 // 	padding: 40px 0 35px 0;
 // 	&:after{
 // 		content: '';
@@ -1140,7 +1144,7 @@ $browser-context: 16; // Default
 // 	@extend %bg;
 // }
 // .news {
-// 	
+//
 // 	padding: 53px 0 40px 0px;
 // 	text-align:center;
 // 	font-size: 0px;

@@ -248,7 +248,7 @@ img {
   display: block;
   padding: 0px 0 0 30px;
   box-sizing: border-box;
-  transition: 0.5s ease;
+  transition: 0.4s ease;
   height: 0;
   width: 0;
   overflow: hidden; }
@@ -548,7 +548,7 @@ img {
   .advice__form {
     width: 270px; }
   .advice__submit-button {
-    font-size: 15px; }
+    font-size: 18px; }
   .logo {
     width: 59%; }
   .social {
@@ -559,7 +559,10 @@ img {
       box-sizing: border-box;
       margin: 0; }
   .footer {
-    padding: 25px 5px; } }
+    padding: 25px 5px; }
+  .copyright__item {
+    line-height: 1.2;
+    font-size: 14px; } }
 
 @media screen and (max-width: 396px) {
   .phone__number, .phone__city, .phone .email, .phone .email__number {
