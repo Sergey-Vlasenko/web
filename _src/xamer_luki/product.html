@@ -156,8 +156,8 @@
                 </div>
             </div>
 		</div>
-        <!--Catalog -->
-		<div class="catalog">
+        <!--product -->
+		<div class="product">
 			<div class="wraper wraper_catalog">
 				<ul class="breadcrumb">
 					<li class="breadcrumb__item">
@@ -181,46 +181,172 @@
 					<span class="new"> Новинка </span>
 				</div>
 				<h2 class="caption caption_catalog">Люки "Гефест" под покраску противопожарный</h2>
-				<div class="product-calculator">
-					<h2 class="product-calculator__caption">Калькулятор товара</h2>
-					
+                <div class="photo">
+                    <div class="slider catalog-photo">
+                        <ul class="catalog-photo__content">
+                            <li class="slide-photo">
+                                <a href="img/photo_1.jpg" class="photo-link" data-lightbox="image">
+                                    <img src="img/photo_1.jpg" alt="images" class="slide-photo__image">
+                                </a>
+                            </li>
+                            <li class="slide-photo">
+                                <a href="img/photo_2.jpg" class="photo-link" data-lightbox="image">
+                                    <img src="img/photo_2.jpg" alt="images" class="slide-photo__image">
+                                </a>
+                            </li>
+                            <li class="slide-photo">
+                                <a href="img/photo_3.jpg" class="photo-link" data-lightbox="image">
+                                    <img src="img/photo_3.jpg" alt="images" class="slide-photo__image">
+                                </a>
+                            </li>
+                            <li class="slide-photo">
+                                <a href="img/photo_4.jpg" class="photo-link" data-lightbox="image">
+                                    <img src="img/photo_4.jpg" alt="images" class="slide-photo__image">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- calculator -->
+				<div class="calculator">
+					<h2 class="calculator__caption">Калькулятор товара</h2>
+                    <!--counter -->
+                    <div class="wrapper-counter">
+                        <div class="counter">
+                        	<h4 class="counter__caption">Сторона А, мм</h4>
+                        	<div class="counter__content">
+                        		<input type="text" class="counter__field" maxlength="6" value="600">
+                        		<div class="counter__toogle">
+                        			<span class="counter__next"></span>
+                        			<span class="counter__prev"></span>
+                        		</div>
+                        	</div>
+                        </div>
+                        <div class="counter">
+                            <h4 class="counter__caption">Сторона В, мм</h4>
+                            <div class="counter__content">
+                                <input type="text" class="counter__field" maxlength="6" value="500">
+                                <div class="counter__toogle">
+                                    <span class="counter__next"></span>
+                                    <span class="counter__prev"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <h4 class="counter__caption">Количество, мм</h4>
+                            <div class="counter__content">
+                                <input type="text" class="counter__field" maxlength="3" value="1">
+                                <div class="counter__toogle">
+                                    <span class="counter__next"></span>
+                                    <span class="counter__prev"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--counter end-->
+                    <!-- option -->
+                    <div class="checkbox-area">
+                        <h4 class="checkbox-area__caption">Дополнительные опции</h4>
+						<div class="check-container">
+							<input type="checkbox" value="2000" class="check">
+							<div class="check-desc">
+								<p class="checkbox-text">Комплект газовых пружин</p>
+								<p class="checkbox-value">(+2000руб)</p>
+							</div>
+						</div>
+
+						<div class="check-container">
+							<input type="checkbox" value="4000" class="check">
+							<div class="check-desc">
+								<p class="checkbox-text">Поворотная ручка</p>
+								<p class="checkbox-value">(+4000руб)</p>
+							</div>
+						</div>
+
+						<div class="check-container">
+							<input type="checkbox" value="1600" class="check">
+							<div class="check-desc">
+								<p class="checkbox-text">Потайная защелка фиксатор</p>
+								<p class="checkbox-value">(+1600руб)</p>
+							</div>
+						</div>
+                        <div class="check-container">
+                            <input type="checkbox" value="0" class="check">
+                            <div class="check-desc">
+                                <p class="checkbox-text">Страховочные упоры</p>
+                                <p class="checkbox-value">(Бесплатно)</p>
+                            </div>
+                        </div>
+                        <div class="check-container">
+                            <input type="checkbox" value="0" class="check">
+                            <div class="check-desc">
+                                <p class="checkbox-text">Страховочный тросик</p>
+                                <p class="checkbox-value">(Бесплатно)</p>
+                            </div>
+                        </div>
+					</div>
+                    <!-- option end -->
+                    <!-- additional characteristics -->
+                    <div class="additional-desc">
+                        <h4 class="additional-desc__caption">Дополнительные характеристики</h4>
+                        <ul class="additional-desc__list">
+                            <li class="additional-desc__item"><strong>Сторона А</strong> - сторона расположения петли и замков</li>
+                            <li class="additional-desc__item"><strong>Сторона В</strong> - другая сторона</li>
+                            <li class="additional-desc__item">Одностворчатый люк</li>
+                            <li class="additional-desc__item">люки данного цвета изготавливаются высотой профиля от 40мм до 70мм</li>
+                            <li class="additional-desc__item">Высота 48мм</li>
+                        </ul>
+                    </div>
+                    <!-- additional characteristics end-->
+                    <!-- price -->
+                    <div class="price">
+                    	<h4 class="price__caption">Стоимость</h4>
+                    	<div class="price__item">
+                    		<p class="price__value price__value_old">13 250₽</p>
+                    		<p class="discount">Скидка 5.00%</p>
+                    	</div>
+                    	<div class="price__item price__item_sale">
+                    		<p class="price__value price__value_discount">12 588₽</p>
+                    		<p class="price__savings">663₽</p>
+                    	</div>
+                    </div>
+                    <!--price end  -->
+                    <div class="availability">
+                    	<p class="availability__true">В наличии</p>
+                    	<p class="availability__false">Под заказ</p>
+                    </div>
+                    <!-- presence end-->
+                    <!-- buy -->
+                    <div class="buy">
+                        <button class="jsAddToCart buy__add-cart">Добавить в корзину</button>
+                        <a class="buy__now" href="#modal-2">Купить в 1 клик</a>
+                    </div>
+                    <!--buy end -->
+                    <!--info-dostavka  -->
+                    <div class="info-dostavka">
+                        <ul class"info-dostavka__list">
+                            <li class="info-dostavka__item">Доставка по <strong>Московскому региону, Санкт-Петербургу</strong> и <strong>Ленинградской области</strong> товаров со статусом "В НАЛИЧИИ" осуществляется в течение 2-х рабочих дней.</li>
+                            <li class="info-dostavka__item">При заказе <strong>из регионов</strong> товаров со статусом "В НАЛИЧИИ" и "ПОД ЗАКАЗ" требуется 100% предоплата. Доставка осуществляется транспортными компаниями.</li>
+                        </ul>
+                    </div>
+                    <!-- info-dostavka end -->
+                    <!-- tabs -->
+                    <ul class="accordion-container">
+                        <li>
+                            <h3>Описание</h3>
+                            <div class="info">
+                                <p>Люк модели «Макс» устанавливается в подготовленный проем.</p>
+                            </div>
+                        </li>
+                    </ul>
 				</div>
+                <!--calculator end -->
 			</div>
 		</div>
         <!-- photo -->
-        <div class="photo">
-            <!--<div class="title title_photo">
-                <h2 class="caption caption_photo">Фото люков</h2>
-            </div>-->
-            <div class="slider catalog-photo">
-                <ul class="catalog-photo__content">
-                    <li class="slide-photo">
-						<a href="img/photo_1.jpg" class="photo-link" data-lightbox="image">
-							<img src="img/photo_1.jpg" alt="images" class="slide-photo__image">
-						</a>
-                    </li>
-                    <li class="slide-photo">
-						<a href="img/photo_2.jpg" class="photo-link" data-lightbox="image">
-							<img src="img/photo_2.jpg" alt="images" class="slide-photo__image">
-						</a>
-                    </li>
-                    <li class="slide-photo">
-						<a href="img/photo_3.jpg" class="photo-link" data-lightbox="image">
-							<img src="img/photo_3.jpg" alt="images" class="slide-photo__image">
-						</a>
-                    </li>
-                    <li class="slide-photo">
-						<a href="img/photo_4.jpg" class="photo-link" data-lightbox="image">
-							<img src="img/photo_4.jpg" alt="images" class="slide-photo__image">
-						</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- advance -->
-       
+
         <!-- Footer -->
-        <div class="footer">
+        <!-- <div class="footer">
 			<div class="footer__content justify">
                 <div class="logo logo-footer">
                     <a class="logo__link" href="http://www.xammer-luki.ru/">
@@ -243,7 +369,7 @@
 				<p class="copyright__item">© "ПФ ХАММЕР" 2006 - у нас вы можете купить <br>люки невидимки от производителя.</p>
 				<p class="copyright__item">Разработка и продвижение сайта - <a title="Разработка сайтов и он-лайн сервисов, любой сложности. Продвижение в поисковых системах. Контекстная и социальная реклама." href="http://outcode.ru/" target="_blank">outcode.ru</a></p>
 			</div>
-		</div>
+		</div> -->
 	</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/jquery.bxslider-rahisified.min.js"></script>

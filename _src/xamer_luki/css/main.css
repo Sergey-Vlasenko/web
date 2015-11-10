@@ -151,7 +151,8 @@ img {
   position: relative; }
 
 .header .menu.open-sidebar {
-  transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
   -webkit-transform: translate(0, 0); }
 
 /*Кнопка меню*/
@@ -166,21 +167,24 @@ img {
   -webkit-appearance: none;
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
   left: -25px;
   width: 30px;
   height: 30px; }
 
 .mobilepanel_toggle span {
-  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
   -webkit-transform: rotate(180deg); }
 
 .mobilepanel_toggle span:after, .mobilepanel_toggle span:before, .mobilepanel_toggle span {
   width: 24px;
   height: 4px;
   background-color: #fff;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   border-radius: 2px; }
 
 .mobilepanel_toggle span {
@@ -201,11 +205,13 @@ img {
   top: 8px; }
 
 .mobilepanel_toggle span:before, .mobilepanel_toggle span:after {
-  transform-origin: 1.71429px center;
+  -ms-transform-origin: 1.71429px center;
+      transform-origin: 1.71429px center;
   -webkit-transform-origin: 1.71429px center; }
 
 .mobilepanel_toggle.active span {
-  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
   -webkit-transform: rotate(360deg); }
 
 .mobilepanel_toggle.active span:before {
@@ -231,7 +237,8 @@ img {
   width: 300px;
   height: auto;
   transition: 0.5s ease;
-  transform: translate(-110%, 0);
+  -ms-transform: translate(-110%, 0);
+      transform: translate(-110%, 0);
   -webkit-transform: translate(-110%, 0);
   box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -291,11 +298,13 @@ img {
 
 .menu.open-sidebar {
   display: block;
-  transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
   -webkit-transform: translate(0, 0); }
 
 .menu li a.active ~ .rd-submenu-toggle {
-  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
   -webkit-transform: rotate(180deg); }
 
 .rd-submenu-toggle {
@@ -386,7 +395,8 @@ img {
     width: 58%;
     text-align: left;
     top: 50%;
-    transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
     -webkit-transform: translate(0, -50%); }
   .make__images {
     display: inline-block; }
@@ -589,6 +599,190 @@ img {
   .breadcrumb__name {
     color: #464646; }
 
+/*counter*/
+.calculator {
+  text-align: center; }
+  .calculator__caption {
+    font-size: 27px;
+    line-height: 45px;
+    font-weight: bold; }
+
+.counter {
+  text-align: center;
+  display: inline-block; }
+  .counter__caption {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-align: left; }
+  .counter__content {
+    position: relative;
+    height: 40px;
+    width: 100px;
+    padding: 0 0 0 5px; }
+  .counter__field {
+    height: 100%;
+    width: 55px;
+    padding: 0;
+    margin: 0 45px 0 0;
+    z-index: 1;
+    display: block;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 40px;
+    text-indent: 10px;
+    margin: 0;
+    box-sizing: border-box; }
+  .counter__toogle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 45px; }
+  .counter__next, .counter__prev {
+    display: inline-block;
+    width: 100%;
+    font-size: 21px;
+    vertical-align: top; }
+  .counter__next:before {
+    content: "\f0d8";
+    font-family: 'FontAwesome'; }
+  .counter__prev:before {
+    content: "\f0d7";
+    font-family: 'FontAwesome'; }
+
+/**/
+/*option*/
+.checkbox-area {
+  border-top: 1px solid #ccc; }
+  .checkbox-area__caption {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    margin: 0 0 9px 9px;
+    color: #1f1f1f; }
+
+.check-container {
+  border-bottom: 1px solid #ccc;
+  margin: 5px 9px;
+  display: inline-block; }
+
+.check {
+  width: 18px;
+  height: 18px;
+  margin-right: 9px;
+  display: inline-block; }
+
+.check-desc {
+  display: inline-block;
+  text-align: left; }
+
+.checkbox-text {
+  font-size: 14px;
+  line-height: 16px; }
+
+.checkbox-value {
+  font-size: 13px;
+  line-height: 16px;
+  color: #555;
+  margin: 0 0 9px 0; }
+
+/*additional-desc*/
+.additional-desc__caption {
+  font-weight: bold;
+  line-height: 18px;
+  margin: 0 0 9px 0;
+  color: #1f1f1f; }
+
+.additional-desc__item {
+  font-size: 13px;
+  margin: 0 0 5px 0; }
+  .additional-desc__item strong {
+    font-weight: bold; }
+
+/**/
+/*price*/
+.price {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px; }
+  .price__caption {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 300; }
+  .price__value {
+    display: inline-block; }
+    .price__value_old {
+      position: relative;
+      display: inline-block;
+      color: #1f1f1f; }
+      .price__value_old:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: #e21720; }
+    .price__value_discount {
+      display: inline-block;
+      color: #e51212; }
+  .price__savings {
+    display: inline-block;
+    color: #00b63d; }
+
+.discount {
+  display: inline-block;
+  background: #EDEDED;
+  padding: 7px 15px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #ff483e;
+  font-weight: 700; }
+
+/*availability*/
+.availability {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 20px; }
+  .availability__true {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    color: #1f1f1f;
+    background: url(../img/availability-yes.png) no-repeat 0 0; }
+  .availability__false {
+    display: inline-block;
+    color: #6AB635; }
+
+/**/
+/*buy*/
+.buy {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff; }
+  .buy__add-cart {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 5px 15px;
+    background-color: #8ec73b;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    text-align: center; }
+  .buy__now {
+    display: inline-block;
+    background: #595859;
+    border-radius: 3px;
+    padding: 5px 15px;
+    text-align: center;
+    color: #fff; }
+
+/**/
+/*info-dostavka*/
 /**/
 /**/
 @media screen and (max-width: 768px) {

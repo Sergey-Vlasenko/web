@@ -652,7 +652,235 @@ $browser-context: 16; // Default
 		color: #464646;
 	}
 }
+/*counter*/
+.calculator{
+	text-align: center;
+	&__caption{
+		font-size: 27px;
+		line-height: 45px;
+		font-weight: bold;
+	}
+}
+.counter {
+	text-align: center;
+	display: inline-block;
+
+	&__caption{
+		font-size: 14px;
+		font-weight: normal;
+		margin-bottom: 5px;
+		text-align: left;
+	}
+	&__content{
+		position: relative;
+		height: 40px;
+		width: 100px;
+		padding: 0 0 0 5px;
+	}
+	&__field{
+		height: 100%;
+	    width: 55px;
+	    padding: 0;
+		margin: 0 45px 0 0;
+	    z-index: 1;
+	    display: block;
+		border: 1px solid #dbdbdb;
+	    border-radius: 3px;
+	    background: #fff;
+	    font-size: 16px;
+	    font-weight: normal;
+	    line-height: 40px;
+	    text-indent: 10px;
+	    margin: 0;
+	    box-sizing: border-box;
+	}
+	&__toogle{
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 45px;
+	}
+	&__next, &__prev {
+		display: inline-block;
+    	width: 100%;
+		font-size: 21px;
+		vertical-align: top;
+	}
+	&__next{
+		&:before{
+    		content: "\f0d8";
+			font-family: 'FontAwesome';
+		}
+	}
+	&__prev{
+		&:before{
+			content: "\f0d7";
+			font-family: 'FontAwesome';
+		}
+	}
+}
 /**/
+/*option*/
+.checkbox-area{
+	border-top: 1px solid #ccc;
+	&__caption{
+		font-size: 16px;
+		line-height: 18px;
+		font-weight: 700;
+		margin: 0 0 9px 9px;
+		color: #1f1f1f;
+	}
+}
+.check-container{
+	border-bottom: 1px solid #ccc;
+    margin: 5px 9px;
+	display: inline-block;
+}
+.check {
+    width: 18px;
+    height: 18px;
+    margin-right: 9px;
+    display: inline-block;
+}
+.check-desc{
+	display: inline-block;
+	text-align: left;
+}
+.checkbox-text{
+	font-size: 14px;
+    line-height: 16px;
+}
+.checkbox-value{
+	font-size: 13px;
+    line-height: 16px;
+    color: #555;
+    margin: 0 0 9px 0;
+}
+/*additional-desc*/
+.additional-desc{
+	&__caption{
+	    font-weight: bold;
+	    line-height: 18px;
+	    margin: 0 0 9px 0;
+	    color: #1f1f1f;
+	}
+	&__list{
+
+	}
+	&__item{
+		font-size: 13px;
+		margin: 0 0 5px 0;
+		strong {
+			font-weight: bold;
+		}
+	}
+}
+/**/
+/*price*/
+.price{
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 20px;
+	&__caption{
+		font-size: 14px;
+    	margin-bottom: 5px;
+		font-weight: 300;
+	}
+	&__item{
+	}
+	&__value{
+		display: inline-block;
+		&_old{
+			position: relative;
+			display: inline-block;
+			color: #1f1f1f;
+			&:before{
+				content:"";
+				position: absolute;
+				top:50%;
+				left:0;
+				height: 2px;
+				width: 100%;
+				background: #e21720;
+			}
+		}
+		&_discount{
+			display: inline-block;
+			color: #e51212;
+		}
+	}
+	&__savings{
+		display: inline-block;
+		color: #00b63d;
+	}
+}
+.discount{
+	display: inline-block;
+	background: #EDEDED;
+	padding: 7px 15px;
+	border-radius: 3px;
+	font-size: 14px;
+	color: #ff483e;
+	font-weight: 700;
+}
+/*availability*/
+.availability{
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 20px;
+	&__true{
+		display: inline-block;
+		padding: 0 0 0 20px;
+		color: #1f1f1f;
+		background: url(../img/availability-yes.png) no-repeat 0 0;
+	}
+	&__false{
+		display: inline-block;
+    	color: #6AB635;
+	}
+}
+/**/
+/*buy*/
+.buy{
+	font-size: 16px;
+	font-weight: 700;
+	color:#fff;
+	&__add-cart{
+		display: inline-block;
+		border-radius: 3px;
+		padding: 5px 15px;
+		background-color: #8ec73b;
+		margin: 0;
+	    border: none;
+	    box-sizing: border-box;
+	    text-align: center;
+	}
+	&__now{
+		display: inline-block;
+		background: #595859;
+		border-radius: 3px;
+		padding: 5px 15px;
+		text-align: center;
+		color: #fff;
+	}
+}
+/**/
+/*info-dostavka*/
+.info-dostavka{
+	&__list{
+
+	}
+	&__item{
+		
+	}
+}
+/**/
+// <div class="info-dostavka">
+// 	<ul class"info-dostavka__list">
+// 		<li class="info-dostavka__item">Доставка по <strong>Московскому региону, Санкт-Петербургу</strong> и <strong>Ленинградской области</strong> товаров со статусом "В НАЛИЧИИ" осуществляется в течение 2-х рабочих дней.</li>
+// 		<li class="info-dostavka__item">
 /**/
 @media screen and (max-width: 768px){
 	.mobile-wraper{

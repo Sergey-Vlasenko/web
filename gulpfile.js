@@ -18,6 +18,7 @@ gulp.task('sass', /*['css'],*/ function(){
 	gulp.src(SRC + '**/sass/**/*.scss')
 		.pipe(sourcemaps.init())
 			.pipe(sass().on('error', sass.logError))
+			.pipe(autoprefixer({browsers:['last 3 versions']}))
 		.pipe(rename(function(path){
 			path.dirname = path.dirname.replace(/[^\\]+\\?$/i,'') + 'css';
 		}))
@@ -30,7 +31,7 @@ gulp.task('css', ['copy:css','css:autoprefix']);
 
 gulp.task('css:autoprefix', function(){
 	gulp.src(SRC + '**/css/**/*.css')
-		.pipe(autoprefixer())
+        .pipe(autoprefixer({browsers: ['last 2 versions']}))
 		.pipe(livereload());
 });
 
@@ -40,11 +41,11 @@ gulp.task('copy:css', function(){
 		.pipe(gulp.dest(DIST))
 		.pipe(minifyCss())
 		.pipe(rename({ extname: '.min.css' }))
-		.pipe(gulp.dest(DIST))	
+		.pipe(gulp.dest(DIST))
 });
 
 gulp.task('img', ['img:min']);
- 
+
 gulp.task('img:min', function(){
 	gulp.src(SRC + '**/img/*')
 		.pipe(imagemin({
