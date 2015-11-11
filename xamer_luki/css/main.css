@@ -561,7 +561,7 @@ img {
 .extra-options {
   position: relative;
   color: #fff;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 26px;
   height: 26px;
   text-shadow: 0px -1px 2px #c07c2d;
@@ -573,22 +573,24 @@ img {
   display: inline-block;
   position: relative;
   z-index: 1;
-  padding: 0 15px 0 10px;
+  padding: 2px 15px 2px 10px;
   background: url(../img/bg-hit.png) 100% 0 no-repeat;
+  background-size: cover;
   vertical-align: top; }
 
 .new {
   display: inline-block;
   margin-left: 6px;
-  padding: 0 15px 0 10px;
+  padding: 2px 15px 2px 10px;
   background: url(../img/bg-new-2.png) 100% 0 no-repeat;
+  background-size: cover;
   position: relative;
   z-index: 1; }
 
 /*breadcrumb*/
 .breadcrumb {
   display: block;
-  font-size: 14px;
+  font-size: 18px;
   padding: 0 0 13px 0; }
   .breadcrumb__item {
     display: inline-block;
@@ -608,9 +610,9 @@ img {
 .calculator {
   text-align: center; }
   .calculator__caption {
-    font-size: 20px;
-    line-height: 20px;
-    padding: 15px 0;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 10px 0;
     font-weight: bold; }
 
 .counter {
@@ -618,7 +620,7 @@ img {
   display: inline-block;
   margin: 0 15px; }
   .counter__caption {
-    font-size: 14px;
+    font-size: 19px;
     font-weight: normal;
     margin-bottom: 5px;
     text-align: left; }
@@ -637,7 +639,7 @@ img {
     border: 1px solid #dbdbdb;
     border-radius: 3px;
     background: #fff;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
     line-height: 40px;
     text-indent: 10px;
@@ -664,10 +666,10 @@ img {
 /**/
 /*option*/
 .checkbox-area {
-  padding: 15px 100px 0 100px; }
+  padding: 15px 50px 0 50px; }
   .checkbox-area__caption {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 20px;
     font-weight: 700;
     margin: 0 0 9px 0;
     color: #1f1f1f;
@@ -683,8 +685,8 @@ img {
   vertical-align: top; }
 
 .check {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   margin-right: 9px;
   display: inline-block; }
 
@@ -693,22 +695,22 @@ img {
   text-align: left; }
 
 .checkbox-text {
-  font-size: 14px;
-  line-height: 16px; }
+  font-size: 18px;
+  line-height: 18px; }
 
 .checkbox-value {
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 18px;
   color: #555;
   margin: 0 0 9px 0; }
 
 /*additional-desc*/
 .additional-desc {
-  padding: 0 100px; }
+  padding: 0 50px; }
   .additional-desc__caption {
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 19px;
+    line-height: 19px;
     margin: 0 0 9px 0;
     color: #1f1f1f; }
   .additional-desc__list {
@@ -716,7 +718,7 @@ img {
     padding: 0 0 0 10px;
     list-style-type: disc; }
   .additional-desc__item {
-    font-size: 14px;
+    font-size: 18px;
     margin: 0 0 5px 0; }
     .additional-desc__item strong {
       font-weight: bold; }
@@ -727,9 +729,9 @@ img {
   font-size: 24px;
   font-weight: 700;
   line-height: 20px;
-  padding: 0 100px; }
+  padding: 0 50px; }
   .price__caption {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 18px;
     text-align: center;
     font-weight: 700;
@@ -764,7 +766,7 @@ img {
   background: #EDEDED;
   padding: 7px 10px;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 16px;
   color: #ff483e;
   font-weight: 700;
   box-sizing: border-box;
@@ -791,7 +793,7 @@ img {
 /**/
 /*buy*/
 .buy {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #fff;
   padding: 0 100px 25px 100px; }
@@ -813,7 +815,7 @@ img {
     padding: 10px 15px;
     text-align: center;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1;
     margin: 0 10%; }
 
@@ -833,7 +835,7 @@ img {
   font-family: "PT Sans", sans-serif;
   text-align: left; }
   .tabs__item .tabs__caption {
-    font: 700 16px/20px "PT Sans", sans-serif;
+    font: 700 17px/20px "PT Sans", sans-serif;
     color: #1f1f1f; }
   .tabs__item .table table {
     width: 1000px; }
