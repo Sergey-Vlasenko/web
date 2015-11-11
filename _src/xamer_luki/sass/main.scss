@@ -609,7 +609,7 @@ $browser-context: 16; // Default
 .extra-options{
 	position: relative;
     color: #fff;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 26px;
     height: 26px;
     text-shadow: 0px -1px 2px #c07c2d;
@@ -621,22 +621,24 @@ $browser-context: 16; // Default
     display: inline-block;
     position: relative;
 	z-index: 1;
-	padding: 0 15px 0 10px;
+	padding: 2px 15px 2px 10px;
     background: url(../img/bg-hit.png) 100% 0 no-repeat;
+	background-size: cover;
     vertical-align: top;
 }
 .new {
     display: inline-block;
     margin-left: 6px;
-	padding: 0 15px 0 10px;
+	padding: 2px 15px 2px 10px;
     background: url(../img/bg-new-2.png) 100% 0 no-repeat;
+	background-size: cover;
     position: relative;
     z-index: 1;
 }
 /*breadcrumb*/
 .breadcrumb{
 	display:block;
-	font-size:14px;
+	font-size:18px;
 	padding: 0 0 13px 0;
 	&__item{
 		display:inline-block;
@@ -661,9 +663,9 @@ $browser-context: 16; // Default
 .calculator{
 	text-align: center;
 	&__caption{
-		font-size: 20px;
-		line-height: 20px;
-		padding: 15px 0;
+		font-size: 24px;
+		line-height: 24px;
+		padding: 10px 0;
 		font-weight: bold;
 	}
 }
@@ -672,7 +674,7 @@ $browser-context: 16; // Default
 	display: inline-block;
 	margin: 0 15px;
 	&__caption{
-		font-size: 14px;
+		font-size: 19px;
 		font-weight: normal;
 		margin-bottom: 5px;
 		text-align: left;
@@ -693,7 +695,7 @@ $browser-context: 16; // Default
 		border: 1px solid #dbdbdb;
 	    border-radius: 3px;
 	    background: #fff;
-	    font-size: 16px;
+	    font-size: 20px;
 	    font-weight: normal;
 	    line-height: 40px;
 	    text-indent: 10px;
@@ -730,10 +732,10 @@ $browser-context: 16; // Default
 /*option*/
 .checkbox-area{
 	//border-top: 1px solid #ccc;
-	padding: 15px 100px 0 100px;
+	padding: 15px 50px 0 50px;
 	&__caption{
-		font-size: 16px;
-		line-height: 18px;
+		font-size: 20px;
+		line-height: 20px;
 		font-weight: 700;
 		margin: 0 0 9px 0;
 		color: #1f1f1f;
@@ -750,8 +752,8 @@ $browser-context: 16; // Default
 	vertical-align:top;
 }
 .check {
-	width: 25px;
-    height: 25px;
+	width: 30px;
+    height: 30px;
     margin-right: 9px;
     display: inline-block;
 }
@@ -760,22 +762,22 @@ $browser-context: 16; // Default
 	text-align: left;
 }
 .checkbox-text{
-	font-size: 14px;
-    line-height: 16px;
+	font-size: 18px;
+    line-height: 18px;
 }
 .checkbox-value{
-	font-size: 13px;
-    line-height: 16px;
+	font-size: 16px;
+    line-height: 18px;
     color: #555;
     margin: 0 0 9px 0;
 }
 /*additional-desc*/
 .additional-desc{
-	padding: 0 100px;
+	padding: 0 50px;
 	&__caption{
 		font-weight: bold;
-		font-size: 16px;
-		line-height: 20px;
+		font-size: 19px;
+		line-height: 19px;
 		margin: 0 0 9px 0;
 		color: #1f1f1f;
 	}
@@ -785,7 +787,7 @@ $browser-context: 16; // Default
 		list-style-type: disc;
 	}
 	&__item{
-		font-size: 14px;
+		font-size: 18px;
 		margin: 0 0 5px 0;
 		strong {
 			font-weight: bold;
@@ -798,9 +800,9 @@ $browser-context: 16; // Default
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 20px;
-	padding: 0 100px;
+	padding: 0 50px;
 	&__caption{
-		font-size: 16px;
+		font-size: 18px;
 		line-height: 18px;
 		text-align:center;
 		font-weight: 700;
@@ -842,7 +844,7 @@ $browser-context: 16; // Default
     background: #EDEDED;
     padding: 7px 10px;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 16px;
     color: #ff483e;
     font-weight: 700;
     box-sizing: border-box;
@@ -871,7 +873,7 @@ $browser-context: 16; // Default
 /**/
 /*buy*/
 .buy{
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 700;
 	color:#fff;
 	padding: 0 100px 25px 100px;
@@ -894,7 +896,7 @@ $browser-context: 16; // Default
 		padding: 10px 15px;
 		text-align: center;
 		color: #fff;
-		font-size: 16px;
+		font-size: 18px;
 		line-height: 1;
 		margin: 0 10%;
 	}
@@ -920,7 +922,7 @@ $browser-context: 16; // Default
 	font-family: "PT Sans", sans-serif;
 	text-align: left;
     .tabs__caption {
-		font: 700 16px/20px "PT Sans", sans-serif;
+		font: 700 17px/20px "PT Sans", sans-serif;
 		color: #1f1f1f;
 	}
 	.table table{
