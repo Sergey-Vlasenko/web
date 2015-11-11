@@ -553,7 +553,10 @@ img {
 /**/
 /*item catalog*/
 .product {
-  padding: 0 10px; }
+  padding: 10px 10px 15px 10px; }
+
+.product .photo {
+  background: none; }
 
 .extra-options {
   position: relative;
@@ -607,12 +610,13 @@ img {
   .calculator__caption {
     font-size: 20px;
     line-height: 20px;
-    padding: 10px 0 10px 0;
+    padding: 15px 0;
     font-weight: bold; }
 
 .counter {
   text-align: center;
-  display: inline-block; }
+  display: inline-block;
+  margin: 0 15px; }
   .counter__caption {
     font-size: 14px;
     font-weight: normal;
@@ -790,7 +794,7 @@ img {
   font-size: 16px;
   font-weight: 700;
   color: #fff;
-  padding: 25px 100px 25px 100px; }
+  padding: 0 100px 25px 100px; }
   .buy__add-cart {
     display: inline-block;
     border-radius: 3px;
@@ -815,12 +819,63 @@ img {
 
 /**/
 /*info-dostavka*/
-.info-dostavka__list {
-  text-align: left;
-  padding: 0 0 0 10px;
-  list-style-type: disc; }
+.info-dostavka {
+  margin: 0 10px;
+  padding: 0 0 15px 0px; }
+  .info-dostavka__list {
+    text-align: left;
+    padding: 0 0 0 10px;
+    list-style-type: disc; }
 
 /**/
+/*tabs*/
+.tabs__item {
+  font-family: "PT Sans", sans-serif;
+  text-align: left; }
+  .tabs__item .tabs__caption {
+    font: 700 16px/20px "PT Sans", sans-serif;
+    color: #1f1f1f; }
+  .tabs__item .table table {
+    width: 1000px; }
+  .tabs__item .tabs__info {
+    font-size: 14px; }
+    .tabs__item .tabs__info p {
+      margin: 0 0 15px 0; }
+    .tabs__item .tabs__info ul {
+      padding: 0 0 0 20px;
+      list-style-type: disc; }
+    .tabs__item .tabs__info .color {
+      margin-left: 36px;
+      display: inline-block; }
+    .tabs__item .tabs__info .standart {
+      background-color: #9fdf9f; }
+    .tabs__item .tabs__info .odna {
+      background-color: #fff; }
+    .tabs__item .tabs__info .dvu {
+      background-color: #fffab4; }
+    .tabs__item .tabs__info td {
+      text-align: center;
+      border: 1px solid #e8e8e8;
+      font-size: 12px;
+      padding: 8px 0px 7px 3px;
+      line-height: 14px; }
+
+.delivery-links {
+  display: inline-block;
+  margin: 0;
+  margin-right: 5px;
+  padding-right: 9px;
+  border-right: 1px solid #999; }
+
+.color_description {
+  margin: 20px 0 0 0; }
+
+.color_description .nestand, .color_description .odna40, .color_description .odna70, .color_description .dvu54, .color_description .heigt54, .color_description .heigt48, .color_description .odna, .color_description .dvu, .color_description .standart {
+  height: 27px;
+  width: 90px;
+  display: inline-block;
+  border: 1px solid #d9d9d9; }
+
 /**/
 @media screen and (max-width: 768px) {
   .mobile-wraper {
