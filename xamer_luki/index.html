@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="ru">
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +8,10 @@
         <title>Люки: купить люк невидимки, сантехнические люки ревизионные, сантехнические дверцы, производство люков и продажа :: ПФ "Хаммер"</title>
         <link href="http://www.xammer-luki.ru/templates/jblank/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Place favicon.ico in the root directory -->
 		<link rel="stylesheet" href="css/jquery.bxslider.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href="css/lightbox.css" rel="stylesheet">
     </head>
@@ -36,10 +33,7 @@
             <div class="mobile-wraper">
                 <ul class="mobile-menu">
                     <li class="mobile-menu__toogle">
-                      <span class="mobile-menu__name">
-                          <button class="mobilepanel_toggle"><span></span></button>
-                          Меню
-                      </span>
+                      <span class="mobile-menu__name"><button class="mobilepanel_toggle"><span></span></button>Меню</span>
                     </li>
                     <li class="mobile-menu__phone">
                       <i class="fa fa-phone"></i>
@@ -251,21 +245,25 @@
 						<a href="img/obj_1.jpg" class="photo-link" data-lightbox="image">
 							<img src="img/obj_1.jpg" alt="images" class="slide-object__image" >
 						</a>
+                        <p class="slide-object__caption">ФСБ на Лубянке</p>
 					</li>
 					<li class="slide-object">
 						<a href="img/obj_2.jpg" class="photo-link" data-lightbox="image">
 							<img src="img/obj_2.jpg" alt="images" class="slide-object__image">
 						</a>
+                        <p class="slide-object__caption">Пулково 3</p>
 					</li>
 					<li class="slide-object">
 						<a href="img/obj_3.jpg" class="photo-link" data-lightbox="image">
 							<img src="img/obj_3.jpg" alt="images" class="slide-object__image">
 						</a>
+                        <p class="slide-object__caption">Москва - Сити</p>
 					</li>
 					<li class="slide-object">
 						<a href="img/obj_4.jpg" class="photo-link" data-lightbox="image">
 							<img src="img/obj_4.jpg" alt="images" class="slide-object__image">
 						</a>
+                        <p class="slide-object__caption">МИД России</p>
 					</li>
 				</ul>
 			</div>
@@ -375,14 +373,20 @@
     <script src="js/jquery.bxslider-rahisified.min.js"></script>
    <!--  <script src="js/jquery.bxslider.min.js"></script> -->
     <script src="js/lightbox.js"></script>
+<!--Left menu open + rotate arrow-->
 <script type="text/javascript">
-  <!--Left menu open + rotate arrow-->
-  $(document).ready(function(){
-      $('.mobile-menu__toogle').click(function () {
-          $(this).find('.mobilepanel_toggle').toggleClass('active');
-          $('.panel').toggleClass('open-sidebar');
-          });
-      });
+    $(document).ready(function(){
+       $('.mobile-menu__toogle').click(function () {
+           $(this).find('.mobilepanel_toggle').toggleClass('active');
+           $('.panel').toggleClass('open-sidebar');
+
+           var phone = $('.phone').css('display') == 'block';
+           if (phone) {
+               $(".phone").slideToggle(300);
+           }
+           $('.mobilepanel_toggle').toggleClass('active');
+       });
+     });
 </script>
 <!--Sub menu open + rotate arrow submenu-->
 <script type="text/javascript">
@@ -399,7 +403,12 @@
     $(function(){
         $(".mobile-menu__phone").on("click", function(e){
             $(this).parent().parent().find(".phone").slideToggle(300);
-    		return false;
+
+            // var phone = $('.mobilepanel_toggle').css('transform') == 'translate(0, 0)';
+            // if (phone) {
+            //     $(".mobilepanel_toggle").css('transform') == 'translate(-110%, 0)';
+            // }
+            // $(this).parent().parent().find(".phone").slideToggle(300);
         });
     });
 </script>
@@ -448,7 +457,7 @@
         pager:false,
         controls: true,
         autoReload: true,
-        breaks: [{screen:100, slides:1},{screen:480, slides:2}]
+        //breaks: [{screen:100, slides:1},{screen:480, slides:2}]
       });
      });
     </script>
