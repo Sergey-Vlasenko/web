@@ -745,6 +745,12 @@ img {
   font-weight: 700;
   line-height: 20px;
   padding: 0 50px; }
+  .price__subtitle {
+    display: block;
+    font-weight: 300;
+    font-size: 16px; }
+    .price__subtitle em {
+      font-style: normal; }
   .price__caption {
     font-size: 18px;
     line-height: 18px;
@@ -753,7 +759,8 @@ img {
     margin: 20px 0 10px 0;
     color: #1f1f1f; }
   .price__item {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: top; }
   .price__value {
     display: inline-block;
     margin: 10px 0; }
@@ -771,10 +778,10 @@ img {
         background: #e21720; }
     .price__value_discount {
       display: block;
-      color: #e51212;
-      margin: 10px 0; }
+      color: #e51212; }
   .price__savings {
-    color: #00b63d; }
+    color: #00b63d;
+    margin: 10px 0px 0px; }
 
 .discount {
   display: inline-block;
@@ -785,7 +792,7 @@ img {
   color: #ff483e;
   font-weight: 700;
   box-sizing: border-box;
-  margin: 0px 0 10px 0; }
+  margin: 18px 0px 8px; }
 
 /*availability*/
 .availability {
@@ -793,7 +800,8 @@ img {
   font-size: 21px;
   font-weight: bold;
   line-height: 20px;
-  vertical-align: top; }
+  vertical-align: top;
+  margin: 12px 0 0 0; }
   .availability__true {
     display: inline-block;
     padding: 0 0 0 20px;
@@ -913,6 +921,8 @@ img {
     display: block; } }
 
 @media screen and (max-width: 620px) {
+  .price {
+    padding: 0 20px; }
   .checkbox-area {
     padding: 15px 10px 0 10px; }
   .additional-desc {
@@ -958,6 +968,8 @@ img {
     .counter__next, .counter__prev {
       font-size: 19px;
       line-height: 1; }
+  .discount {
+    margin: 16px 0px 8px; }
   .checkbox-area__caption {
     font-size: 19px;
     line-height: 19px; }
@@ -976,8 +988,9 @@ img {
     line-height: 1.1; }
   .price {
     font-size: 22px;
-    line-height: 18px;
-    padding: 0 20px; }
+    line-height: 18px; }
+    .price__subtitle {
+      font-size: 14px; }
   .buy__now, .buy__add-cart {
     margin: 0 6%; }
   .availability {
@@ -1024,7 +1037,11 @@ img {
     padding: 25px 5px; }
   .copyright__item {
     line-height: 1.2;
-    font-size: 14px; } }
+    font-size: 14px; }
+  .price__subtitle em {
+    display: block; }
+  .discount {
+    margin: 20px 0px 23px 0px; } }
 
 @media screen and (max-width: 420px) {
   .breadcrumb {
@@ -1060,7 +1077,7 @@ img {
     font-size: 17px;
     line-height: 17px; }
   .price {
-    padding: 0 5px; }
+    padding: 0 3px; }
     .price__item {
       text-align: center; }
   .info-dostavka {
@@ -1097,7 +1114,11 @@ img {
     font-weight: 300;
     font-size: 18px; }
   .buy__now, .buy__add-cart {
-    margin: 0 1%; } }
+    margin: 0 1%; }
+  .availability {
+    font-size: 16px; }
+  .discount {
+    padding: 7px 5px; } }
 
 @media screen and (max-width: 320px) {
   .case__header, .slide-object__caption {

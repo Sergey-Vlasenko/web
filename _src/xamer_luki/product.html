@@ -9,7 +9,8 @@
         <link href="http://www.xammer-luki.ru/templates/jblank/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <!-- <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> -->
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href="css/lightbox.css" rel="stylesheet">
         <link rel="stylesheet" href="css/jquery.bxslider.css">
@@ -306,16 +307,25 @@
                     <div class="price justify">
                     	<h4 class="price__caption">Стоимость</h4>
                     	<div class="price__item">
-                    		<p class="price__value price__value_old">13 250₽</p>
-							<p class="price__value price__value_discount">12 588₽</p>
+                            <div class="price__subitem">
+                                <span class="price__subtitle">Стоимость:</span>
+                        		<p class="price__value price__value_old">13 250<span>&#8399;</span></p>
+                            </div>
+                            <div class="price__subitem">
+                                <span class="price__subtitle"><em>Стоимость</em> со скидкой:</span>
+							    <p class="price__value price__value_discount">12 588<span>&#8399;</span></p>
+                            </div>
                     	</div>
                     	<div class="price__item price__item_sale">
                     		<p class="discount">Скидка 5.00%</p>
-                    		<p class="price__savings">663₽</p>
+                            <div class="price__subitem">
+                                <span class="price__subtitle">Экономия:</span>
+                        		<p class="price__savings">663<span>&#8399;</span></p>
+                            </div>
                     	</div>
 						<div class="availability">
 							<p class="availability__true">В наличии</p>
-							<p class="availability__false">Под заказ</p>
+							<!-- <p class="availability__false">Под заказ</p> -->
 						</div>
                     </div>
                     <!--price end  -->

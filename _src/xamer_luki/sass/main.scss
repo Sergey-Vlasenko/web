@@ -815,6 +815,14 @@ $browser-context: 16; // Default
 	font-weight: 700;
 	line-height: 20px;
 	padding: 0 50px;
+	&__subtitle {
+		display: block;
+	    font-weight: 300;
+	    font-size: 16px;
+		em {
+			font-style: normal;
+		}
+	}
 	&__caption{
 		font-size: 18px;
 		line-height: 18px;
@@ -825,6 +833,7 @@ $browser-context: 16; // Default
 	}
 	&__item{
 	    display: inline-block;
+		vertical-align: top;
 	}
 	&__value{
 		display: inline-block;
@@ -846,11 +855,11 @@ $browser-context: 16; // Default
 		&_discount{
 		    display: block;
 			color: #e51212;
-			margin: 10px 0;
 		}
 	}
 	&__savings{
 		color: #00b63d;
+		margin: 10px 0px 0px;
 	}
 }
 .discount{
@@ -862,7 +871,7 @@ $browser-context: 16; // Default
     color: #ff483e;
     font-weight: 700;
     box-sizing: border-box;
-    margin: 0px 0 10px 0;
+    margin: 18px 0px 8px;
 }
 /*availability*/
 .availability{
@@ -871,6 +880,7 @@ $browser-context: 16; // Default
 	font-weight: bold;
 	line-height: 20px;
 	vertical-align: top;
+	margin: 12px 0 0 0;
 	&__true{
 		display: inline-block;
 		padding: 0 0 0 20px;
@@ -1017,6 +1027,9 @@ $browser-context: 16; // Default
 	}
 }
 @media screen and (max-width: 620px){
+	.price {
+	    padding: 0 20px;
+	}
 	.checkbox-area {
     	padding: 15px 10px 0 10px;
 	}
@@ -1084,6 +1097,9 @@ $browser-context: 16; // Default
 			line-height: 1;
 		}
 	}
+	.discount {
+	    margin: 16px 0px 8px;
+	}
 	.checkbox{
 		&-area__caption {
 		    font-size: 19px;
@@ -1112,7 +1128,9 @@ $browser-context: 16; // Default
 	.price {
 	    font-size: 22px;
 	    line-height: 18px;
-		padding: 0 20px;
+		&__subtitle {
+		    font-size: 14px;
+		}
 	}
 	.buy__now, .buy__add-cart {
     	margin: 0 6%;
@@ -1181,6 +1199,15 @@ $browser-context: 16; // Default
 	    line-height: 1.2;
 	    font-size: 14px;
 	}
+	.price__subtitle{
+		em{
+			display: block;
+		}
+	}
+	.discount {
+    	//margin: 16px 0px 27px 0px;
+		margin: 20px 0px 23px 0px;
+	}
 }
 @media screen and (max-width: 420px){
 	.breadcrumb {
@@ -1232,7 +1259,7 @@ $browser-context: 16; // Default
 		}
 	}
 	.price {
-	    padding: 0 5px;
+	    padding: 0 3px;
 		&__item {
 	    	text-align: center;
 		}
@@ -1286,6 +1313,12 @@ $browser-context: 16; // Default
 	}
 	.buy__now, .buy__add-cart {
 		margin: 0 1%;
+	}
+	.availability{
+		font-size: 16px;
+	}
+	.discount {
+    	padding: 7px 5px;
 	}
 }
 @media screen and (max-width: 320px){
