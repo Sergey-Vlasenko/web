@@ -1048,7 +1048,7 @@ $browser-context: 16; // Default
 }
 @media screen and (max-width: 540px){
 	.product {
-    	padding: 5px 10px 15px 10px;
+    	padding: 5px 8px 15px 8px;
 	}
 	.breadcrumb {
     	font-size: 16px;
@@ -1068,7 +1068,7 @@ $browser-context: 16; // Default
 	    padding: 15px 0 10px 0;
 	}
 	.counter {
-	    margin: 0 10px;
+	    margin: 0 8px;
 		&__caption {
 	    	font-size: 16px;
 		}
@@ -1115,7 +1115,7 @@ $browser-context: 16; // Default
 		padding: 0 20px;
 	}
 	.buy__now, .buy__add-cart {
-    	margin: 0 7%;
+    	margin: 0 6%;
 	}
 	.availability {
 	    font-size: 19px;
@@ -1209,7 +1209,7 @@ $browser-context: 16; // Default
 	}
 	.checkbox{
 		&-area{
-    		padding: 20px 10px 15px 10px;
+    		padding: 20px 10px 15px 15px;
 		}
 		&-area__caption {
 		    font-size: 18px;
@@ -1285,7 +1285,7 @@ $browser-context: 16; // Default
 		font-size: 18px;
 	}
 	.buy__now, .buy__add-cart {
-		margin: 0 2%;
+		margin: 0 1%;
 	}
 }
 @media screen and (max-width: 320px){
