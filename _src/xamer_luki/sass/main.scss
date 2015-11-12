@@ -371,8 +371,8 @@ $browser-context: 16; // Default
 	padding: 3px;
 }
 .caption_catalog {
-    padding: 20px 0;
-    font-size: 26px;
+    padding: 30px 0 20px 0;
+    font-size: 27px;
 	line-height: 1;
 }
 .case {
@@ -607,33 +607,32 @@ $browser-context: 16; // Default
 	background: none;
 }
 .extra-options{
-	position: relative;
+    position: relative;
     color: #fff;
-    font-size: 20px;
-    line-height: 26px;
-    height: 26px;
+    font-size: 18px;
+    line-height: 18px;
     text-shadow: 0px -1px 2px #c07c2d;
-	display: block;
+    display: block;
     text-align: left;
     vertical-align: top;
 }
 .hit {
     display: inline-block;
     position: relative;
-	z-index: 1;
-	padding: 2px 15px 2px 10px;
+    z-index: 1;
+    padding: 2px 10px 2px 5px;
     background: url(../img/bg-hit.png) 100% 0 no-repeat;
-	background-size: cover;
+    background-size: cover;
     vertical-align: top;
 }
 .new {
     display: inline-block;
-    margin-left: 6px;
-	padding: 2px 15px 2px 10px;
+    margin-left: -15px;
+    padding: 2px 10px 2px 10px;
     background: url(../img/bg-new-2.png) 100% 0 no-repeat;
-	background-size: cover;
+    background-size: cover;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 /*breadcrumb*/
 .breadcrumb{
@@ -661,10 +660,15 @@ $browser-context: 16; // Default
 }
 /*counter*/
 .calculator{
+	border: 1px solid #dbdbdb;
+    background: #FAFAFA;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,2,0.2);
+    margin: 20px 0 0 0;
 	text-align: center;
+	box-sizing: border-box;
 	&__caption{
-		font-size: 24px;
-		line-height: 24px;
+		font-size: 22px;
+		line-height: 22px;
 		padding: 20px 0 10px 0;
 		font-weight: bold;
 	}
@@ -738,7 +742,7 @@ $browser-context: 16; // Default
 		font-size: 20px;
 		line-height: 20px;
 		font-weight: 700;
-		margin: 0 0 9px 0;
+		margin: 10px 0 10px 0;
 		color: #1f1f1f;
 		text-align: center;
 	}
@@ -747,6 +751,8 @@ $browser-context: 16; // Default
 	padding: 5px 0px 5px 0px;
     box-sizing: border-box;
     text-align: left;
+	border-bottom: 1px dotted #ccc;
+    margin: 0 0 5px 0;
 }
 .check-container-left, .check-container-right{
 	display: inline-block;
@@ -780,7 +786,7 @@ $browser-context: 16; // Default
 		font-weight: bold;
 		font-size: 19px;
 		line-height: 19px;
-		margin: 0 0 9px 0;
+		margin: 15px 0 10px 0;
 		color: #1f1f1f;
 	}
 	&__list{
@@ -808,7 +814,7 @@ $browser-context: 16; // Default
 		line-height: 18px;
 		text-align:center;
 		font-weight: 700;
-		margin: 0 0 9px 0;
+		margin: 20px 0 10px 0;
 		color: #1f1f1f;
 	}
 	&__item{
@@ -907,7 +913,7 @@ $browser-context: 16; // Default
 /*info-dostavka*/
 .info-dostavka{
 	margin: 0 10px;
-	padding: 0 0 15px 0px;
+	padding: 0 0 15px 10px;
 	&__list{
 		text-align: left;
 		padding: 0 0 0 10px;
@@ -920,47 +926,53 @@ $browser-context: 16; // Default
 /**/
 
 /*tabs*/
-.tabs__item{
-	font-family: "PT Sans", sans-serif;
-	text-align: left;
-    .tabs__caption {
-		font: 700 17px/20px "PT Sans", sans-serif;
-		color: #1f1f1f;
-	}
-	.table table{
-		width: 1000px;
-	}
-	.tabs__info{
-		font-size: 18px;
-		&.table-size{
+.tabs{
+    margin: 10px 0 0 0;
+	&__item{
+		font-family: "PT Sans", sans-serif;
+		text-align: left;
+		.tabs__caption {
+			font: 700 18px/22px "PT Sans", sans-serif;
+			color: #1f1f1f;
+		}
+		.table{
+			width: 1000px;
+		}
+		.table table{
+			width: 100%;
+		}
+		.tabs__info{
+			font-size: 18px;
+			&.table-size{
 
-		}
-		p{
-			margin: 0 0 15px 0;
-		}
-		ul{
-			padding: 0 0 0 20px;
-			list-style-type: disc;
-		}
-		.color {
-		    margin-left: 36px;
-		    display: inline-block;
-		}
-		.standart {
-			background-color: #9fdf9f;
-		}
-		.odna {
-			background-color: #fff;
-		}
-		.dvu {
-			background-color: #fffab4;
-		}
-		td {
-		    text-align: center;
-		    border: 1px solid #e8e8e8;
-		    font-size: 12px;
-		    padding: 8px 0px 7px 3px;
-		    line-height: 14px;
+			}
+			p{
+				margin: 0 0 15px 0;
+			}
+			ul{
+				padding: 0 0 0 20px;
+				list-style-type: disc;
+			}
+			.color {
+				margin-left: 36px;
+				display: inline-block;
+			}
+			.standart {
+				background-color: #9fdf9f;
+			}
+			.odna {
+				background-color: #fff;
+			}
+			.dvu {
+				background-color: #fffab4;
+			}
+			td {
+				text-align: center;
+				border: 1px solid #e8e8e8;
+				font-size: 12px;
+				padding: 8px 0px 7px 3px;
+				line-height: 14px;
+			}
 		}
 	}
 }
@@ -973,6 +985,12 @@ $browser-context: 16; // Default
 }
 .color_description{
     margin: 20px 0 0 0;
+	display: block;
+    font-size: 15px;
+}
+.color_description .color div[class*="descr"] {
+    display: inline-block;
+	vertical-align: top;
 }
 .color_description .nestand, .color_description .odna40, .color_description .odna70, .color_description .dvu54, .color_description .heigt54, .color_description .heigt48, .color_description .odna, .color_description .dvu, .color_description .standart {
     height: 27px;
@@ -997,7 +1015,10 @@ $browser-context: 16; // Default
     	padding: 15px 10px 0 10px;
 	}
 	.additional-desc {
-    	padding: 0 20px;
+    	padding: 0 10px;
+		&__list {
+			margin: 0 0 0 9px;
+		}
 	}
 }
 @media screen and (max-width: 600px){
@@ -1028,17 +1049,16 @@ $browser-context: 16; // Default
     	padding: 0 0 9px 0;
 	}
 	.extra-options {
-	    font-size: 18px;
-	    line-height: 22px;
-	    height: 22px;
+		font-size: 16px;
+		line-height: 19px;
 	}
 	.caption_catalog {
-	    padding: 15px 0;
-	    font-size: 22px;
+	    padding: 20px 0 15px 0;
+	    font-size: 23px;
 	}
 	.calculator__caption {
-	    font-size: 20px;
-	    line-height: 20px;
+	    font-size: 18px;
+	    line-height: 18px;
 	    padding: 15px 0 10px 0;
 	}
 	.counter {
@@ -1080,7 +1100,7 @@ $browser-context: 16; // Default
 		&__item {
 		    font-size: 16px;
 		    margin: 0 0 5px 0;
-		    line-height: 1;
+		    line-height: 1.1;
 		}
 	}
 	.price {
@@ -1096,8 +1116,8 @@ $browser-context: 16; // Default
 	    line-height: 19px;
 	}
 	.tabs__item .tabs__caption {
-		font-size: 16px;
-		line-height: 18px;
+		font-size: 17px;
+		line-height: 21px;
 	}
 	.tabs__item .tabs__info {
 	    font-size: 16px;
@@ -1162,18 +1182,28 @@ $browser-context: 16; // Default
 	    line-height: 16px;
 	}
 	.extra-options {
-		font-size: 17px;
-	    line-height: 20px;
+		font-size: 15px;
+		line-height: 18px;
 	}
 	.calculator__caption {
 	    padding: 10px 0 10px 0;
 	}
 	.counter {
-	    margin: 0 5px;
- 	}
+	    margin: 0 2px;
+		&__caption {
+			font-size: 13px;
+		}
+		&__content {
+			width: 85px;
+			padding: 0;
+		}
+		&__toogle {
+			width: 30px;
+		}
+	}
 	.checkbox{
 		&-area{
-    		padding: 15px 10px 5px 10px;
+    		padding: 20px 10px 15px 10px;
 		}
 		&-area__caption {
 		    font-size: 18px;
@@ -1200,6 +1230,12 @@ $browser-context: 16; // Default
 		&__item {
 	    	text-align: center;
 		}
+	}
+	.info-dostavka {
+		margin: 0 10px;
+		padding: 0 0 15px 10px;
+		font-size: 13px;
+		line-height: 16px;
 	}
 	.tabs__item .tabs__info {
 	    font-size: 15px;
@@ -1245,9 +1281,6 @@ $browser-context: 16; // Default
 	.buy__now, .buy__add-cart {
 		margin: 0 2%;
 	}
-	.price {
-		padding: 0;
-	}
 }
 @media screen and (max-width: 320px){
 	.case__header, .slide-object__caption{
@@ -1255,17 +1288,6 @@ $browser-context: 16; // Default
 		font-weight: 600;
 	}
 	.counter {
-    	margin: 0 3px;
-		&__caption {
-    		font-size: 14px;
-		}
-		&__content {
-    		width: 85px;
-			padding: 0;
-		}
-		&__toogle{
-			width: 30px;
-		}
 		.checkbox-text {
 		    font-size: 15px;
 		    line-height: 15px;
