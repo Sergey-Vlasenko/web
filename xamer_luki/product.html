@@ -1170,7 +1170,8 @@ $(document).ready(function(){
         $(".mobile-menu__phone").on("click", function(){
 			var mobilepanel = $('.menu').hasClass('open-sidebar');
 			if (mobilepanel){
-				$('.menu').removeClass('open-sidebar');
+				$('.panel').removeClass('open-sidebar');
+                $('.mobilepanel_toggle').removeClass('active');
 			}
             $(".phone").slideToggle(300);
     		return false;
