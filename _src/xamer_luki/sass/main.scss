@@ -580,6 +580,21 @@ $browser-context: 16; // Default
 		cursor: pointer;
 	}
 }
+/*about*/
+.about {
+    border-top: 1px solid #D8D8D8;
+    background: #FAFCFB;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    text-align: justify;
+	&__content {
+	    font-size: 16px;
+	}
+}
+.caption_about {
+    margin: 0 0 25px 0;
+}
+/**/
 /**/
 /*footer*/
 .footer{
@@ -990,6 +1005,12 @@ $browser-context: 16; // Default
 				line-height: 14px;
 			}
 		}
+	}
+	&__roll-up {
+		display: block;
+	    color: #e51212;
+	    font-weight: 700;
+	    padding: 10px 0 0 0;
 	}
 }
 .delivery-links {
