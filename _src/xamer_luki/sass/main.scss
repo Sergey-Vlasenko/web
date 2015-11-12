@@ -74,8 +74,8 @@ $browser-context: 16; // Default
     color: #fff;
 	text-align: center;
 	&__content {
-		height: 30px;
-    	line-height: 30px;
+		height: 25px;
+    	line-height: 25px;
 		font-size: 17px;
 		strong {
 			font-size: 18px;
@@ -109,10 +109,14 @@ $browser-context: 16; // Default
     text-align: center;
 	vertical-align: top;
 }
+.mobile-navigation{
+	height:40px;
+}
 .mobile-wraper{
 	position: relative;
 	width: 765px;
 	z-index: 2;
+	height:40px;
 }
 /*mobile menu top*/
 .mobile-menu {
@@ -126,6 +130,7 @@ $browser-context: 16; // Default
 	color:#fff;
 	text-align: center;
 	border-bottom: 1px solid #c3c3c3;
+	box-sizing:border-box;
 }
 .mobile-menu li{
 	list-style:none;
@@ -250,7 +255,7 @@ $browser-context: 16; // Default
     position: absolute;
     z-index: 101;
     left: 0;
-    top: 41px;
+    top: 39px;
 	width: 300px;
     height: auto;
     transition: 0.5s ease;
@@ -350,6 +355,7 @@ $browser-context: 16; // Default
     box-sizing: border-box;
 	background: #230B0D;
 	padding: 10px 15px 15px 15px;
+	transform: translateZ(0);
 	&__number, &__city, .email, .email__number {
 		display: inline-block;
 		font-size:18px;
