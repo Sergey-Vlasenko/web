@@ -1,24 +1,167 @@
-// Avoid `console` errors in browsers that lack a console.
-(function() {
-    var method;
-    var noop = function () {};
-    var methods = [
-        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-        'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
-    ];
-    var length = methods.length;
-    var console = (window.console = window.console || {});
+//index.html
 
-    while (length--) {
-        method = methods[length];
+//Сладер object
+ $(function(){
+  $('.slider-object__content').bxSlider({
+    auto: false,
+    pause: 3000,
+    slideWidth:340,
+    minSlides: 1,
+    maxSlides: 2,
+    moveSlides: 1,
+    slideMargin: 25,
+    nextText:'',
+    prevText:'',
+    pager:false,
+    controls: true,
+    autoReload: true,
+    breaks: [{screen:100, slides:1},{screen:480, slides:2}]
+  });
+ });
 
-        // Only stub undefined methods.
-        if (!console[method]) {
-            console[method] = noop;
-        }
-    }
-}());
+//Сладер photo
+ $(function(){
+  $('.slider-photo__content').bxSlider({
+    auto: false,
+    pause: 3000,
+    slideWidth:285,
+    minSlides: 1,
+    maxSlides: 2,
+    moveSlides: 2,
+    slideMargin: 25,
+    nextText:'',
+    prevText:'',
+    pager:false,
+    controls: true,
+    autoReload: true,
+    //breaks: [{screen:100, slides:1},{screen:480, slides:2}]
+  });
+ });
 
-// Place any jQuery/helper plugins in here.
+//Сладер advance
+ $(function(){
+  $('.slider-advance__content').bxSlider({
+    auto: false,
+    pause: 3000,
+    slideWidth:180,
+    //minSlides: 1,
+    //maxSlides: 6,
+    moveSlides: 2,
+    slideMargin: 25,
+    nextText:'',
+    prevText:'',
+    pager:false,
+    controls: true,
+    autoReload: true,
+    breaks: [{screen:0, slides:1},{screen:480, slides:2}]
+  });
+ });
+
+//product.html
+
+//Spinner
+   $(document).ready(function() {
+       $('.counter__prev').click(function () {
+           var $input = $(this).parent().parent().find('input');
+           var count = parseInt($input.val()) - 1;
+           count = count < 1 ? 1 : count;
+           $input.val(count);
+           $input.change();
+           return false;
+       });
+       $('.counter__next').click(function () {
+           var $input = $(this).parent().parent().find('input');
+           $input.val(parseInt($input.val()) + 1);
+           $input.change();
+           return false;
+       });
+   });
+
+//Accordion
+   $(document).ready(function(){
+      $('.tabs').accordion({
+          collapsible:true,
+          heightStyle: "content",
+          active:false
+      });
+  });
+
+//Left menu open + rotate arrow
+$(document).ready(function(){
+   $('.mobile-menu__toogle').click(function () {
+   var phone = $('.phone').css('display') == 'block';
+       if (phone) {
+           $(".phone").slideToggle(300);
+       }
+       $('.mobilepanel_toggle').toggleClass('active');
+       $('.panel').toggleClass('open-sidebar');
+   });
+});
+
+//Sub menu open + rotate arrow submenu
+   $(function(){
+       $(".rd-submenu-toggle").on("click", function(){
+           $(this).parent().find(".uk-dropdown-navbar").toggleClass('active');
+           $(this).parent().find("a").toggleClass('active');
+           return false;
+       });
+   });
+
+//Phone menu open
+   $(function(){
+       $(".mobile-menu__phone").on("click", function(){
+           var mobilepanel = $('.menu').hasClass('open-sidebar');
+           if (mobilepanel){
+               $('.panel').removeClass('open-sidebar');
+               $('.mobilepanel_toggle').removeClass('active');
+           }
+           $(".phone").slideToggle(300);
+           return false;
+       });
+   });
+
+//Галлерея
+$(function(){
+   lightbox.option({
+     'resizeDuration': 200,
+     'showImageNumberLabel': false,
+     'wrapAround':false
+ });
+});
+//Сладер photo
+$(function(){
+ $('.catalog-photo__content').bxSlider({
+   auto: false,
+   pause: 3000,
+   slideWidth:100,
+   minSlides: 1,
+   maxSlides: 2,
+   moveSlides: 2,
+   slideMargin: 15,
+   nextText:'',
+   prevText:'',
+   pager:false,
+   controls: true,
+   autoReload: true,
+   breaks: [{screen:0, slides:3},{screen:320, slides:3},{screen:480, slides:4}, {screen:750, slides:4}]
+ });
+});
+
+//Fix menu
+   $(function(){
+       $(window).scroll(function() {
+           var top = $(document).scrollTop();
+           if (top < 107) $(".mobile-wraper").css({top: '0', position: 'relative'});
+           else $(".mobile-wraper").css({top: '0px', position: 'fixed'});
+       });
+   });
+
+//roll up
+$(function(){
+    $(".tabs__roll-up").on("click", function(){
+        $(this).parent().parent().find(".tabs__info").slideToggle(500);
+        $(this).parent().parent().find(".tabs__caption").removeClass('ui-accordion-header-active ui-state-active ui-corner-top').toggleClass('ui-corner-all').attr("aria-selected", "false").attr("aria-expanded", "false");
+        $(this).parent().parent().find(".tabs__caption span").removeClass('ui-icon-triangle-1-s').toggleClass('ui-icon-triangle-1-e');
+        return false;
+    });
+});
