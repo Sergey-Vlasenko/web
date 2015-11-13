@@ -670,6 +670,17 @@ $browser-context: 16; // Default
 		&_active:after{
 			display:none;
 		}
+		&_cart{
+			&:before {
+				font-family: 'FontAwesome';
+				content: "\f177";
+				color: #d20202;
+				padding: 0 3px 0 0;
+			}
+			&:after{
+				content:none;
+			}
+		}
 	}
 	&__link{
 		color: #d20202;
@@ -729,7 +740,7 @@ $browser-context: 16; // Default
 	}
 	&__toogle{
 		position: absolute;
-		top: 0;
+		bottom: 0;
 		right: 0;
 		height: 100%;
 		width: 45px;
@@ -740,6 +751,7 @@ $browser-context: 16; // Default
 		font-size: 21px;
 		line-height: 1;
 		vertical-align: top;
+		text-align: center;
 	}
 	&__next{
 		&:before{
@@ -847,6 +859,7 @@ $browser-context: 16; // Default
 		color: #1f1f1f;
 	}
 	&__item{
+		position:relative;
 	    display: inline-block;
 		vertical-align: top;
 	}
@@ -941,6 +954,40 @@ $browser-context: 16; // Default
 	}
 }
 /**/
+/*cart*/
+.cart__content {
+    border: 1px solid #dbdbdb;
+    background: #FAFAFA;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 2, 0.2);
+    margin: 20px 0;
+	padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.cart-clear {
+    font-size: 16px;
+    display: inline-block;
+}
+.caption_cart{
+	display:inline-block;
+	line-height: 1;
+}
+.cart .counter__caption{
+	display:inline-block;
+}
+.wraper_cart {
+    padding: 10px 20px;
+}
+.lot-options {
+    margin: 0 0 25px 0;
+	&__sizes{
+		text-align:left;
+		&-value{
+			padding: 0 5px;
+		}
+	}
+}
+/**/
 /*info-dostavka*/
 .info-dostavka{
 	margin: 0 10px;
@@ -1010,7 +1057,8 @@ $browser-context: 16; // Default
 		display: block;
 	    color: #e51212;
 	    font-weight: 700;
-	    padding: 10px 0 0 0;
+		padding: 15px 0 5px 0;
+		text-align: right;
 	}
 }
 .delivery-links {
