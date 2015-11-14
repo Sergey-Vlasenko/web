@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="css/jquery.bxslider.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href="css/lightbox.css" rel="stylesheet">
 
@@ -167,56 +167,109 @@
 				</ul>
 				<div class="cart__title justify">
 					<h2 class="caption caption_cart">Корзина</h2>
-					<a class="cart-clear">Очистить корзину</a>
+					<span class="cart-clear">Очистить корзину</span>
 				</div>
-				<div class="cart__content">
-				<h2 class="caption caption_catalog">Люки "Гефест" под покраску противопожарный</h2>
+				<div class="lot">
+    				<h3 class="lot__caption">Люки "Гефест" под покраску противопожарный</h3>
+                    <div class="lot-sizes">
+                        <p class="lot-sizes__item">(Сторона А:<span class="lot-sizes__value">1000</span>мм</p>
+                        <span>X</span>
+                        <p class="lot-sizes__item">Сторона В:<span class="lot-sizes__value">1500</span>мм)</p>
+                    </div>
 					<div class="lot-options">
-						<div class="lot-options__sizes">
-							<p class="counter__caption">Сторона А:<span class="lot-options__sizes-value">1000</span>мм</p>
-							<span>X</span>
-							<p class="counter__caption">Сторона В:<span class="lot-options__sizes-value">1500</span>мм</p>
-						</div>
-						<div class="lot-options__pa">
-							<div class="cart-checkbox">
-								<p><strong>Дополнительные опции:</strong></p>
-								<p>+ Комплект газовых пружин</p>
-								<p>+ Поворотная ручка</p>
-								<p>+ Потайная защелка фиксатор</p>
-							</div>
-						</div>
-					</div>
-				    <div class="price justify">
-					 	<div class="price__item">
-							<h4 class="price__subtitle">Количество</h4>
-                        	<div class="counter__content">
-                        		<input type="text" class="counter__field" maxlength="3" value="1">
-                        		<div class="counter__toogle">
-                        			<span class="counter__next"></span>
-                        			<span class="counter__prev"></span>
-                        		</div>
-                        	</div>
-                    	</div>
-                     	<div class="price__item">
+						<p class="lot-options__title">Доп. опции:</p>
+                        <p class="lot-options__list">
+    						<span class="lot-options__item">Комплект газовых пружин</span>,
+    						<span class="lot-options__item">Поворотная ручка</span>,
+    						<span class="lot-options__item">Потайная защелка фиксатор</span>
+                        </p>
+                    </div>
+                    <div class="price justify">
+                        <div class="price__item price__item_couter">
+                            <h4 class="price__subtitle">Количество</h4>
+                            <div class="counter__content">
+                                <input type="text" class="counter__field" maxlength="3" value="1">
+                                <div class="counter__toogle">
+                                    <span class="counter__next"></span>
+                                    <span class="counter__prev"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price__item">
                             <div class="price__subitem">
                                 <span class="price__subtitle">Стоимость:</span>
-                        		<p class="price__value price__value_old">13 250<span>&#8399;</span></p>
+                                <p class="price__value price__value_old">13 250<span>&#8399;</span></p>
                             </div>
-							<div class="price__subitem">
+                        </div>
+                        <div class="price__item">
+                            <div class="price__subitem">
                                 <span class="price__subtitle">Скидка:</span>
-                        		<p class="price__savings">663<span>&#8399;</span></p>
+                                <p class="price__savings">663<span>&#8399;</span></p>
                             </div>
-                    	</div>
-						<div class="price__item price__item_sale">
-							<div class="price__subitem">
+                        </div>
+                        <div class="price__item price__item_sale">
+                            <div class="price__subitem">
                                 <span class="price__subtitle"><em>Стоимость</em> со скидкой:</span>
-							    <p class="price__value price__value_discount">12 588<span>&#8399;</span></p>
+                                <p class="price__value price__value_discount">12 588<span>&#8399;</span></p>
                             </div>
-						</div>
+                        </div>
                     </div>
 				</div>
+                <div class="lot">
+                    <h3 class="lot__caption">Напольный люк модель "Премиум 44" с алюминиевым кантом</h3>
+                    <div class="lot-sizes">
+                        <p class="lot-sizes__item">(Сторона А:<span class="lot-sizes__value">1000</span>мм</p>
+                        <span>X</span>
+                        <p class="lot-sizes__item">Сторона В:<span class="lot-sizes__value">1500</span>мм)</p>
+                    </div>
+                    <div class="lot-options">
+                        <p class="lot-options__title">Доп. опции:</p>
+                        <p class="lot-options__list">
+                            <span class="lot-options__item">Комплект газовых пружин</span>,
+                            <span class="lot-options__item">Поворотная ручка</span>,
+                            <span class="lot-options__item">Потайная защелка фиксатор</span>
+                        </p>
+                    </div>
+                    <div class="price justify">
+                        <div class="price__item price__item_couter">
+                            <h4 class="price__subtitle">Количество</h4>
+                            <div class="counter__content">
+                                <input type="text" class="counter__field" maxlength="3" value="1">
+                                <div class="counter__toogle">
+                                    <span class="counter__next"></span>
+                                    <span class="counter__prev"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price__item">
+                            <div class="price__subitem">
+                                <span class="price__subtitle">Стоимость:</span>
+                                <p class="price__value price__value_old">213 850<span>&#8399;</span></p>
+                            </div>
+                        </div>
+                        <div class="price__item">
+                            <div class="price__subitem">
+                                <span class="price__subtitle">Скидка:</span>
+                                <p class="price__savings">1023<span>&#8399;</span></p>
+                            </div>
+                        </div>
+                        <div class="price__item price__item_sale">
+                            <div class="price__subitem">
+                                <span class="price__subtitle"><em>Стоимость</em> со скидкой:</span>
+                                <p class="price__value price__value_discount">202 588<span>&#8399;</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total-price justify">
+                    <p class="total-price__content">Итого:
+                        <span class="total-price__value">1012 518 </span>
+                        <span class="total-price__valuta">&#8399;</span>
+                    </p>
+                    <input type="submit" name="create-pay" value="Оформить заказ" class="total-price__submit">
+                </div>
             </div>
-  
+
         <!-- Footer -->
         <div class="footer">
 			<div class="footer__content justify">

@@ -571,13 +571,11 @@ $browser-context: 16; // Default
 		background: #CF0B16;
 		color: #fff;
 		text-align: center;
-		width: 99.8%;
 		border: none;
 		height: 41px;
 		font-size: 20px;
 		font-weight: 700;
 		border-radius: 2px;
-		cursor: pointer;
 	}
 }
 /*about*/
@@ -772,8 +770,8 @@ $browser-context: 16; // Default
 	//border-top: 1px solid #ccc;
 	padding: 15px 50px 0 50px;
 	&__caption{
-		font-size: 20px;
-		line-height: 20px;
+		font-size: 19px;
+		line-height: 19px;
 		font-weight: 700;
 		margin: 10px 0 10px 0;
 		color: #1f1f1f;
@@ -838,10 +836,13 @@ $browser-context: 16; // Default
 /**/
 /*price*/
 .price{
-	font-size: 24px;
 	font-weight: 700;
-	line-height: 20px;
+
 	padding: 0 50px;
+	&__item{
+		font-size: 24px;
+		line-height: 20px;
+	}
 	&__subtitle {
 		display: block;
 	    font-weight: 300;
@@ -887,7 +888,7 @@ $browser-context: 16; // Default
 	}
 	&__savings{
 		color: #00b63d;
-		margin: 10px 0px 0px;
+		margin: 10px 0px;
 	}
 }
 .discount{
@@ -955,38 +956,87 @@ $browser-context: 16; // Default
 }
 /**/
 /*cart*/
-.cart__content {
-    border: 1px solid #dbdbdb;
-    background: #FAFAFA;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 2, 0.2);
-    margin: 20px 0;
-	padding: 10px;
-    text-align: center;
-    box-sizing: border-box;
-}
-.cart-clear {
-    font-size: 16px;
-    display: inline-block;
+.cart{
+	&-clear {
+		font-size: 18px;
+	    display: inline-block;
+	    line-height: 1;
+	    color: #3d3d3d;
+	    text-decoration: underline;
+	}
+	&-checkbox {
+	    text-align: left;
+	    font-size: 18px;
+	    line-height: 23px;
+	    padding: 10px 0 0 0;
+	}
+	.counter__caption{
+		display:inline-block;
+	}
 }
 .caption_cart{
 	display:inline-block;
 	line-height: 1;
 }
-.cart .counter__caption{
-	display:inline-block;
-}
 .wraper_cart {
-    padding: 10px 20px;
+    padding: 10px;
 }
-.lot-options {
-    margin: 0 0 25px 0;
-	&__sizes{
-		text-align:left;
-		&-value{
-			padding: 0 5px;
+.lot {
+	border: 1px solid #dbdbdb;
+	background: #FAFAFA;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 2, 0.2);
+	margin: 20px 0;
+	padding: 10px;
+	text-align: center;
+	box-sizing: border-box;
+	&-sizes {
+		&__item {
+	    	display: inline-block;
+		}
+	}
+	&-options{
+		text-align: left;
+		margin: 10px 0 10px 0;
+		&__title{
+			font-weight: 700;
+			display: inline-block;
+		}
+		&__list{
+			display: inline;
 		}
 	}
 }
+.total-price {
+	&__content{
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: 700;
+		line-height: 1;
+	}
+	&__value{
+
+	}
+	&__submit{
+		background: #CF0B16;
+		color: #fff;
+		text-align: center;
+		border: none;
+		font-size: 20px;
+		font-weight: 700;
+		border-radius: 2px;
+		padding: 5px 6px;
+		font-size: 20px;
+	}
+}
+// .lot-options {
+//     margin: 0 0 25px 0;
+// 	&__sizes{
+// 		text-align:left;
+// 		&-value{
+// 			padding: 0 5px;
+// 		}
+// 	}
+// }
 /**/
 /*info-dostavka*/
 .info-dostavka{
@@ -1171,8 +1221,8 @@ $browser-context: 16; // Default
 	}
 	.checkbox{
 		&-area__caption {
-		    font-size: 19px;
-		    line-height: 19px;
+		    font-size: 18px;
+		    line-height: 18px;
 		}
 		&-text {
 		    font-size: 16px;
@@ -1195,8 +1245,11 @@ $browser-context: 16; // Default
 		}
 	}
 	.price {
-	    font-size: 22px;
-	    line-height: 18px;
+
+		&__item{
+			font-size: 22px;
+		    line-height: 18px;
+		}
 		&__subtitle {
 		    font-size: 14px;
 		}
@@ -1246,8 +1299,11 @@ $browser-context: 16; // Default
 	.advice__form {
 		width: 270px;
 	}
-	.advice__submit-button{
+	.advice__submit-button, .total-price__submit{
 		font-size: 18px;
+	}
+	.total-price__content {
+    	font-size: 19px;
 	}
 	.logo{
 		width: 59%;
@@ -1308,16 +1364,16 @@ $browser-context: 16; // Default
     		padding: 20px 10px 15px 15px;
 		}
 		&-area__caption {
-		    font-size: 18px;
-		    line-height: 18px;
+		    font-size: 17px;
+		    line-height: 17px;
 		}
 		&-text {
-		    font-size: 16px;
-		    line-height: 16px;
-		}
-		&-value {
 		    font-size: 15px;
 		    line-height: 15px;
+		}
+		&-value {
+		    font-size: 14px;
+		    line-height: 14px;
 			margin: 0 0 5px 0;
 		}
 	}
@@ -1331,6 +1387,8 @@ $browser-context: 16; // Default
 	    padding: 0 3px;
 		&__item {
 	    	text-align: center;
+			vertical-align: bottom;
+			font-size: 18px;
 		}
 	}
 	.info-dostavka {
@@ -1342,6 +1400,44 @@ $browser-context: 16; // Default
 	.tabs__item .tabs__info {
 	    font-size: 15px;
 	    padding: 10px 10px;
+	}
+	.lot {
+		margin: 10px 0;
+	    padding: 10px 5px;
+		&__caption{
+			font-size: 16px;
+			line-height: 1;
+		}
+		&-sizes {
+			&__item {
+
+			}
+		}
+		&-options{
+			margin: 10px 0;
+		    border: 1px dotted #dbdbdb;
+		    border-left: none;
+		    border-right: none;
+			&__title{
+
+			}
+			&__list{
+
+			}
+		}
+	}
+	.cart {
+		.counter{
+			&__content {
+				width: 70px;
+			}
+			&__field {
+				width: 40px;
+			}
+		}
+		.price__value, .price__savings {
+			margin: 10px 0 0 0;
+		}
 	}
 }
 @media screen and (max-width: 396px){
@@ -1389,6 +1485,9 @@ $browser-context: 16; // Default
 	.discount {
     	padding: 7px 5px;
 	}
+	.wraper_cart {
+    	padding: 10px 5px;
+	}
 }
 @media screen and (max-width: 320px){
 	.case__header, .slide-object__caption{
@@ -1413,13 +1512,14 @@ $browser-context: 16; // Default
 		}
 	}
 	.price {
-	    font-size: 20px;
-	    line-height: 18px;
 
+		&__item{
+			font-size: 20px;
+		}
 	}
-	.discount {
-    	padding: 7px 5px;
-	}
+	// .discount {
+    // 	padding: 7px 5px;
+	// }
 	.additional-desc__item {
     	font-size: 15px;
 	}
