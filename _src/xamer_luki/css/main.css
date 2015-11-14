@@ -897,11 +897,36 @@ img {
   padding: 10px;
   text-align: center;
   box-sizing: border-box; }
-  .lot-sizes__item {
-    display: inline-block; }
+  .lot__caption {
+    position: relative;
+    padding: 0 30px 0 0;
+    line-height: 1;
+    font-size: 20px; }
+  .lot__delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    background: #E2E2E2;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #363636; }
+    .lot__delete:after {
+      content: "\f00d";
+      font-family: 'FontAwesome'; }
+  .lot-sizes {
+    font-size: 17px;
+    padding: 5px 0 0 0; }
+    .lot-sizes__item {
+      display: inline-block; }
   .lot-options {
+    font-size: 17px;
     text-align: left;
-    margin: 10px 0 10px 0; }
+    margin: 10px 0 10px 0;
+    padding: 0 50px; }
     .lot-options__title {
       font-weight: 700;
       display: inline-block; }
@@ -911,6 +936,7 @@ img {
 .total-price__content {
   display: inline-block;
   text-transform: uppercase;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1; }
 
@@ -1010,7 +1036,7 @@ img {
     display: block; } }
 
 @media screen and (max-width: 620px) {
-  .price {
+  .price, .lot-options {
     padding: 0 20px; }
   .checkbox-area {
     padding: 15px 10px 0 10px; }
@@ -1111,8 +1137,10 @@ img {
     width: 100%; }
   .advice__form {
     width: 270px; }
-  .advice__submit-button, .total-price__submit {
-    font-size: 18px; }
+  .advice__submit-button {
+    font-size: 17px; }
+  .total-price__submit {
+    font-size: 16px; }
   .total-price__content {
     font-size: 19px; }
   .logo {
@@ -1135,6 +1163,8 @@ img {
     margin: 20px 0px 23px 0px; } }
 
 @media screen and (max-width: 420px) {
+  .caption {
+    font-size: 20px; }
   .breadcrumb {
     font-size: 14px;
     line-height: 16px; }
@@ -1172,7 +1202,11 @@ img {
     .price__item {
       text-align: center;
       vertical-align: bottom;
-      font-size: 18px; }
+      font-size: 17px; }
+    .price_cart {
+      padding: 0; }
+  .cart-clear {
+    font-size: 15px; }
   .info-dostavka {
     margin: 0 10px;
     padding: 0 0 15px 10px;
@@ -1187,15 +1221,27 @@ img {
     .lot__caption {
       font-size: 16px;
       line-height: 1; }
+    .lot-sizes {
+      font-size: 14px;
+      padding: 0; }
     .lot-options {
-      margin: 10px 0;
+      margin: 10px 0 6px 0;
+      padding: 0;
       border: 1px dotted #dbdbdb;
       border-left: none;
-      border-right: none; }
+      border-right: none;
+      font-size: 14px; }
   .cart .counter__content {
-    width: 70px; }
+    width: 70px;
+    height: 28px; }
   .cart .counter__field {
-    width: 40px; }
+    width: 40px;
+    line-height: 28px;
+    font-size: 18px; }
+  .cart .counter__toogle {
+    line-height: 14px; }
+  .cart .counter__next, .cart .counter__prev {
+    font-size: 14px; }
   .cart .price__value, .cart .price__savings {
     margin: 10px 0 0 0; } }
 
@@ -1209,8 +1255,6 @@ img {
     padding: 0 0 0 10px; }
     .make__caption {
       font-size: 18px; }
-  .caption {
-    font-size: 20px; }
   .caption_advice {
     padding: 0 30px;
     box-sizing: border-box; }
@@ -1247,8 +1291,6 @@ img {
     line-height: 16px; }
   .counter .additional-desc__item {
     font-size: 15px; }
-  .price__item {
-    font-size: 20px; }
   .additional-desc__item {
     font-size: 15px; }
   .availability {

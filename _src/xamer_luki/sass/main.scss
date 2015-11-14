@@ -989,14 +989,41 @@ $browser-context: 16; // Default
 	padding: 10px;
 	text-align: center;
 	box-sizing: border-box;
+	&__caption {
+		position: relative;
+		padding: 0 30px 0 0;
+	    line-height: 1;
+		font-size: 20px;
+	}
+	&__delete{
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: inline-block;
+		background: #E2E2E2;
+	    width: 30px;
+	    height: 30px;
+		font-size: 14px;
+	    line-height: 30px;
+	    border-radius: 50%;
+	    color: #363636;
+		&:after{
+			content: "\f00d";
+			font-family: 'FontAwesome';
+		}
+	}
 	&-sizes {
+		font-size: 17px;
+		padding: 5px 0 0 0;
 		&__item {
 	    	display: inline-block;
 		}
 	}
 	&-options{
+		font-size: 17px;
 		text-align: left;
 		margin: 10px 0 10px 0;
+		padding: 0 50px;
 		&__title{
 			font-weight: 700;
 			display: inline-block;
@@ -1010,6 +1037,7 @@ $browser-context: 16; // Default
 	&__content{
 		display: inline-block;
 		text-transform: uppercase;
+		font-size: 24px;
 		font-weight: 700;
 		line-height: 1;
 	}
@@ -1146,7 +1174,7 @@ $browser-context: 16; // Default
 	}
 }
 @media screen and (max-width: 620px){
-	.price {
+	.price, .lot-options {
 	    padding: 0 20px;
 	}
 	.checkbox-area {
@@ -1299,9 +1327,12 @@ $browser-context: 16; // Default
 	.advice__form {
 		width: 270px;
 	}
-	.advice__submit-button, .total-price__submit{
-		font-size: 18px;
+	.advice__submit-button{
+		font-size: 17px;
 	}
+	 .total-price__submit{
+		 font-size: 16px;
+	 }
 	.total-price__content {
     	font-size: 19px;
 	}
@@ -1335,6 +1366,9 @@ $browser-context: 16; // Default
 	}
 }
 @media screen and (max-width: 420px){
+	.caption{
+		font-size: 20px;
+	}
 	.breadcrumb {
 		font-size: 14px;
 	    line-height: 16px;
@@ -1388,8 +1422,14 @@ $browser-context: 16; // Default
 		&__item {
 	    	text-align: center;
 			vertical-align: bottom;
-			font-size: 18px;
+			font-size: 17px;
 		}
+		&_cart{
+			padding: 0;
+		}
+	}
+	.cart-clear {
+    	font-size: 15px;
 	}
 	.info-dostavka {
 		margin: 0 10px;
@@ -1409,15 +1449,19 @@ $browser-context: 16; // Default
 			line-height: 1;
 		}
 		&-sizes {
+			font-size: 14px;
+			padding: 0;
 			&__item {
 
 			}
 		}
 		&-options{
-			margin: 10px 0;
+			margin: 10px 0 6px 0;
+			padding: 0;
 		    border: 1px dotted #dbdbdb;
 		    border-left: none;
 		    border-right: none;
+			font-size: 14px;
 			&__title{
 
 			}
@@ -1430,9 +1474,18 @@ $browser-context: 16; // Default
 		.counter{
 			&__content {
 				width: 70px;
+				height: 28px;
 			}
 			&__field {
 				width: 40px;
+				line-height: 28px;
+				font-size: 18px;
+			}
+			&__toogle{
+				line-height: 14px;
+			}
+			&__next, &__prev {
+			    font-size: 14px;
 			}
 		}
 		.price__value, .price__savings {
@@ -1455,9 +1508,6 @@ $browser-context: 16; // Default
 		&__caption{
 			font-size:18px;
 		}
-	}
-	.caption{
-		font-size: 20px;
 	}
 	.caption_advice{
 		padding: 0 30px;
@@ -1511,12 +1561,12 @@ $browser-context: 16; // Default
     		font-size: 15px;
 		}
 	}
-	.price {
-
-		&__item{
-			font-size: 20px;
-		}
-	}
+	// .price {
+	//
+	// 	&__item{
+	// 		font-size: 20px;
+	// 	}
+	// }
 	// .discount {
     // 	padding: 7px 5px;
 	// }
