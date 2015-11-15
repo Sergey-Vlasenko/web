@@ -51,7 +51,10 @@ img {
 .time {
   background: #585759;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  box-shadow: inset 0 1px 0 0 #7e7e7e;
+  background-image: linear-gradient(#585759, #3c3642);
+  text-shadow: 0 1px 0 #2a2331; }
   .time__content {
     height: 25px;
     line-height: 25px;
@@ -84,7 +87,13 @@ img {
   font-size: 20px;
   word-spacing: 150px;
   text-align: center;
-  vertical-align: top; }
+  vertical-align: top;
+  border: 1px solid #8a0000;
+  border-bottom: 1px solid #810000;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 0 0 #ff1d0c;
+  background-image: linear-gradient(to bottom, #ff0000 0%, #c70000 39%, #a90000 61%, #b00000 100%);
+  text-shadow: 0 -1px 1px #730000; }
 
 .mobile-navigation {
   height: 40px; }
@@ -638,7 +647,12 @@ img {
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 2, 0.2);
   margin: 20px 0 0 0;
   text-align: center;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 1px solid #dad3d3;
+  border-radius: 3px;
+  background-image: linear-gradient(#FAFAFA, #e1dbdb);
+  text-shadow: 0 1px 0 white;
+  background-clip: padding-box; }
   .calculator__caption {
     font-size: 22px;
     line-height: 22px;
@@ -814,7 +828,11 @@ img {
   color: #ff483e;
   font-weight: 700;
   box-sizing: border-box;
-  margin: 18px 0px 8px; }
+  margin: 18px 0px 8px;
+  text-shadow: 0 1px 0 #f8f6f6;
+  border: 1px solid #cec4c4;
+  box-shadow: inset 0 1px 0 0 white;
+  background-image: -webkit-linear-gradient(#EDEDED, #d5cdcd); }
 
 /*availability*/
 .availability {
@@ -852,7 +870,14 @@ img {
     box-sizing: border-box;
     text-align: center;
     font-size: 18px;
-    line-height: 1; }
+    line-height: 1;
+    background-image: linear-gradient(to bottom, #8ec73b 0%, #56951a 50%, #387c0b 50%, #3f810d 100%);
+    border: 1px solid #195800;
+    border-bottom: 1px solid #104800;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 0 #b3e447;
+    color: #333333;
+    text-shadow: 0 -1px 1px #99d73f; }
   .buy__now {
     display: inline-block;
     background: #595859;
@@ -862,7 +887,13 @@ img {
     color: #fff;
     font-size: 18px;
     line-height: 1;
-    margin: 0 10%; }
+    margin: 0 10%;
+    background-image: linear-gradient(to bottom, #595859 0%, #212638 50%, #030d29 50%, #0a122b 100%);
+    border: 1px solid #000008;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 0 #7e7565;
+    text-shadow: 0 -1px 1px black; }
 
 /**/
 /*cart*/
@@ -893,7 +924,7 @@ img {
   border: 1px solid #dbdbdb;
   background: #FAFAFA;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 2, 0.2);
-  margin: 20px 0;
+  margin: 25px 0;
   padding: 10px;
   text-align: center;
   box-sizing: border-box; }
@@ -946,10 +977,9 @@ img {
   text-align: center;
   border: none;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 300;
   border-radius: 2px;
-  padding: 5px 6px;
-  font-size: 20px; }
+  padding: 5px 6px; }
 
 /**/
 /*info-dostavka*/
@@ -1196,7 +1226,8 @@ img {
     margin: 0 0 5px 0; }
   .additional-desc__caption {
     font-size: 17px;
-    line-height: 17px; }
+    line-height: 17px;
+    margin: 10px 0; }
   .price {
     padding: 0 3px; }
     .price__item {
@@ -1216,7 +1247,7 @@ img {
     font-size: 15px;
     padding: 10px 10px; }
   .lot {
-    margin: 10px 0;
+    margin: 15px 0;
     padding: 10px 5px; }
     .lot__caption {
       font-size: 16px;
