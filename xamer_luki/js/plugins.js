@@ -165,3 +165,11 @@ $(function(){
         return false;
     });
 });
+//cart close
+$(document).ready(function(){
+   $('.js-cart-close').click(function () {
+       $('.cart').toggleClass('none');
+       $('.ordering').toggleClass('block');
+	   $(document).scrollTop(0);
+   });
+});
