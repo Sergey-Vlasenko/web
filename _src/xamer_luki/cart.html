@@ -158,6 +158,7 @@
             </div>
 		</div>
         <!--Catalog -->
+		<form action="#" method="post" name="jbcartForm" accept-charset="utf-8" enctype="multipart/form-data" class="jbcart jsJBZooCart">
         <div class="cart">
         	<div class="wraper wraper_cart">
 				<ul class="breadcrumb breadcrumb_cart">
@@ -266,12 +267,11 @@
                         <span class="total-price__value">1 012 518 </span>
                         <span class="total-price__valuta">&#8399;</span>
                     </p>
-                    <input type="submit" name="create-pay" value="Оформить заказ" class="total-price__submit">
+                    <input type="button" name="create-pay" value="Оформить заказ" class="total-price__submit js-cart-close">
                 </div>
             </div>
         </div>
         <!--  Оформить заказ-->
-        <form action="http://www.xammer-luki.ru/index.php?option=com_zoo&amp;controller=basket&amp;task=index" method="post" name="jbcartForm" accept-charset="utf-8" enctype="multipart/form-data" class="jbcart jsJBZooCart">
         <div class="ordering">
         	<h2 class="ordering__caption">Оформление заказа</h2>
         	<div class="ordering-container ordering-container_full-name">
@@ -290,38 +290,37 @@
         	</div>
         	<div class="ordering-container ordering-container_delivery">
         		<h3 class="ordering-container__caption">Доставка</h3>
+				<div class="ordering-item">
+					<input type="radio" class="payment-radio" id="delivery_1" value="b425af05-f0a0-4aae-881a-5195b059cc4f" name="shipping[_shipping_id]" >
+					<label for="delivery_1">
+						<div class="ordering-item__content ordering-box">
+							<p class="ordering-item__text">Доставка по Москве и Санкт-Петербургу (500 руб)</p>
+							<span class="ordering-item__note">При сумме заказа свыше 3000руб - бесплатно</span>
+						</div>
+					</label>
+				</div>
+				<div class="ordering-item">
+					<input type="radio" class="payment-radio" id="delivery_2" value="dfcc9d27-4449-4f19-b50a-3b0e56f86cce" name="shipping[_shipping_id]">
+					<label for="delivery_2">
+						<div class="ordering-item__content ordering-box">
+							<p class="ordering-item__text">За МКАД/КАД до 100 км (30 руб/км)</p>
+							<span  class="ordering-item__note">При сумме заказа менее 3000руб + 500 руб</span>
+						</div>
+					</label>
+					<div class="ordering-item__content-hidden">
+						<p class="ordering-item__text">Расстояние от МКАД, км<span>*</span>:</p>
+						<input class="jsKm distance-moscow counter__field" type="text" name="shipping[dfcc9d27-4449-4f19-b50a-3b0e56f86cce][value]" value="1" >
+					</div>
+				</div>
         		<div class="ordering-item">
-        			<input type="radio" id="delivery_1" value="b425af05-f0a0-4aae-881a-5195b059cc4f" name="shipping[_shipping_id]" >
-        			<div class="ordering-item__content">
-        				<label for="delivery_1">
-        					<p>Доставка по Москве и Санкт-Петербургу (500 руб)</p>
-        					<span>При сумме заказа свыше 3000руб - бесплатно</span>
-        				</label>
-        			</div>
-        		</div>
-        		<div class="ordering-item">
-        			<input type="radio" id="delivery_2" value="dfcc9d27-4449-4f19-b50a-3b0e56f86cce" name="shipping[_shipping_id]">
-        			<div class="ordering-item__content">
-        				<label for="delivery_2">
-        					<p>За МКАД/КАД до 100 км (30 руб/км)</p>
-        					<span>При сумме заказа менее 3000руб + 500 руб</span>
-        				</label>
-        			</div>
+					<input type="radio" class="payment-radio" id="delivery_3" value="7467c371-fb48-47c9-af00-9c671222a402" name="shipping[_shipping_id]">
+					<label for="delivery_3">
+						<div class="ordering-item__content ordering-box">
+							<p class="ordering-item__text">Доставка транспортной компанией более 100км от МКАД/КАД</p>
+							<span class="ordering-item__note">Доставка до ТК бесплатно</span>
+						</div>
+					</label>
         			<div class="ordering-item__content-hidden">
-        				<p>Расстояние от МКАД, км<span>*</span>:</p>
-        				<input class="jsKm distance-moscow" type="text" name="shipping[dfcc9d27-4449-4f19-b50a-3b0e56f86cce][value]" value="1" >
-        			</div>
-        		</div>
-        		<div class="ordering-item">
-        			<input type="radio" id="delivery_3" value="7467c371-fb48-47c9-af00-9c671222a402" name="shipping[_shipping_id]">
-        			<div class="ordering-item__content">
-        				<label for="delivery_3">
-        					<p>Доставка транспортной компанией более 100км от МКАД/КАД</p>
-        					<span>Доставка до ТК бесплатно</span>
-        				</label>
-        			</div>
-        			<div class="ordering-item__content-hidden">
-
         				<div class="other-company" id="other-985292">
         					<label class="text">Паспортные данные: <textarea name="shipping[7467c371-fb48-47c9-af00-9c671222a402][passport]"></textarea></label>
         					<label for="id-delovye-linii-851267" class="radio-lbl lbl-delovye-linii"><input value="Деловые Линии" name="shipping[7467c371-fb48-47c9-af00-9c671222a402][service]" type="radio" class="jsCompany" id="id-delovye-linii-851267"> Деловые Линии</label>
@@ -334,28 +333,27 @@
         					<label for="id-sluzhba-dostavki-908697" class="radio-lbl lbl-sluzhba-dostavki"> <input value="Служба Доставки" name="shipping[7467c371-fb48-47c9-af00-9c671222a402][service]" type="radio" class="jsCompany" id="id-sluzhba-dostavki-908697"> Служба Доставки</label>
         					<label for="id-zheldorekspediciya-876537" class="radio-lbl lbl-zheldorekspediciya"> <input value="ЖелдорЭкспедиция" name="shipping[7467c371-fb48-47c9-af00-9c671222a402][service]" type="radio" class="jsCompany" id="id-zheldorekspediciya-876537"> ЖелдорЭкспедиция</label>
         					<label for="id-drugaya-578358" class="radio-lbl lbl-drugaya"> <input value="Другая" name="shipping[7467c371-fb48-47c9-af00-9c671222a402][service]" type="radio" class="jsCompany" id="id-drugaya-578358"> Другая</label>
-        					<input type="text" name="shipping[7467c371-fb48-47c9-af00-9c671222a402][text]" value="" class="jsText other-company__text">
+        					<input type="text" name="shipping[7467c371-fb48-47c9-af00-9c671222a402][text]" value="" class="jsText other-company__text counter__field">
+							<p class="selection-company-info">Выберите Транспортную компанию или проконсультируйтесь c менеджером</p>
         				</div>
-        				<p class="selection-company-info">Выберите Транспортную компанию или проконсультируйтесь c менеджером</p>
-
         			</div>
         			<div class="ordering-item">
-        				<input type="radio" id="delivery_4" value="b425af05-f0a0-4aae-881a-5195b059cc4f" name="shipping[_shipping_id]" >
-        				<div class="ordering-item__content">
-        					<label for="delivery_4">
-        						<p>Самовывоз (-11% к заказу)</p>
-        					</label>
-        				</div>
+						<input type="radio" class="payment-radio" id="delivery_4" value="b425af05-f0a0-4aae-881a-5195b059cc4f" name="shipping[_shipping_id]" >
+						<label for="delivery_4">
+							<div class="ordering-item__content ordering-box">
+        						<p class="ordering-item__text">Самовывоз (-11% к заказу)</p>
+							</div>
+						</label>
         				<div class="ordering-item__content-hidden">
-        					<p>Адрес самовывоза</p>
+        					<p class="ordering-item__text">Адрес самовывоза</p>
         				</div>
         			</div>
-        			<div class="jbcart-total-price-cell">
-        				<div class="jbcart-label">Стоимость с учётом доставки:</div>
-        				<div class="jbcart-value jsTotal">
+        			<div class="jbcart-total-price-cell ordering-price">
+        				<p class="jbcart-label ordering-price__text">Стоимость с учётом доставки:</p>
+        				<div class="jbcart-value jsTotal ordering-price__value">
         					<span data-moneyid="24" data-value="1615" data-currency="rub" data-showplus="0" class="jsMoney jbcartvalue" data-widgetid="12">
-        						<span class="jbcurrency-value">0</span>
-        						<span class="jbcurrency-symbol">₽</span>
+        						<span class="jbcurrency-value ">23 060</span>
+        						<span class="jbcurrency-symbol">&#8399;</span>
         					</span>
         				</div>
         			</div>
@@ -372,52 +370,58 @@
         		</div>
         	</div>
         	<div class="ordering-container ordering-container_payment">
-        		<h3 class="ordering-container__caption">Оплата</h3>
+        		<h3 class="ordering-container__caption ordering-container__caption_payment">Оплата</h3>
         		<div class="ordering-item">
-        			<input type="radio" id="payment_1" value="7f0ed2e0-6e8e-4366-827f-83a889746f6b" name="shipping[_shipping_id]" >
-        			<div class="ordering-item__content">
-        				<label for="payment_1">
-        					<p>Оплатить он-лайн</p>
-        					<span>Qiwi, Яндекс Деньги, Web Money, Wallet One, Visa, Mastercard, Элекснет, Альфа-клик, Банк Русский Стандарт, Мегафон, Билайн, TELE 2, Евросеть, Связной</span>
-        				</label>
-        			</div>
+					<input type="radio" class="payment-radio" id="payment_1" value="7f0ed2e0-6e8e-4366-827f-83a889746f6b" name="payment[_payment_id]" >
+					<label for="payment_1">
+						<div class="ordering-item__content ordering-box">
+        					<p class="ordering-item__text">Оплатить он-лайн</p>
+        					<!--<span class="ordering-item__note">Qiwi, Яндекс Деньги, Web Money, Wallet One, Visa, Mastercard, Элекснет, Альфа-клик, Банк Русский Стандарт, Мегафон, Билайн, TELE 2, Евросеть, Связной</span>-->
+						</div>
+					</label>
         		</div>
         		<div class="ordering-item">
-        			<input type="radio" id="payment_2" value="94616cae-577b-4fa1-8091-d4ff35197927" name="shipping[_shipping_id]" >
-        			<div class="ordering-item__content">
-        				<label for="payment_2">
-        					<p>Оплата наличными</p>
-        				</label>
-        			</div>
+					<input type="radio" class="payment-radio" id="payment_2" value="94616cae-577b-4fa1-8091-d4ff35197927" name="payment[_payment_id]" >
+					<label for="payment_2">
+						<div class="ordering-item__content ordering-box">
+        					<p class="ordering-item__text">Оплата наличными</p>
+						</div>
+					</label>
         		</div>
         		<div class="ordering-item">
-        			<input type="radio" id="payment_3" value="5b8c0c1c-2ec0-49e9-93d7-66e238a3b754" name="shipping[_shipping_id]" >
-        			<div class="ordering-item__content">
-        				<label for="payment_3">
-        					<p>Выставить счёт (физ. лицо)</p>
-        				</label>
-        			</div>
+					<input type="radio" class="payment-radio" id="payment_3" value="5b8c0c1c-2ec0-49e9-93d7-66e238a3b754" name="payment[_payment_id]" >
+					<label for="payment_3">
+						<div class="ordering-item__content ordering-box">
+								<p class="ordering-item__text">Выставить счёт (физ. лицо)</p>
+						</div>
+					</label>
         		</div>
         		<div class="ordering-item">
-        			<input type="radio" id="payment_4" value="bb9600b9-a449-4b77-98d6-ac4678d2b474" name="shipping[_shipping_id]" >
-        			<div class="ordering-item__content">
-        				<label for="payment_4">
-        					<p>Выставить счёт (юр. лицо)</p>
-        				</label>
-        			</div>
+					<input type="radio" class="payment-radio" id="payment_4" value="bb9600b9-a449-4b77-98d6-ac4678d2b474" name="payment[_payment_id]" >
+					<label for="payment_4">
+						<div class="ordering-item__content ordering-box">
+        					<p class="ordering-item__text">Выставить счёт (юр. лицо)</p>
+						</div>
+					</label>
         			<div class="ordering-item__content-hidden">
-        				<label class="score__title" for="jbcart-08e598a1-328c-49a0-9d93-6e96daa44b17">Укажите реквизиты или прикрепите файл с реквизитами</label>
-        				<textarea class="score__content" name="order[08e598a1-328c-49a0-9d93-6e96daa44b17][value]" id="jbcart-08e598a1-328c-49a0-9d93-6e96daa44b17"></textarea>
+        				<label class="score__title" for="jbcart-08e598a1-328c-49a0-9d93-6e96daa44b17">Укажите реквизиты или прикрепите файл с реквизитами
+							<textarea class="score__content" name="order[08e598a1-328c-49a0-9d93-6e96daa44b17][value]" id="jbcart-08e598a1-328c-49a0-9d93-6e96daa44b17"></textarea>
+						</label>
         			</div>
         		</div>
+				<div class="jbtool-total-price ordering-price">
+					<span class="jbtool-label ordering-price__text">Итого к оплате:</span>
+					<span class="jbtool-value jsTotal ordering-price__value">
+						<span data-moneyid="26" data-value="1615" data-currency="rub" data-showplus="0" class="jsMoney jbcartvalue" data-widgetid="13">
+							<span class="jbcurrency-value">10 989</span> <span class="jbcurrency-symbol">&#8399;</span>
+						</span>
+					</span>
+				</div>
         	</div>
-        	<div class="jbtool-total-price">
-                <span class="jbtool-label">Итого к оплате:</span>
-                <span class="jbtool-value jsTotal"><span data-moneyid="26" data-value="1615" data-currency="rub" data-showplus="0" class="jsMoney jbcartvalue" data-widgetid="13"><span class="jbcurrency-value">10 989</span> <span class="jbcurrency-symbol">₽</span></span></span>
-            </div>
-        	<input type="submit" name="create-pay" value="Оформить заказ" class="ordering__submit">
+			<div class="ordering-wraper-submit">
+				<input type="submit" name="create-pay" value="Оформить заказ" class="ordering__submit total-price__submit">
+			</div>
         </div>
-        </form>
         <!--  Оформить заказ end-->
         <!-- Footer -->
         <div class="footer">
@@ -444,6 +448,7 @@
 				<p class="copyright__item">Разработка и продвижение сайта - <a title="Разработка сайтов и он-лайн сервисов, любой сложности. Продвижение в поисковых системах. Контекстная и социальная реклама." href="http://outcode.ru/" target="_blank">outcode.ru</a></p>
 			</div>
 		</div>
+		</form>
 	</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>

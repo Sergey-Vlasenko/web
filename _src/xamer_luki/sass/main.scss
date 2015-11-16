@@ -1231,26 +1231,25 @@ $browser-context: 16; // Default
 /**/
 /*ordering*/
 .ordering{
+	display:none;
 	border: 1px solid #dbdbdb;
-	background: #FAFAFA;
+	background: #fff;
 	box-shadow: 0px 0px 4px 0px rgba(0, 0, 2, 0.2);
-	margin: 25px 0;
-	padding: 10px;
-	text-align: center;
+	margin: 25px 10px;
 	box-sizing: border-box;
 	&__caption{
-		font-size: 30px;
+		font-size: 26px;
 	    color: #1f1f1f;
 	    padding-left: 45px;
 	    font-weight: 700;
-	    margin: 35px 0;
+	    margin: 25px 0;
 		text-align: left;
 	}
 	&-container{
 		padding: 0 45px 10px 45px;
 		box-sizing: border-box;
 		&__caption{
-			font-size: 21px;
+			font-size: 20px;
 			color: #1f1f1f;
 			padding-left: 0px;
 			font-weight: 700;
@@ -1258,30 +1257,24 @@ $browser-context: 16; // Default
 			text-align: left;
 		}
 		textarea{
+		    display: block;
+			box-sizing: border-box;
 			width: 100%;
 			height: 100px;
+			background: #fcfcfc;
+			box-shadow: 0 1px 5px 0px #bababa inset;
+			border: 1px solid #bababa;
+			border-radius: 4px;
+			font-size: 16px;
+			//margin: 10px 0 20px;
 		}
 		&_delivery{
-			border-top: 1px solid #fff;
+			border-top: 1px solid #e6e6e6;
 			background: #FAFAFA;
-			.ordering-item{
-				margin-bottom: 15px;
-			    border-radius: 4px;
-			    background: #FFFFFF;
-			    border: 1px solid #B5B5B5;
-				padding: 17px 10px 15px 50px;
-				text-align: left;
-				p{
-					line-height: 26px;
-    				font-size: 16px;
-				}
-				span{
-					color: #797979;
-					font-size: 12px;
-					margin-bottom: 0;
-					margin-top: 5px;
-				}
-			}
+			border-bottom: 1px solid #e6e6e6;;
+		}
+		&__payment{
+			border-top: 1px solid #e6e6e6;
 		}
 	}
 	&-item{
@@ -1292,43 +1285,141 @@ $browser-context: 16; // Default
 			color: #1f1f1f;
 		}
 		&__field{
-			width: 80%;
-			background: #fcfcfc url(http://www.xammer-luki.ru/media/zoo/applications/jbuniversal/assets/img/shipping/bg-cart-input.png) top left repeat-x;
+			width: 70%;
+			background: #fcfcfc;
 		    border: 1px solid #BABABA;
+			box-shadow: 0 1px 3px 0px #bababa inset;
 		    border-radius: 4px;
-		    height: 40px;
-		    line-height: 40px;
+		    height: 35px;
+		    line-height: 35px;
 		    font-size: 16px;
+			text-indent: 10px;
+		}
+		&__content-hidden{
+			text-align:left;
+			display: none;
+			p{
+				display:inline-block;
+			}
+		}
+		&__text{
+			line-height: 16px;
+			font-size: 16px;
+		}
+		&__note{
+			color: #797979;
+			font-size: 12px;
+			margin-bottom: 0;
+			margin-top: 5px;
 		}
 	}
 }
-.ordering__submit{
-	height: 43px;
-	border: none;
-    line-height: 40px;
-    background: #E21720;
-    border-bottom: 4px solid #b51218;
-    font-size: 18px;
-    text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
-	color: #fff;
-    border-radius: 4px;
-	box-sizing: border-box;
-	margin: 0;
-	text-align: center;
+.payment-radio{
+	display:none;
+	&:checked~{
+		label .ordering-box{
+			background: #FAE8E8;
+			border: 1px solid #FAE8E8;
+			&:before{
+				background-position:-80px 0;
+			}
+		}
+		.ordering-item__content-hidden{
+			display:block;
+		}
+	}
 }
-.jbcart{
-	&-label{
-		font-size: 20px;
+.distance-moscow{
+	display:inline-block;
+}
+.ordering-container_delivery label, .ordering-container_payment label{
+		display: block;
+		
+	}
+.ordering-box{
+	position:relative;
+	padding: 20px 10px 20px 50px;
+	margin-bottom: 15px;
+	border-radius: 4px;
+	background: #FFFFFF;
+	border: 1px solid #B5B5B5;
+	text-align: left;
+	&:before {
+		background: url(../img/radio.png) no-repeat 0 0;
+		content: '';
+		position: absolute;
+		top: 50%;
+		margin: -12px 0 0 0;
+		left: 15px;
+		width: 24px;
+		height: 24px;
+	}
+}
+.other-company {
+	position: relative;
+	background: url(../img/bg-cart-other-company.jpg) center bottom no-repeat;
+	label {
+		display: block;
 		color: #1f1f1f;
+		font-size: 16px;
+		margin: 10px 0;
+	}
+	&__text{
+		width:200px;
+		margin: 0 0 30px 0;
+	}
+}
+.selection-company-info{
+    position: absolute;
+    right: 7%;
+	top: 50%;
+    font-size: 13px;
+    font-style: italic;
+    color: #383838;
+    width: 34%;
+    line-height: 20px;
+}
+.ordering-wraper-submit{
+    margin: 20px 45px 30px 45px;
+	text-align:center;
+}
+.ordering__submit{
+	display:block;
+	width:100%;
+}
+.ordering-price{
+	color: #1f1f1f;
+	&__text{
+		font-size: 20px;
 		font-weight: 400;
 	    display: inline-block;
 	}
-	&-value span{
+	&__value{
 		font-size: 20px;
-		color: #1f1f1f;
 		font-weight: 700;
+		display: inline-block;
 	}
 }
+.block{
+	display:block;
+}
+.none{
+	display:none;
+}
+//.ordering__submit{
+//	height: 43px;
+//	border: none;
+//    line-height: 40px;
+//    background: #E21720;
+//    border-bottom: 4px solid #b51218;
+//    font-size: 18px;
+//    text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
+//	color: #fff;
+//    border-radius: 4px;
+//	box-sizing: border-box;
+//	margin: 0;
+//	text-align: center;
+//}
 /**/
 @media screen and (max-width: 768px){
 	.mobile-wraper{
@@ -1352,6 +1443,16 @@ $browser-context: 16; // Default
     	padding: 0 10px;
 		&__list {
 			margin: 0 0 0 9px;
+		}
+	}
+	.ordering__caption{
+		padding:0;
+		text-align:center;
+	}
+	.ordering-container {
+		padding: 0 10px 10px 10px;
+		&__caption{
+			text-align:center;
 		}
 	}
 }
@@ -1639,7 +1740,7 @@ $browser-context: 16; // Default
 			}
 		}
 	}
-	.cart {
+	.cart{
 		.counter{
 			&__content {
 				width: 70px;
@@ -1660,6 +1761,62 @@ $browser-context: 16; // Default
 		.price__value, .price__savings {
 			margin: 10px 0 0 0;
 		}
+	}
+	.ordering{
+		&__caption{
+			padding:0;
+			text-align:center;
+			font-size: 20px;
+			margin: 15px 0;
+		}
+		&-item{
+			margin: 0 0 10px 0;
+			&__title {
+				width:auto;
+				font-size: 14px;
+			}
+			&__field{
+				height: 28px;
+				line-height: 28px;
+			}
+			&__text{
+				line-height: 14px;
+				font-size: 14px;
+			}
+		}
+		&-box {
+			position: relative;
+			padding: 15px 3px 15px 33px;
+			&:before{
+				left:3px;
+			}
+		}
+		&-price{
+			&__value{
+				font-size: 16px;
+			}
+			&__text {
+				font-size: 16px;
+			}
+		}
+		&-container {
+			&__caption_payment{
+				margin: -5px 0 15px 0;
+			}
+			textarea {
+				height: 70px;
+				}
+			}
+		&-wraper-submit {
+			margin: 5px 45px 15px 45px;
+		}
+	}
+	.other-company label {
+		font-size: 14px;
+		margin: 5px 0;
+	}
+	.selection-company-info{
+	    transform: translate(0, -50%);
 	}
 }
 @media screen and (max-width: 396px){
