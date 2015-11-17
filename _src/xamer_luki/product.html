@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href="css/lightbox.css" rel="stylesheet">
         <link rel="stylesheet" href="css/jquery.bxslider.css">
-		<!--<link rel="stylesheet" href="css/jquery-ui.css">-->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -1117,112 +1116,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.bxslider-rahisified.min.js"></script>
-     <!--<script src="js/jquery.bxslider.min.js"></script> -->
-     <script src="js/lightbox.js"></script>
-     <script src="js/plugins.js"></script>
- <!-- Spinner-->
- <!-- <script>
-	$(document).ready(function() {
-		$('.counter__prev').click(function () {
-			var $input = $(this).parent().parent().find('input');
-			var count = parseInt($input.val()) - 1;
-			count = count < 1 ? 1 : count;
-			$input.val(count);
-			$input.change();
-			return false;
-		});
-		$('.counter__next').click(function () {
-			var $input = $(this).parent().parent().find('input');
-			$input.val(parseInt($input.val()) + 1);
-			$input.change();
-			return false;
-		});
-	});
- </script> -->
-<!--Accordion -->
-<!-- <script>
-    $(document).ready(function(){
-       $('.tabs').accordion({
-           collapsible:true,
-           heightStyle: "content",
-           active:false
-       });
-   });
-</script> -->
-<!--Left menu open + rotate arrow-->
-<!-- <script>
-$(document).ready(function(){
-	$('.mobile-menu__toogle').click(function () {
-	var phone = $('.phone').css('display') == 'block';
-		if (phone) {
-			$(".phone").slideToggle(300);
-		}
-		$('.mobilepanel_toggle').toggleClass('active');
-		$('.panel').toggleClass('open-sidebar');
-	});
-});
-</script> -->
-<!--Sub menu open + rotate arrow submenu-->
-<!-- <script>
-    $(function(){
-        $(".rd-submenu-toggle").on("click", function(){
-            $(this).parent().find(".uk-dropdown-navbar").toggleClass('active');
-            $(this).parent().find("a").toggleClass('active');
-    		return false;
-        });
-    });
-</script> -->
-<!--Phone menu open-->
-<!-- <script>
-    $(function(){
-        $(".mobile-menu__phone").on("click", function(){
-			var mobilepanel = $('.menu').hasClass('open-sidebar');
-			if (mobilepanel){
-				$('.panel').removeClass('open-sidebar');
-                $('.mobilepanel_toggle').removeClass('active');
-			}
-            $(".phone").slideToggle(300);
-    		return false;
-        });
-    });
-</script> -->
-<!--Галлерея -->
-<!-- <script>
-    lightbox.option({
-      'resizeDuration': 200,
-	  'showImageNumberLabel': false,
-	  'wrapAround':false
-    })
-</script> -->
-<!--Сладер photo-->
-<!-- <script>
- $(function(){
-  $('.catalog-photo__content').bxSlider({
-	auto: false,
-	pause: 3000,
-	slideWidth:100,
-	minSlides: 1,
-	maxSlides: 2,
-	moveSlides: 2,
-	slideMargin: 15,
-	nextText:'',
-	prevText:'',
-	pager:false,
-	controls: true,
-	autoReload: true,
-	breaks: [{screen:0, slides:3},{screen:320, slides:3},{screen:480, slides:4}, {screen:750, slides:4}]
-  });
- });
-</script> -->
-<!--фикс меню-->
-<!-- <script>
-	$(function(){
-		$(window).scroll(function() {
-			var top = $(document).scrollTop();
-			if (top < 107) $(".mobile-wraper").css({top: '0', position: 'relative'});
-			else $(".mobile-wraper").css({top: '0px', position: 'fixed'});
-		});
-	});
-</script> -->
+	<!--<script src="js/jquery.bxslider.min.js"></script> -->
+	<script src="js/lightbox.js"></script>
+	<script src="js/plugins.js"></script>
 </body>
 </html>
