@@ -1,22 +1,3 @@
-/* DIRECTION CONTROLS (NEXT / PREV) */
-
-/*.bx-wrapper .bx-prev {
-	left: 10px;
-	background: url(../img/controls.png) no-repeat 0 -32px;
-}
-
-.bx-wrapper .bx-next {
-	right: 10px;
-	background: url(../img/controls.png) no-repeat -43px -32px;
-}
-.bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
-}
-
-.bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
-}*/
-
 .bx-wrapper .bx-controls-direction .bx-prev, .bx-wrapper .bx-controls-direction .bx-next{
 	position: absolute;
     top: 50%;
@@ -53,11 +34,6 @@
 	max-width: 100%;
 	display: inline-block;
 	margin: 0 auto;
-
-	/*position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);*/
 }
 /*slide-object*/
 .slide-object__image, .slide-advance__image, .slide-photo__image{
@@ -86,14 +62,6 @@
 }
 /** RESET AND LAYOUT
 ===================================*/
-@media screen and (max-width: 480px){
-	.slider_testimonials .bx-pager-item{
-		width:31%;
-	}
-	.slider_testimonials .bx-pager-item a{
-		width:100%;
-	}
-}
 @media screen and (max-width: 420px){
 	.product .bx-wrapper .bx-next{
 		right: -30px;

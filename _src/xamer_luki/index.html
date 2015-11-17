@@ -14,7 +14,6 @@
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href="css/lightbox.css" rel="stylesheet">
-
     </head>
     <body>
 	<div class="wrapper">
@@ -41,8 +40,10 @@
                           <i class="fa fa-phone"></i>
                         </li>
                         <li class="mobile-menu__cart">
-                          <i class="fa fa-shopping-cart"></i>
-                          <span class="count">1</span>
+                            <a href="cart.html" class="mobile-menu__link">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span class="count">1</span>
+                            </a>
                         </li>
                     </ul>
                     <!--  Menu left-->
@@ -383,127 +384,6 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.bxslider-rahisified.min.js"></script>
     <script src="js/lightbox.js"></script>
-    <!--  <script src="js/jquery.bxslider.min.js"></script> -->
      <script src="js/plugins.js"></script>
-    <!--Галлерея -->
-    <!-- <script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'showImageNumberLabel': false,
-      'wrapAround':false
-    })
-    </script> -->
-<!--Left menu open + rotate arrow-->
-<!-- <script type="text/javascript">
-    $(document).ready(function(){
-       $('.mobile-menu__toogle').click(function () {
-           $(this).find('.mobilepanel_toggle').toggleClass('active');
-           $('.panel').toggleClass('open-sidebar');
-
-           var phone = $('.phone').css('display') == 'block';
-           if (phone) {
-               $(".phone").slideToggle(300);
-           }
-           $('.mobilepanel_toggle').toggleClass('active');
-       });
-     });
-</script> -->
-<!--Sub menu open + rotate arrow submenu-->
-<!-- <script type="text/javascript">
-    $(function(){
-        $(".rd-submenu-toggle").on("click", function(e){
-            $(this).parent().find(".uk-dropdown-navbar").toggleClass('active');
-            $(this).parent().find("a").toggleClass('active');
-    		return false;
-        });
-    });
-</script> -->
-<!--Phone menu open-->
-<!-- <script type="text/javascript">
-    $(function(){
-        $(".mobile-menu__phone").on("click", function(e){
-            $(this).parent().parent().find(".phone").slideToggle(300);
-
-            // var phone = $('.mobilepanel_toggle').css('transform') == 'translate(0, 0)';
-            // if (phone) {
-            //     $(".mobilepanel_toggle").css('transform') == 'translate(-110%, 0)';
-            // }
-            // $(this).parent().parent().find(".phone").slideToggle(300);
-        });
-    });
-</script> -->
-
-
-    <!--Сладер object-->
-    <!-- <script>
-     $(function(){
-      $('.slider-object__content').bxSlider({
-        auto: false,
-        pause: 3000,
-        slideWidth:340,
-        minSlides: 1,
-        maxSlides: 2,
-    	moveSlides: 1,
-        slideMargin: 25,
-        nextText:'',
-	    prevText:'',
-        pager:false,
-        controls: true,
-		autoReload: true,
-        breaks: [{screen:100, slides:1},{screen:480, slides:2}]
-      });
-     });
-    </script> -->
-    <!--Сладер photo-->
-   <!-- <script>
-     $(function(){
-      $('.slider-photo__content').bxSlider({
-        auto: false,
-        pause: 3000,
-        slideWidth:285,
-        minSlides: 1,
-        maxSlides: 2,
-        moveSlides: 2,
-        slideMargin: 25,
-        nextText:'',
-        prevText:'',
-        pager:false,
-        controls: true,
-        autoReload: true,
-        //breaks: [{screen:100, slides:1},{screen:480, slides:2}]
-      });
-     });
-    </script> -->
-    <!--Сладер advance-->
-    <!-- <script>
-     $(function(){
-      $('.slider-advance__content').bxSlider({
-        auto: false,
-        pause: 3000,
-        slideWidth:180,
-        //minSlides: 1,
-        //maxSlides: 6,
-        moveSlides: 2,
-        slideMargin: 25,
-        nextText:'',
-        prevText:'',
-        pager:false,
-        controls: true,
-        autoReload: true,
-        breaks: [{screen:0, slides:1},{screen:480, slides:2}]
-      });
-     });
-    </script> -->
-    <!--фикс меню-->
-    <!-- <script>
-    $(function(){
-        $(window).scroll(function() {
-            var top = $(document).scrollTop();
-            if (top < 100) $(".mobile-wraper").css({top: '0', position: 'relative'});
-            else $(".mobile-wraper").css({top: '0px', position: 'fixed'});
-        });
-    });
-    </script> -->
     </body>
-
 </html>
