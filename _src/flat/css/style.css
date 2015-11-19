@@ -60,7 +60,8 @@ html {
     left: 50%;
     width: 650px;
     top: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 .caption_slide {
 	color:#c9cbce;
@@ -307,11 +308,13 @@ html {
 .box {}
 .box__header_desing:before, .box__header_social:before {
 	left: 88%;
-	transform: skew(20deg, 0deg);
+	-webkit-transform: skew(20deg, 0deg);
+	        transform: skew(20deg, 0deg);
 }
 .box__header_search:before, .box__header_shop:before {
 	left: -3%;
-	transform: skew(-20deg, 0deg);
+	-webkit-transform: skew(-20deg, 0deg);
+	        transform: skew(-20deg, 0deg);
 	box-shadow: -3px -12px 0px -7px #d9d9d9;
 }
 .box_social {
@@ -347,12 +350,14 @@ html {
 .box__content_desing:before, .box__content_social:before {
 	right: -28px;
     top: 11px;
-	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	        transform:rotate(-45deg);
 }
 .box__content_search:before, .box__content_shop:before {
     left: -28px;
     top: 11px;
-    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
 }
 .box__details {
 	font: 14px 'Bree Serif', sans-serif;
@@ -485,7 +490,8 @@ html {
 	transition: 0.5s ease;
 	text-align:center;
     top: 50%;
-    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
 }
 .info__header, .case__header {
 	color:#f98561;
@@ -600,7 +606,8 @@ html {
 	transition:0.2s ease;
 }
 .social-list__link:hover {
-	transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	        transform:scale(1.1);
 	transition:0.2s ease;
 }
 .social-list__item:first-child {
@@ -631,7 +638,8 @@ html {
 }
 @media screen and (max-width: 992px){
 	.slide__info {
-	    transform: translate(-50%, -20%);
+	    -webkit-transform: translate(-50%, -20%);
+	            transform: translate(-50%, -20%);
 	}
 	.slogan__text {
 		width: 90%;
@@ -848,3 +856,109 @@ html {
   text-align:left;
 }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=../../flat/css/style.css.map */

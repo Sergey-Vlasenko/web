@@ -1,6 +1,7 @@
 //font-family: 'Roboto', sans-serif;
 //font-family: 'PT Sans', sans-serif;
 //font-family: 'PT Sans Narrow', sans-serif;
+//
 html, body, ul, li, p, img, h1, h2, h3, h4 {
 	margin:0;
 	padding:0;
@@ -140,7 +141,11 @@ $browser-context: 16; // Default
 	//
 }
 .mobile-navigation{
-	height:40px;
+    position: relative;
+    width: 765px;
+    z-index: 2;
+    height: 41px;
+    transform: translateZ(0);
 }
 .mobile-wraper{
 	position: relative;
@@ -150,17 +155,17 @@ $browser-context: 16; // Default
 }
 /*mobile menu top*/
 .mobile-menu {
-	position: relative;
-	width: 100%;
-	z-index: 104;
-	background: #230B0D;
-	margin: 0;
-	padding: 0;
-	height: 40px;
-	color:#fff;
-	text-align: center;
-	border-bottom: 1px solid #c3c3c3;
-	box-sizing:border-box;
+    position: relative;
+    width: 100%;
+    z-index: 104;
+    background: #230B0D;
+    margin: 0;
+    padding: 0;
+    /* height: 40px; */
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #c3c3c3;
+    box-sizing: border-box;
 }
 .mobile-menu li{
 	list-style:none;
@@ -289,6 +294,7 @@ $browser-context: 16; // Default
     top: 39px;
 	width: 300px;
     height: auto;
+	padding: 0 25px;
     transition: 0.5s ease;
 	transform: translate(-110%, 0);
 	-webkit-transform: translate(-110%, 0);
@@ -297,9 +303,6 @@ $browser-context: 16; // Default
 	background: #230B0D;
 	color:#fff;
 }
-.uk-container {
-    padding: 0 25px;
-}
 .menu li {
 	position: relative;
     margin: 0;
@@ -307,43 +310,43 @@ $browser-context: 16; // Default
     line-height: 35px;
 }
 .menu li a {
-    padding: 0 30px 0 0;
-    height: 35px;
+	display: block;
+    //padding: 0 30px 0 0;
     font-weight: 400;
-    line-height: 35px;
     position: relative;
-    margin-right: 20px;
+    margin-right: 35px;
 	font-size: 15px;
 	color:#fff;
-	display: inline;
 }
 .uk-dropdown {
-    display: block;
     padding: 0px 0 0 30px;
 	box-sizing: border-box;
-    transition: 0.4s ease;
-	height:0;
-	width:0;
-	overflow:hidden;
+    //transition: 0.4s ease;
+	//height:0;
+	//width:0;
+	//display: block;
+	//overflow:hidden;
+	display:none;
+	transform: translateZ(0);
 }
-.uk-dropdown.active a {
-    line-height: 1;
-}
-.uk-dropdown.active{
-	width:300px;
-}
-.dropdown-store.active{
-	height:215px;
-}
-.dropdown-installation.active{
-	height:90px;
-}
-.dropdown-about.active{
-	height:60px;
-}
-.dropdown-payment.active{
-	height:43px;
-}
+//.uk-dropdown.active a {
+//    line-height: 1;
+//}
+//.uk-dropdown.active{
+//	width:300px;
+//}
+//.dropdown-store.active{
+//	height:215px;
+//}
+//.dropdown-installation.active{
+//	height:90px;
+//}
+//.dropdown-about.active{
+//	height:60px;
+//}
+//.dropdown-payment.active{
+//	height:43px;
+//}
 .menu li .uk-dropdown li {
     list-style-type: disc;
 	line-height: 30px;
@@ -1160,43 +1163,42 @@ $browser-context: 16; // Default
 			color: #1f1f1f;
 		}
 		.table{
-			width: 1000px;
+			//width: 1000px;
 		}
 		.table table{
-			width: 100%;
+			//width: 100%;
+			white-space: pre;
 		}
-		.tabs__info{
-			font-size: 18px;
-			&.table-size{
-
-			}
-			p{
-				margin: 0 0 15px 0;
-			}
-			ul{
-				padding: 0 0 0 20px;
-				list-style-type: disc;
-			}
-			.color {
-				margin-left: 36px;
-				display: inline-block;
-			}
-			.standart {
-				background-color: #9fdf9f;
-			}
-			.odna {
-				background-color: #fff;
-			}
-			.dvu {
-				background-color: #fffab4;
-			}
-			td {
-				text-align: center;
-				border: 1px solid #e8e8e8;
-				font-size: 12px;
-				padding: 8px 0px 7px 3px;
-				line-height: 14px;
-			}
+		
+	}
+	&__info{
+		font-size: 18px;
+		p{
+			margin: 0 0 15px 0;
+		}
+		ul{
+			padding: 0 0 0 20px;
+			list-style-type: disc;
+		}
+		.color {
+			margin-left: 36px;
+			display: inline-block;
+		}
+		.standart {
+			background-color: #9fdf9f;
+		}
+		.odna {
+			background-color: #fff;
+		}
+		.dvu {
+			background-color: #fffab4;
+		}
+		td {
+			text-align: center;
+			border: 1px solid #e8e8e8;
+			font-size: 12px;
+			padding: 7px 5px;
+			line-height: 14px;
 		}
 	}
 	&__roll-up {
@@ -1218,6 +1220,7 @@ $browser-context: 16; // Default
     margin: 20px 0 0 0;
 	display: block;
     font-size: 15px;
+	white-space: nowrap;
 }
 .color_description .color div[class*="descr"] {
     display: inline-block;
@@ -1423,7 +1426,7 @@ $browser-context: 16; // Default
 //}
 /**/
 @media screen and (max-width: 768px){
-	.mobile-wraper{
+	.mobile-navigation {
 		width: 100%;
 	}
 	.wrapper{
