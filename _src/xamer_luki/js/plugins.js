@@ -87,14 +87,14 @@
   });
 
 //Left menu open + rotate arrow
-$(document).ready(function(){
+$(function(){
    $('.mobile-menu__toogle').click(function () {
    var phone = $('.phone').css('display') == 'block';
        if (phone) {
            $(".phone").slideToggle(300);
        }
        $('.mobilepanel_toggle').toggleClass('active');
-       $('.menu').toggleClass('open-sidebar');
+       $('.vertical-menu').toggleClass('open-sidebar');
    });
 });
 
@@ -109,9 +109,9 @@ $(document).ready(function(){
    
 //Sub menu open + rotate arrow submenu
    $(function(){
-       $(".rd-submenu-toggle").on("click", function(){
-           $(this).parent().find(".uk-dropdown-navbar").slideToggle(300);
-           $(this).parent().find("a").toggleClass('active');
+       $(".submenu-toggle").on("click", function(){
+           $(this).parent().find(".vertical-submenu").slideToggle(300);
+           $(this).toggleClass('active');
            return false;
        });
    });
@@ -119,9 +119,9 @@ $(document).ready(function(){
 //Phone menu open
    $(function(){
        $(".mobile-menu__phone").on("click", function(){
-           var mobilepanel = $('.menu').hasClass('open-sidebar');
+           var mobilepanel = $('.vertical-menu').hasClass('open-sidebar');
            if (mobilepanel){
-               $('.menu').removeClass('open-sidebar');
+               $('.vertical-menu').removeClass('open-sidebar');
                $('.mobilepanel_toggle').removeClass('active');
            }
            $(".phone").slideToggle(300);
