@@ -274,7 +274,7 @@ img {
 
 .vertical-submenu {
   display: none;
-  padding: 0 0 0 30px;
+  padding: 0 0 0 18px;
   box-sizing: border-box;
   -webkit-transform: translateZ(0);
           transform: translateZ(0); }
