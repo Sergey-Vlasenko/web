@@ -87,22 +87,31 @@
   });
 
 //Left menu open + rotate arrow
-$(document).ready(function(){
+$(function(){
    $('.mobile-menu__toogle').click(function () {
    var phone = $('.phone').css('display') == 'block';
        if (phone) {
            $(".phone").slideToggle(300);
        }
        $('.mobilepanel_toggle').toggleClass('active');
-       $('.panel').toggleClass('open-sidebar');
+       $('.vertical-menu').toggleClass('open-sidebar');
    });
 });
 
 //Sub menu open + rotate arrow submenu
+//   $(function(){
+//       $(".rd-submenu-toggle").on("click", function(){
+//           $(this).parent().find(".uk-dropdown-navbar").toggleClass('active');
+//           $(this).parent().find("a").toggleClass('active');
+//           return false;
+//       });
+//   });
+
+//Sub menu open + rotate arrow submenu
    $(function(){
-       $(".rd-submenu-toggle").on("click", function(){
-           $(this).parent().find(".uk-dropdown-navbar").toggleClass('active');
-           $(this).parent().find("a").toggleClass('active');
+       $(".submenu-toggle").on("click", function(){
+           $(this).next(".vertical-submenu").slideToggle(300);
+           $(this).toggleClass('active');
            return false;
        });
    });
@@ -110,9 +119,9 @@ $(document).ready(function(){
 //Phone menu open
    $(function(){
        $(".mobile-menu__phone").on("click", function(){
-           var mobilepanel = $('.menu').hasClass('open-sidebar');
+           var mobilepanel = $('.vertical-menu').hasClass('open-sidebar');
            if (mobilepanel){
-               $('.panel').removeClass('open-sidebar');
+               $('.vertical-menu').removeClass('open-sidebar');
                $('.mobilepanel_toggle').removeClass('active');
            }
            $(".phone").slideToggle(300);
@@ -148,13 +157,16 @@ $(function(){
 });
 
 //Fix menu
-   $(function(){
-       $(window).scroll(function() {
-           var top = $(document).scrollTop();
-           if (top < 107) $(".mobile-wraper").css({top: '0', position: 'relative'});
-           else $(".mobile-wraper").css({top: '0px', position: 'fixed'});
-       });
-   });
+	$(function(){
+		$(".mobile-navigation").stick_in_parent();
+	});
+//   $(function(){
+//       $(window).scroll(function() {
+//           var top = $(document).scrollTop();
+//           if (top < 107) $(".mobile-wraper").css({top: '0', position: 'relative'});
+//           else $(".mobile-wraper").css({top: '0px', position: 'fixed'});
+//       });
+//   });
 
 //roll up
 $(function(){
