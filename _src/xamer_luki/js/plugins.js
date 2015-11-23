@@ -106,11 +106,11 @@ $(function(){
 //           return false;
 //       });
 //   });
-   
+
 //Sub menu open + rotate arrow submenu
    $(function(){
        $(".submenu-toggle").on("click", function(){
-           $(this).parent().find(".vertical-submenu").slideToggle(300);
+           $(this).next(".vertical-submenu").slideToggle(300);
            $(this).toggleClass('active');
            return false;
        });
