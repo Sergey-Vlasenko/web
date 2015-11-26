@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="Hotel">
+        <meta name="description" content="Landmark Hotel">
+        <title>Landmark Hotel</title>
+        <link href="" rel="shortcut icon" type="img/*.icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    </head>
+    <body onload="initialize()">
+	<div class="head">
+        <div class="logo logo_head">
+            <a class="logo__link" href="#">
+                <img class="logo__images" src="img/logo.jpg" alt="logo" height="130" width="160">
+            </a>
+        </div>
+		<div class="contact">
+			<div class="wraper wraper_contact justify">
+				<p class="contact__item adress">1010 Dawson Road Thunder Bay Ontario P7B 5J4 Canada</p>
+				<p class="contact__item contact-phone">1-807-767-1681</p>
+			</div>
+		</div>
+		<div class="navigation wraper">
+			<ul class="menu justify">
+                <ul class="menu__container menu__container_left">
+				            <li class="menu__item menu__item_active"><a href="#" class="menu__link">home page</a></li>
+				            <li class="menu__item"><a href="#" class="menu__link">hotel rooms</a></li>
+                </ul>
+                <ul class="menu__container menu__container_right">
+                    <li class="menu__item"><a href="#" class="menu__link">hotel features</a></li>
+				    <li class="menu__item"><a href="#" class="menu__link">location</a></li>
+                </ul>
+			</ul>
+		</div>
+        <div class="reservation justify wraper">
+            <a href="#" class="button button_reservation">reservation</a>
+            <form class="search-form" id="search-form" method="get" action="#">
+                <div class="search-form__wrapper">
+                    <input class="search-form__text" type="text" name="search-text">
+                    <input class="search-form__submit" type="submit" name="search-submit">
+                </div>
+            </form>
+        </div>
+        <div class="promo">
+            <img src="img/promo.jpg" alt="promo" class="promo__images">
+        </div>
+        <div class="slogan">
+            <h2 class="slogan__title"><span>Welcome to the</span> Landmark Hotel</h2>
+            <p class="slogan__description">guest services</p>
+        </div>
+	</div>
+	<div class="maintenance wraper wraper_maintenance">
+		<div class="service">
+			<img src="img/1.jpg" alt="service" class="service__images">
+			<p class="service__title">Restaurant</p>
+		</div>
+		<div class="service">
+			<img src="img/2.jpg" alt="service" class="service__images">
+			<p class="service__title">Free Internet Access</p>
+		</div>
+		<div class="service">
+			<img src="img/3.jpg" alt="service" class="service__images">
+			<p class="service__title">Coin-operated Laundry</p>
+		</div>
+		<div class="service">
+			<img src="img/4.jpg" alt="service" class="service__images">
+			<p class="service__title">Ample free parcing</p>
+		</div>
+		<div class="service">
+			<img src="img/5.jpg" alt="service" class="service__images">
+			<p class="service__title">L.C.B.O. Liquor Store Oulet</p>
+		</div>
+		<div class="service">
+			<img src="img/6.jpg" alt="service" class="service__images">
+			<p class="service__title">Sports Bar</p>
+		</div>
+		<div class="service">
+			<img src="img/7.jpg" alt="service" class="service__images">
+			<p class="service__title">Fax and photocopy service</p>
+		</div>
+		<div class="service">
+			<img src="img/8.jpg" alt="service" class="service__images">
+			<p class="service__title">24 hour Shuttle service</p>
+		</div>
+	</div>
+	<div class="landmark wraper">
+		<h3 class="landmark__title">Landmark Hotel</h3>
+		<div class="landmark__description">
+            <p>Welcome to the Landmark Hotel, conveniently located at the corner of Dawson Rd (Hwy 102) and the Trans-Canada highway (Hwy 11/17). We are a full service family hotel oriented to an extended stay in Thunder Bay, business layover, or a quick vacation stopover.</p>
+            <p>You and your family can enjoy hours of fun in our tropical pool area. The waterslide is a real hit with kids of all ages and lots of fun at pool side birthday parties.</p>
+            <p>Our friendly and knowledgeable staff would be pleased to guide you to points of interest in and around Thunder Bay. If your flying into Thunder Bay for medical services ask about our special rates and Shuttle services.</p>
+            <p>Should you have any questions about our hotel or its many features, please call our toll free number and one of our service representatives would be pleased to help you!</p>
+		</div>
+		<a href="#" class="button button_landmark">Our Contacts</a>
+	</div>
+	<div class="photo wraper">
+		<ul class="slider">
+			<li class="slider__item"><img src="img/photo_1.jpg" alt="slide" class="slider__images"></li>
+			<li class="slider__item"><img src="img/photo_2.jpg" alt="slide" class="slider__images"></li>
+			<li class="slider__item"><img src="img/photo_3.jpg" alt="slide" class="slider__images"></li>
+			<li class="slider__item"><img src="img/photo_4.jpg" alt="slide" class="slider__images"></li>
+		</ul>
+	</div>
+	<div class="review wraper">
+		<div class="review__container">
+		<h3 class="review__title">Customer reviews</h3>
+			<div class="recall">
+				<img src="img/recall__photo.png" alt="photo" class="recall__photo">
+				<div class="recall__content">
+					<h4 class="recall__author">Gabriel</h4>
+					<p class="recall__date">10.11.2015</p>
+					<div class="recall__text">
+						<p>Thank you so much for your hospitality, I liked everything, the administration of gratitude for their sensitivity to the visitors.</p>
+					</div>
+                    <div class="recall__rating"></div>
+				</div>
+			</div>
+            <div class="recall">
+                <img src="img/recall__photo.png" alt="photo" class="recall__photo">
+                <div class="recall__content">
+                    <h4 class="recall__author">Gabriel</h4>
+                    <p class="recall__date">10.11.2015</p>
+                    <div class="recall__text">
+                        <p>Thank you so much for your hospitality, I liked everything, the administration of gratitude for their sensitivity to the visitors.</p>
+                    </div>
+                    <div class="recall__rating"></div>
+                </div>
+            </div>
+            <div class="recall">
+                <img src="img/recall__photo.png" alt="photo" class="recall__photo">
+                <div class="recall__content">
+                    <h4 class="recall__author">Gabriel</h4>
+                    <p class="recall__date">10.11.2015</p>
+                    <div class="recall__text">
+                        <p>Thank you so much for your hospitality, I liked everything, the administration of gratitude for their sensitivity to the visitors.</p>
+                    </div>
+                    <div class="recall__rating"></div>
+                </div>
+            </div>
+		</div>
+		<div class="review__container review__container_right">
+			<h3 class="review__title">Contact Us</h3>
+			<form action="#" class="feedback">
+				<div class="feedback__item">
+					<label class="feedback__title">Name<span>*</span>:</label>
+					<input class="feedback__field" id="feedback__name"  type="text" size="60" maxlength="255">
+				</div>
+				<div class="feedback__item">
+					<label class="feedback__title">Email<span>*</span>:</label>
+					<input class="feedback__field" id="feedback__phone" type="text" value="" size="60" maxlength="255">
+				</div>
+				<div class="feedback__item">
+					<label class="feedback__title">Comments<span>*</span>:</label>
+					<textarea class="feedback__textarea" id="feedback__comments"></textarea>
+				</div>
+				<input type="submit" name="create-pay" value="Submit" class="button button_feedback">
+			</form>
+		</div>
+	</div>
+	<div class="maps" id="map-canvas"></div>
+	<div class="footer">
+		<div class="footer__container-top">
+            <div class="wraper wraper_footer-top">
+    			<div class="logo logo_footer">
+    				<a class="logo__link" href="#">
+    					<img class="logo__images" src="img/logo.jpg" alt="logo" height="130" width="160">
+    				</a>
+    			</div>
+                <ul class="menu-footer">
+    				<li class="menu-footer__item"><a href="#" class="menu-footer__link">Home page</a></li>
+    				<li class="menu-footer__item"><a href="#" class="menu-footer__link">Hotel rooms</a></li>
+    				<li class="menu-footer__item"><a href="#" class="menu-footer__link">Hotel features</a></li>
+    				<li class="menu-footer__item"><a href="#" class="menu-footer__link">Location</a></li>
+    			</ul>
+            </div>
+		</div>
+		<div class="footer__container-bottom">
+            <div class="wraper justify">
+    			<div class="copyright">
+    				<p class="copyright__content">© 2015 Landmark Hotel. All Rights Reserved.</p>
+    			</div>
+    			<p class="contact__item contact-phone contact-phone_footer">1-807-767-1681</p>
+            </div>
+        </div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+    <script src="js/jquery.bxslider-rahisified.min.js"></script>
+	<script src="js/plugins.js"></script>
+    <script src="js/map.js"></script>
+	</body>
+</html>
