@@ -19,6 +19,21 @@
   });
  });
 
+ // Show Popup
+ $('.button_reservation').click(function() {
+   $('.container-popup').css('display', 'block');
+
+   // Hide body scrollbars
+   $('body').css('overflow', 'hidden');
+ });
+
+ // Hide popup
+ $('.popup-close').click(function() {
+   $('.container-popup').css('display', 'none');
+   $('body').css('overflow', 'auto');
+ });
+
+
 //Сладер photo
  $(function(){
   $('.slider-photo__content').bxSlider({

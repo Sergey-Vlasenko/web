@@ -190,6 +190,105 @@
             </div>
         </div>
 	</div>
+    <div class="container-popup">
+    	<form action="#" class="popup wraper wraper_popup form-reservation">
+    		<div class="form-reservation__container form-reservation__container_top">
+    			<h3 class="form-reservation__title">Check Availability</h3>
+                <div class="form-reservation__content">
+        			<div class="item-form">
+        				<label for="family-name" class="item-form__title">Family name*</label>
+        				<input type="text" name="family-name" class="item-form__field" id="family-name">
+        			</div>
+        			<div class="item-form">
+        				<label for="first-name" class="item-form__title">First name</label>
+        				<input type="text" name="first-name" class="item-form__field" id="first-name">
+        			</div>
+        			<div class="item-form">
+        				<label for="address" class="item-form__title">Address</label>
+        				<input type="text" name="address" class="item-form__field" id="address">
+        			</div>
+        			<div class="item-form">
+        				<label for="city" class="item-form__title">City</label>
+        				<input type="text" name="city" class="item-form__field" id="city">
+        			</div>
+        			<div class="item-form">
+        				<label for="state" class="item-form__title">State/Prov</label>
+        				<input type="text" name="state" class="item-form__field" id="state">
+        			</div>
+        			<div class="item-form">
+        				<label for="country" class="item-form__title">Country</label>
+        				<input type="text" name="country" class="item-form__field" id="country">
+        			</div>
+        			<div class="item-form">
+        				<label for="email" class="item-form__title">E-mail address*</label>
+        				<input type="text" name="email" class="item-form__field" id="email">
+        			</div>
+        			<div class="item-form">
+        				<label for="phone" class="item-form__title">Phone*</label>
+        				<input type="text" name="phone" class="item-form__field" id="phone">
+        			</div>
+                </div>
+    		</div>
+    		<div class="form-reservation__container form-reservation__container_bottom">
+    			<h3 class="form-reservation__title">Reservation:</h3>
+                <div class="form-reservation__content form-reservation__content_bottom">
+        			<div class="item-form">
+        				<label for="check-in-date" class="item-form__title"><span>Check-in date :</span>( mmm-dd-yy )*</label>
+        				<input type="text" name="check-in-date" class="item-form__field" id="check-in-date">
+        			</div>
+        			<div class="item-form">
+        				<label for="hotel-rooms" class="item-form__title">Number of rooms:</label>
+        				<input type="text" name="hotel-rooms" class="item-form__field" id="hotel-rooms">
+        			</div>
+        			<div class="item-form">
+        				<label for="hotel_nights" class="item-form__title">Number of nights:</label>
+        				<input type="text" name="hotel_nights" class="item-form__field" id="hotel_nights">
+        			</div>
+        			<div class="item-form">
+        				<label for="type-of-room" class="item-form__title">Room type:</label>
+        				<select class="item-form__field select-arrow" name="type-of-room" size="1" id="type-of-room">
+        					<option>2 Double -109.00</option>
+        					<option>1 Queen - 109.00</option>
+        					<option>2 Queen - 109.00</option>
+        					<option>2 Double Poolside - 125.00</option>
+        				</select>
+        			</div>
+        			<div class="item-form item-form_select ">
+        				<p class="item-form__title">Guests:</p><!--
+        			 --><div class="field-select">
+        					<select class="item-form__field field-select__item select-arrow" name="adults" size="1" id="adults">
+        						<option>1</option>
+        						<option>2</option>
+        						<option>3</option>
+        						<option>4</option>
+        					</select>
+        					<p class="field-select__title">Adults:</p>
+        				</div><!--
+        				--><div class="field-select">
+        					<select class="item-form__field field-select__item select-arrow" name="children" size="1" id="children">
+        						<option>0</option>
+        						<option>1</option>
+        						<option>2</option>
+        						<option>3</option>
+        						<option>4</option>
+        					</select>
+        					<p class="field-select__title">Children:</p>
+        				</div><!--
+        			--></div>
+        			<div class="item-form item-form_submit">
+        				<input class="item-form__field item-form__field_button button" type="submit" name="Submit" value="Submit">
+        			</div>
+        			<div class="item-form item-form_reset">
+        				<input class="item-form__field item-form__field_button button" type="reset" name="Reset" value="Reset">
+        			</div>
+        			<div class="item-form">
+        				<p class="item-form__text">*designates required</p>
+        			</div>
+                </div>
+    		</div>
+            <button class="popup-close"></button>
+    	</form>
+    </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
     <script src="js/jquery.bxslider-rahisified.min.js"></script>

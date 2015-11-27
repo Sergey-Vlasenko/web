@@ -428,6 +428,112 @@ html {
   font-weight: 400;
   line-height: 40px; }
 
+/*popup*/
+.container-popup {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  z-index: 13;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.66); }
+
+.popup {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 185px;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  color: #FFF;
+  background: #ffaf00;
+  padding: 20px;
+  box-sizing: border-box; }
+  .popup-close {
+    position: absolute;
+    border: none;
+    background: transparent;
+    right: 25px;
+    top: 25px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/ico.png) no-repeat right -220px; }
+
+.form-reservation__container {
+  position: relative;
+  font-size: 0; }
+  .form-reservation__container_top {
+    border-bottom: 1px solid #fff;
+    padding: 0 0 25px 0; }
+  .form-reservation__container_bottom {
+    margin: 30px 0 0 0; }
+
+.form-reservation__title {
+  margin: 0 0 25px 0;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center; }
+
+.item-form {
+  display: inline-block;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 20px 0 0px;
+  font-size: 17px;
+  margin: 0 0 15px 0; }
+  .item-form:nth-child(4n) {
+    padding: 0; }
+  .item-form__title {
+    display: block;
+    font-weight: 400;
+    padding: 0 0 10px 0;
+    color: #fff;
+    text-align: left; }
+  .item-form__field {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 0 10px;
+    color: #3e3e3e;
+    height: 45px;
+    border: none; }
+    .item-form__field_button {
+      border: 1px solid #fff;
+      min-width: 0;
+      padding: 0; }
+  .item-form__text {
+    text-transform: uppercase; }
+
+.field-select {
+  width: 50%;
+  display: inline-block;
+  font-size: 0; }
+  .field-select__title {
+    font-size: 17px;
+    display: inline-block;
+    width: 50%; }
+  .field-select__item {
+    font-size: 17px;
+    width: 40%;
+    min-width: 35px;
+    margin: 0 5px 0 0;
+    padding: 0 0 0 4px; }
+
+.select-arrow {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -ms-appearance: none;
+  background: url(../img/ico.png) no-repeat right -184px, #fff; }
+  .select-arrow::-ms-expand {
+    display: none; }
+
+/*media*/
 @media screen and (max-width: 1217px) {
   .wraper {
     width: auto;
@@ -437,7 +543,12 @@ html {
     .wraper.landmark {
       padding: 0 0 0 320px; }
     .wraper_maintenance {
-      padding: 0 5px; } }
+      padding: 0 5px; }
+    .wraper_popup {
+      width: 100%;
+      padding: 10px; }
+  .item-form__title span {
+    display: block; } }
 
 @media screen and (max-width: 1050px) {
   .service__title {
@@ -497,7 +608,13 @@ html {
   .menu-footer__item {
     padding: 0 25px 0 20px; }
   .feedback {
-    margin: 0; } }
+    margin: 0; }
+  .field-select__title {
+    font-size: 15px; }
+  .item-form__text {
+    font-size: 15px; }
+  .popup {
+    top: 230px; } }
 
 @media screen and (max-width: 768px) {
   .head {
@@ -520,7 +637,31 @@ html {
       height: auto;
       padding: 8px 0 8px 8px; }
     .service__images {
-      width: 100%; } }
+      width: 100%; }
+  .item-form {
+    width: 50%; }
+    .item-form__field {
+      height: 35px; }
+      .item-form__field_button {
+        line-height: 35px; }
+    .item-form:nth-child(2n) {
+      padding: 0; }
+    .item-form_submit.item-form {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 0 20px 0 0; }
+    .item-form_reset {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 0; }
+  .form-reservation__container_bottom {
+    padding: 0 0 60px 0; }
+  .select-arrow {
+    background-position: right -188px; }
+  .popup {
+    top: 0; } }
 
 @media screen and (max-width: 640px) {
   .slogan__title {
@@ -584,7 +725,23 @@ html {
     display: block;
     line-height: 30px; }
   .contact-phone_footer {
-    line-height: 30px; } }
+    line-height: 30px; }
+  .item-form {
+    width: 100%;
+    padding: 0;
+    font-size: 15px;
+    margin: 0 0 10px 0; }
+    .item-form_submit.item-form {
+      position: static;
+      padding: 0; }
+    .item-form_reset {
+      position: static; }
+    .item-form__title span {
+      display: inline; }
+  .form-reservation__container_bottom {
+    padding: 0; }
+  .form-reservation__title {
+    margin: 0 0 15px 0; } }
 
 @media screen and (max-width: 420px) {
   .service__title {
