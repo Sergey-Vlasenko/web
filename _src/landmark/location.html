@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-	<div class="head">
+	<div class="head head_content">
         <div class="logo logo_head">
             <a class="logo__link" href="#">
                 <img class="logo__images" src="img/logo.jpg" alt="logo" height="130" width="160">
@@ -29,8 +29,8 @@
 		<div class="navigation wraper">
 			<ul class="menu justify">
                 <ul class="menu__container menu__container_left">
-				    <li class="menu__item menu__item_active"><a href="#" class="menu__link">home page</a></li>
-				    <li class="menu__item"><a href="#" class="menu__link">hotel rooms</a></li>
+			        <li class="menu__item menu__item_active"><a href="#" class="menu__link">home page</a></li>
+			        <li class="menu__item"><a href="#" class="menu__link">hotel rooms</a></li>
                 </ul>
                 <ul class="menu__container menu__container_right">
                     <li class="menu__item"><a href="#" class="menu__link">hotel features</a></li>
@@ -39,7 +39,7 @@
 			</ul>
 		</div>
         <div class="reservation justify wraper">
-            <span class="button button_reservation">reservation</span>
+            <a href="#" class="button button_reservation">reservation</a>
             <form class="search-form" id="search-form" method="get" action="#">
                 <div class="search-form__wrapper">
                     <input class="search-form__text" type="text" name="search-text">
@@ -55,98 +55,21 @@
             <p class="slogan__description">guest services</p>
         </div>
 	</div>
-	<div class="maintenance wraper wraper_maintenance">
-		<div class="service">
-			<img src="img/1.jpg" alt="service" class="service__images">
-			<p class="service__title">Restaurant</p>
-		</div>
-		<div class="service">
-			<img src="img/2.jpg" alt="service" class="service__images">
-			<p class="service__title">Free Internet Access</p>
-		</div>
-		<div class="service">
-			<img src="img/3.jpg" alt="service" class="service__images">
-			<p class="service__title">Coin-operated Laundry</p>
-		</div>
-		<div class="service">
-			<img src="img/4.jpg" alt="service" class="service__images">
-			<p class="service__title">Ample free parcing</p>
-		</div>
-		<div class="service">
-			<img src="img/5.jpg" alt="service" class="service__images">
-			<p class="service__title">L.C.B.O. Liquor Store Oulet</p>
-		</div>
-		<div class="service">
-			<img src="img/6.jpg" alt="service" class="service__images">
-			<p class="service__title">Sports Bar</p>
-		</div>
-		<div class="service">
-			<img src="img/7.jpg" alt="service" class="service__images">
-			<p class="service__title">Fax and photocopy service</p>
-		</div>
-		<div class="service">
-			<img src="img/8.jpg" alt="service" class="service__images">
-			<p class="service__title">24 hour Shuttle service</p>
-		</div>
-	</div>
-	<div class="landmark wraper">
-		<h3 class="header header_landmark">Landmark Hotel</h3>
-		<div class="content-text">
-            <p>Welcome to the Landmark Hotel, conveniently located at the corner of Dawson Rd (Hwy 102) and the Trans-Canada highway (Hwy 11/17). We are a full service family hotel oriented to an extended stay in Thunder Bay, business layover, or a quick vacation stopover.</p>
-            <p>You and your family can enjoy hours of fun in our tropical pool area. The waterslide is a real hit with kids of all ages and lots of fun at pool side birthday parties.</p>
-            <p>Our friendly and knowledgeable staff would be pleased to guide you to points of interest in and around Thunder Bay. If your flying into Thunder Bay for medical services ask about our special rates and Shuttle services.</p>
-            <p>Should you have any questions about our hotel or its many features, please call our toll free number and one of our service representatives would be pleased to help you!</p>
-		</div>
-		<a href="#" class="button button_landmark">Our Contacts</a>
-	</div>
-	<div class="photo wraper">
-		<ul class="slider">
-			<li class="slider__item"><img src="img/photo_1.jpg" alt="slide" class="slider__images"></li>
-			<li class="slider__item"><img src="img/photo_2.jpg" alt="slide" class="slider__images"></li>
-			<li class="slider__item"><img src="img/photo_3.jpg" alt="slide" class="slider__images"></li>
-			<li class="slider__item"><img src="img/photo_4.jpg" alt="slide" class="slider__images"></li>
-		</ul>
-	</div>
-	<div class="review wraper">
-		<div class="review__container">
-		<h3 class="header header_review">Customer reviews</h3>
-			<div class="recall">
-				<img src="img/recall__photo.png" alt="photo" class="recall__photo">
-				<div class="recall__content">
-					<h4 class="recall__author">Gabriel</h4>
-					<p class="recall__date">10.11.2015</p>
-					<div class="recall__text">
-						<p>Thank you so much for your hospitality, I liked everything, the administration of gratitude for their sensitivity to the visitors.</p>
-					</div>
-                    <div class="recall__rating"></div>
-				</div>
-			</div>
-            <div class="recall">
-                <img src="img/recall__photo.png" alt="photo" class="recall__photo">
-                <div class="recall__content">
-                    <h4 class="recall__author">Gabriel</h4>
-                    <p class="recall__date">10.11.2015</p>
-                    <div class="recall__text">
-                        <p>Thank you so much for your hospitality, I liked everything, the administration of gratitude for their sensitivity to the visitors.</p>
-                    </div>
-                    <div class="recall__rating"></div>
+    <div class="content wraper">
+    	<div class="content__right-column">
+    		<h3 class="header header_content">Location</h3>
+    		<div class="content-text">
+                <div class="contact contact_content">
+                    <p class="adress adress_content">1010 Dawson Road Thunder Bay Ontario P7B 5J4 Canada</p>
+                    <p class="contact-phone contact-phone_content">1-807-767-1681</p>
                 </div>
-            </div>
-            <div class="recall">
-                <img src="img/recall__photo.png" alt="photo" class="recall__photo">
-                <div class="recall__content">
-                    <h4 class="recall__author">Gabriel</h4>
-                    <p class="recall__date">10.11.2015</p>
-                    <div class="recall__text">
-                        <p>Thank you so much for your hospitality, I liked everything, the administration of gratitude for their sensitivity to the visitors.</p>
-                    </div>
-                    <div class="recall__rating"></div>
-                </div>
-            </div>
-		</div>
-		<div class="review__container review__container_right">
-			<h3 class="header header_review">Contact Us</h3>
-			<form action="#" class="feedback">
+    			<p>The Landmark Hotel is situated at the corners of Highways 11/17 and 102 and is part of County Fair Plaza, a 40 store shopping facility. There is lots of Free Parking! You will enjoy easy access to the Highway and Thunder Bay's north (Port Arthur). One of the largest L.C.B.O outlets is located on the main floor of the building.</p>
+                <p>We offer free shuttle service for the Thunder Bay Airport and various medical services. For a more detailed Thunder Bay Map click below.</p>
+    		</div>
+    	</div>
+        <div class="content__left-column">
+            <h3 class="header header_content header_contact">Contact Us</h3>
+			<form action="#" class="feedback feedback_content">
 				<div class="feedback__item">
 					<label class="feedback__title">Name<span>*</span>:</label>
 					<input class="feedback__field" id="feedback__name"  type="text" size="60" maxlength="255">
@@ -159,11 +82,11 @@
 					<label class="feedback__title">Comments<span>*</span>:</label>
 					<textarea class="feedback__textarea" id="feedback__comments"></textarea>
 				</div>
-				<input type="submit" name="create-pay" value="Submit" class="button button_feedback">
+				<input type="submit" name="create-pay" value="Submit" class="button button_feedback button_content">
 			</form>
-		</div>
-	</div>
-	<div onload="initialize()" class="maps" id="map-canvas"></div>
+        </div>
+    </div>
+    <div onload="initialize()" class="maps" id="map-canvas"></div>
 	<div class="footer">
 		<div class="footer__container-top">
             <div class="wraper wraper_footer-top">
@@ -285,7 +208,7 @@
         			</div>
                 </div>
     		</div>
-            <span class="popup-close"></span>
+            <button class="popup-close"></button>
     	</form>
     </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

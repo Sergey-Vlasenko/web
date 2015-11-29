@@ -90,10 +90,39 @@ html{
 	text-transform: uppercase;
 	line-height: 45px;
 	text-align: center;
+	cursor: pointer;
+	&_content{
+		width: 100%;
+	}
+}
+.header{
+	color: #595959;
+	font-size: 45px;
+	font-weight: 700;
+	margin: 0 0 40px 0;
+	&_content{
+		line-height: 1.1;
+		margin: 0 0 45px 0;
+	}
+	&_contact{
+		font-size: 18px;
+		margin: 25px 0 20px 0;
+	}
 }
 /*head*/
 .head{
 	position: relative;
+	overflow: hidden;
+	&.head_content {
+	    height: 300px;
+		margin: 0 0 50px 0;
+		.slogan{
+			display: none;
+		}
+	}
+	.custom{
+		height: 100%;
+	}
 }
 .navigation{
 	position:relative;
@@ -101,7 +130,7 @@ html{
 	height: 73px;
 }
 .contact{
-	height:34px;
+	//height:34px;
 	background:#ffaf00;
 	margin: 0 0 14px 0;
 	&__item{
@@ -110,12 +139,16 @@ html{
 		font-family: "Myriad Pro";
 		font-size: 15px;
 		font-weight: 400;
-		line-height:34px;
-		padding: 0 0 0 25px;
+		line-height:35px;
+		//padding: 0 0 0 25px;
 		margin: 0 0 0 10px;
+	}
+	&_content{
+		background: transparent;
 	}
 }
 .adress, .contact-phone{
+	padding: 0 0 0 25px;
 	position: relative;
 	&:after{
 		content:'';
@@ -132,6 +165,12 @@ html{
 	&:after{
 		background-position: 0 -65px;
 	}
+	&_content{
+		&:after{
+			height: 25px;
+			background-position: 0 -86px;
+		}
+	}
 }
 .contact-phone {
 	font-size: 19px;
@@ -142,6 +181,12 @@ html{
 		line-height: 40px;
 		&:after{
 			background-position: 0 -24px;
+		}
+	}
+	&_content{
+		&:after{
+			height: 25px;
+			background-position: 0 -116px;
 		}
 	}
 }
@@ -334,22 +379,16 @@ html{
 	margin: 35px auto 0;
 	box-sizing: border-box;
 	background: url(../img/bell.png) no-repeat -17px 84px;
-	&__title{
-		color: #595959;
-		font-size: 45px;
-		font-weight: 700;
-		margin: 0 0 38px 0;
-	}
-	&__description{
-    	margin: 0 0 40px 0;
-		text-align: left;
-		p{
-			color: #737373;
-			font-size: 17px;
-			font-weight: 400;
-			line-height: 25px;
-			margin: 0 0 25px 0;
-		}
+}
+.content-text{
+	margin: 0 0 40px 0;
+	text-align: left;
+	p{
+		color: #737373;
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 25px;
+		margin: 0 0 25px 0;
 	}
 }
 /**/
@@ -369,6 +408,7 @@ html{
 /*review*/
 .review{
 	font-size:0;
+	margin-bottom: 100px;
 	&__container{
 		display:inline-block;
 		vertical-align: top;
@@ -378,12 +418,6 @@ html{
 		&_right{
 			padding: 0 0 0 10px;
 		}
-	}
-	&__title{
-		color: #595959;
-		font-size: 45px;
-		font-weight: 700;
-		padding: 0 0 40px 0;
 	}
 }
 .recall{
@@ -469,13 +503,15 @@ html{
 		margin: 10px 0 18px 0;
 		box-sizing: border-box;
 	}
+	&_content{
+		margin: 0;
+	}
 }
 /**/
 /*maps*/
-#map-canvas{
+.maps{
 	height: 630px;
 	width: 100%;
-	margin: 100px 0 0 0;
 }
 /**/
 /*footer*/
@@ -555,6 +591,7 @@ html{
 		top:25px;
 		width: 20px;
 		height: 20px;
+		cursor: pointer;
 		background: url(../img/ico.png) no-repeat right -220px;
 	}
 }
@@ -639,6 +676,31 @@ html{
 		display: none;
 	}
 }
+/*popup end*/
+/*content page*/
+.content{
+	font-size: 0;
+	overflow: hidden;
+	margin: 0 auto 35px;
+	&__left-column{
+		width: 25%;
+		box-sizing: border-box;
+		transition: 0.5s ease;
+	}
+	&__right-column{
+		float: right;
+		width: 75%;
+		box-sizing: border-box;
+		transition: 0.5s ease;
+		padding: 0 0 0 15px;
+	}
+	&__images{
+		display: inline-block;
+		padding: 10px 0 0 0;
+		box-sizing: border-box;
+	}
+}
+/**/
 /*media*/
 @media screen and (max-width: 1217px){
 	.wraper{
@@ -661,6 +723,14 @@ html{
 	.item-form__title span{
 		display: block;
 	}
+	.content{
+		&__left-column{
+			width: 30%;
+		}
+		&__right-column{
+			width: 70%;
+		}
+	}
 }
 @media screen and (max-width: 1050px){
 	.service__title {
@@ -673,8 +743,8 @@ html{
 	}
 	.head{
 		height: 50%;
-		background: url(../img/promo.jpg) no-repeat 50% 0;
-		background-size: cover;
+		//background: url(../img/promo.jpg) no-repeat 50% 0;
+		//background-size: cover;
 	}
 	.logo_head{
 		left: 0;
@@ -692,12 +762,24 @@ html{
 		    padding: 10px 42px;
 		}
 	}
+	.header{
+		font-size: 35px;
+		text-align: center;
+	}
 	.reservation{
 		padding: 45px 15px 0 15px;
 	}
 	.promo {
+		height: 100%;
+		overflow: hidden;
 		&__images{
-			display: none;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%,0);
+			width: auto;
+			height: 100%;
+			max-width: none;
 		}
 	}
 	.slogan{
@@ -711,18 +793,18 @@ html{
 		&.wraper{
 			padding: 0 10px;
 		}
-		&__title{
-			font-size: 45px;
-		}
 	}
 	.service__title {
 		height: 48px;
 	}
-	.review__container{
-		width: 100%;
-		text-align: center;
-		&_right{
-			padding: 0;
+	.review {
+    	margin-bottom: 50px;
+		&__container{
+			width: 100%;
+			text-align: center;
+			&_right{
+				padding: 0;
+			}
 		}
 	}
 	.recall{
@@ -737,14 +819,9 @@ html{
 			padding: 0 0 0 95px;
 		}
 	}
-	#map-canvas {
-    	height: 440px;
-	}
-	.menu-footer__item {
-    	padding: 0 25px 0 20px;
-	}
 	.feedback {
 		margin: 0;
+		text-align: center;
 	}
 	.field-select__title{
 		font-size: 15px;
@@ -752,8 +829,30 @@ html{
 	.item-form__text {
     	font-size: 15px;
 	}
+	.maps {
+		height: 440px;
+	}
+	.menu-footer__item {
+		padding: 0 25px 0 20px;
+	}
 	.popup {
     	top: 230px;
+	}
+	.content{
+		&__left-column{
+			width: auto;
+		}
+		&__right-column{
+			width: auto;
+			padding: 0;
+		}
+		&__images{
+			width: 50%;
+			padding: 10px 10px 0 0;
+		}
+	}
+	.button_content{
+		width: auto;
 	}
 }
 @media screen and (max-width: 768px){
@@ -765,6 +864,9 @@ html{
 	}
 	.adress {
 		display: none;
+		&_content{
+			display: block;
+		}
 	}
 	.slogan{
 		padding: 0 0 10px 0;
@@ -825,6 +927,15 @@ html{
 	}
 }
 @media screen and (max-width: 640px){
+	.header{
+		margin: 0 0 25px 0;
+	}
+	.head.head_content {
+    	margin: 0 0 25px 0;
+	}
+	.content {
+    	margin: 0 auto 25px;
+	}
 	.slogan__title{
 		font-size: 35px;
 	}
@@ -839,20 +950,12 @@ html{
 	}
 	.landmark {
 		margin: 25px auto 0;
-		&__title {
-			font-size: 35px;
-			margin: 0 0 25px 0;
-		}
 	}
 	.photo {
     	margin: 45px auto 25px;
 	}
-	.review__title {
-		font-size: 35px;
-		padding: 0 0 25px 0;
-	}
-	#map-canvas {
-		margin: 25px 0 0 0;
+	.review  {
+		margin-bottom: 25px;
 	}
 }
 @media screen and (max-width: 480px){
@@ -894,7 +997,7 @@ html{
 			font-size: 14px;
 		}
 	}
-	.landmark__description p{
+	.content-text p{
 		font-size: 16px;
 		margin: 0 0 15px 0;
 	}
@@ -958,12 +1061,7 @@ html{
 	}
 }
 @media screen and (max-width: 370px){
-	.landmark {
-		&__title {
-			font-size: 30px;
-		}
-	}
-	.review__title {
+	.header{
 		font-size: 30px;
 	}
 }
