@@ -136,7 +136,7 @@ html {
   .contact-phone_footer {
     line-height: 40px; }
     .contact-phone_footer:after {
-      background-position: 0 -24px; }
+      background-position: 0 -22px; }
   .contact-phone_content:after {
     height: 25px;
     background-position: 0 -116px; }
@@ -612,6 +612,9 @@ html {
     height: 100%; }
   .head {
     height: 50%; }
+    .head_content .promo__images {
+      width: 100%;
+      height: auto; }
   .logo_head {
     left: 0;
     -webkit-transform: none;
@@ -694,6 +697,9 @@ html {
 
 @media screen and (max-width: 768px) {
   .head {
+    height: 100%; }
+  .head_content .promo__images {
+    width: auto;
     height: 100%; }
   .reservation {
     padding: 35px 10px 0 10px; }

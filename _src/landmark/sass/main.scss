@@ -748,6 +748,12 @@ html{
 		height: 50%;
 		//background: url(../img/promo.jpg) no-repeat 50% 0;
 		//background-size: cover;
+		&_content{
+			.promo__images{
+				width: 100%;
+				height: auto;
+			}
+		}
 	}
 	.logo_head{
 		left: 0;
@@ -861,6 +867,10 @@ html{
 @media screen and (max-width: 768px){
 	.head {
     	height: 100%;
+	}
+	.head_content .promo__images {
+	    width: auto;
+	    height: 100%;
 	}
 	.reservation {
     	padding: 35px 10px 0 10px;
