@@ -94,14 +94,15 @@ html {
 
 .contact {
   background: #ffaf00;
-  margin: 0 0 14px 0; }
+  margin: 0 0 14px 0;
+  position: relative;
+  z-index: 1; }
   .contact__item {
     display: inline-block;
     color: #fcfcfc;
-    font-family: "Myriad Pro";
     font-size: 15px;
     font-weight: 400;
-    line-height: 35px;
+    line-height: 34px;
     margin: 0 0 0 10px; }
   .contact_content {
     background: transparent; }
@@ -131,7 +132,7 @@ html {
 .contact-phone {
   font-size: 19px; }
   .contact-phone:after {
-    background-position: 0 -3px; }
+    background-position: 0 -1px; }
   .contact-phone_footer {
     line-height: 40px; }
     .contact-phone_footer:after {
@@ -168,7 +169,7 @@ html {
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  z-index: 1; }
+  z-index: 2; }
   .logo_footer {
     left: 0;
     -webkit-transform: none;
@@ -475,7 +476,8 @@ html {
   color: #FFF;
   background: #ffaf00;
   padding: 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  z-index: 3; }
   .popup-close {
     position: absolute;
     border: none;

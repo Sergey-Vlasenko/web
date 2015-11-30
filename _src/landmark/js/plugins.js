@@ -20,15 +20,18 @@
  });
 
  // Show Popup
- $('.button_reservation').click(function() {
-   $('.container-popup').css('display', 'block');
+jQuery(document).ready(function(jQuery) {
+ jQuery('.button_reservation').click(function() {
+   jQuery('.container-popup').css('display', 'block');
 
    // Hide body scrollbars
-   $('body').css('overflow', 'hidden');
+   jQuery('body').css('overflow', 'hidden');
  });
-
+});
  // Hide popup
- $('.popup-close').click(function() {
-   $('.container-popup').css('display', 'none');
-   $('body').css('overflow', 'auto');
+jQuery(document).ready(function(jQuery) {
+ jQuery('.popup-close').click(function() {
+   jQuery('.container-popup').css('display', 'none');
+   jQuery('body').css('overflow', 'auto');
  });
+});

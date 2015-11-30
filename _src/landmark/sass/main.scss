@@ -133,13 +133,15 @@ html{
 	//height:34px;
 	background:#ffaf00;
 	margin: 0 0 14px 0;
+	position: relative;
+    z-index: 1;
 	&__item{
 		display:inline-block;
 		color: #fcfcfc;
-		font-family: "Myriad Pro";
+		//font-family: "Myriad Pro";
 		font-size: 15px;
 		font-weight: 400;
-		line-height:35px;
+		line-height:34px;
 		//padding: 0 0 0 25px;
 		margin: 0 0 0 10px;
 	}
@@ -175,12 +177,12 @@ html{
 .contact-phone {
 	font-size: 19px;
 	&:after{
-		background-position: 0 -3px;
+		background-position: 0 -1px;
 	}
 	&_footer{
 		line-height: 40px;
 		&:after{
-			background-position: 0 -24px;
+			background-position: 0 -22px;
 		}
 	}
 	&_content{
@@ -229,7 +231,7 @@ html{
 	width:160px;
 	left:50%;
 	transform:translate(-50%, 0);
-	z-index: 1;
+	z-index: 2;
 	&_footer{
 		left:0;
 		transform: none;
@@ -583,6 +585,7 @@ html{
 	background: #ffaf00;
 	padding: 20px;
 	box-sizing: border-box;
+	z-index:3;
 	&-close{
 		position: absolute;
 		border: none;
