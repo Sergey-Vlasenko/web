@@ -1,22 +1,4 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
-
-/*.bx-wrapper .bx-prev {
-	left: 10px;
-	background: url(../img/controls.png) no-repeat 0 -32px;
-}
-
-.bx-wrapper .bx-next {
-	right: 10px;
-	background: url(../img/controls.png) no-repeat -43px -32px;
-}
-.bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
-}
-
-.bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
-}*/
-
 .bx-wrapper .bx-prev, .bx-wrapper .bx-next{
 	position: absolute;
 	box-sizing: border-box;
@@ -42,35 +24,11 @@
 .bx-wrapper .bx-prev {
 	left:-45px;
 }
-/*.bx-wrapper .bx-prev:before {
-    content: "";
-
-}
-.bx-wrapper .bx-next:before {
-	content: "";
-
-}*/
-
 .bx-wrapper ul li img {
 	max-width: 100%;
 	display: inline-block;
 	margin: 0 auto;
-
-	/*position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);*/
 }
-/*.bx-wrapper .bx-prev, .bx-wrapper .bx-next {
-	position: absolute;
-	top: 50%;
-	margin-top: -16px;
-	outline: 0;
-	width: 32px;
-	height: 32px;
-	text-indent: -9999px;
-	z-index: 9999;
-}*/
 .bx-wrapper {
 	position: relative;
 	margin: 0 auto -5px;

@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="keywords" content="Hotel">
         <meta name="description" content="Landmark Hotel">
+        <meta name="format-detection" content="telephone=no">
         <title>Landmark Hotel</title>
         <link href="" rel="shortcut icon" type="img/*.icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +17,7 @@
     <body>
 	<div class="head">
         <div class="logo logo_head">
-            <a class="logo__link" href="#">
+            <a class="logo__link" href="index.html">
                 <img class="logo__images" src="img/logo.jpg" alt="logo" height="130" width="160">
             </a>
         </div>
@@ -27,14 +28,14 @@
 			</div>
 		</div>
 		<div class="navigation wraper">
-			<div class="menu justify">
-                <ul class="menu__container menu__container_left">
-				    <li class="menu__item menu__item_active"><a href="#" class="menu__link">home page</a></li>
-				    <li class="menu__item"><a href="#" class="menu__link">hotel rooms</a></li>
+			<div class="menu-top justify">
+                <ul class="menu-top__container menu-top__container_left">
+				    <li class="menu-top__item menu-top__item_active"><a href="index.html" class="menu-top__link">home page</a></li>
+				    <li class="menu-top__item"><a href="hotel__rooms.html" class="menu-top__link">hotel rooms</a></li>
                 </ul>
-                <ul class="menu__container menu__container_right">
-                    <li class="menu__item"><a href="#" class="menu__link">hotel features</a></li>
-				    <li class="menu__item"><a href="#" class="menu__link">location</a></li>
+                <ul class="menu-top__container menu-top__container_right">
+                    <li class="menu-top__item"><a href="hotel__features.html" class="menu-top__link">hotel features</a></li>
+				    <li class="menu-top__item"><a href="location.html" class="menu-top__link">location</a></li>
                 </ul>
 			</div>
 		</div>
@@ -89,15 +90,22 @@
 			<p class="service__title">24 hour Shuttle service</p>
 		</div>
 	</div>
-	<div class="landmark wraper">
-		<h3 class="header header_landmark">Landmark Hotel</h3>
-		<div class="content-text">
-            <p>Welcome to the Landmark Hotel, conveniently located at the corner of Dawson Rd (Hwy 102) and the Trans-Canada highway (Hwy 11/17). We are a full service family hotel oriented to an extended stay in Thunder Bay, business layover, or a quick vacation stopover.</p>
-            <p>You and your family can enjoy hours of fun in our tropical pool area. The waterslide is a real hit with kids of all ages and lots of fun at pool side birthday parties.</p>
-            <p>Our friendly and knowledgeable staff would be pleased to guide you to points of interest in and around Thunder Bay. If your flying into Thunder Bay for medical services ask about our special rates and Shuttle services.</p>
-            <p>Should you have any questions about our hotel or its many features, please call our toll free number and one of our service representatives would be pleased to help you!</p>
+	<div class="content landmark wraper">
+		<div class="component-wraper">
+			<div class="content__right-column">
+				<h3 class="header header_landmark">Landmark Hotel</h3>
+				<div class="content-text">
+					<p>Welcome to the Landmark Hotel, conveniently located at the corner of Dawson Rd (Hwy 102) and the Trans-Canada highway (Hwy 11/17). We are a full service family hotel oriented to an extended stay in Thunder Bay, business layover, or a quick vacation stopover.</p>
+					<p>You and your family can enjoy hours of fun in our tropical pool area. The waterslide is a real hit with kids of all ages and lots of fun at pool side birthday parties.</p>
+					<p>Our friendly and knowledgeable staff would be pleased to guide you to points of interest in and around Thunder Bay. If your flying into Thunder Bay for medical services ask about our special rates and Shuttle services.</p>
+					<p>Should you have any questions about our hotel or its many features, please call our toll free number and one of our service representatives would be pleased to help you!</p>
+				</div>
+			</div>
+			<div class="content__left-column">
+				<img src="img/bell.png" alt="promo">
+			</div>
 		</div>
-		<a href="#" class="button button_landmark">Our Contacts</a>
+        <a href="location.html" class="button button_landmark">Our Contacts</a>
 	</div>
 	<div class="photo wraper">
 		<ul class="slider">
@@ -168,15 +176,15 @@
 		<div class="footer__container-top">
             <div class="wraper wraper_footer-top">
     			<div class="logo logo_footer">
-    				<a class="logo__link" href="#">
-    					<img class="logo__images" src="img/logo.jpg" alt="logo" height="130" width="160">
+    				<a class="logo__link" href="index.html">
+    					<img class="logo__images" src="img/logo_footer.png" alt="logo" height="130" width="160">
     				</a>
     			</div>
                 <ul class="menu-footer">
-    				<li class="menu-footer__item"><a href="#" class="menu-footer__link">Home page</a></li>
-    				<li class="menu-footer__item"><a href="#" class="menu-footer__link">Hotel rooms</a></li>
-    				<li class="menu-footer__item"><a href="#" class="menu-footer__link">Hotel features</a></li>
-    				<li class="menu-footer__item"><a href="#" class="menu-footer__link">Location</a></li>
+    				<li class="menu-footer__item"><a href="index.html" class="menu-footer__link">Home page</a></li>
+    				<li class="menu-footer__item"><a href="hotel__rooms.html" class="menu-footer__link">Hotel rooms</a></li>
+    				<li class="menu-footer__item"><a href="hotel__features.html" class="menu-footer__link">Hotel features</a></li>
+    				<li class="menu-footer__item"><a href="location.html" class="menu-footer__link">Location</a></li>
     			</ul>
             </div>
 		</div>
@@ -288,10 +296,10 @@
             <span class="popup-close"></span>
     	</form>
     </div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+	<script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/jquery.bxslider-rahisified.min.js"></script>
 	<script src="js/plugins.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
     <script src="js/map.js"></script>
 	</body>
 </html>

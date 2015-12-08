@@ -16,7 +16,7 @@ img {
   border: 0;
   vertical-align: middle; }
 
-.slider__images, .recall__photo {
+.recall__photo {
   max-width: 100%;
   height: auto;
   box-sizing: border-box;
@@ -28,8 +28,10 @@ html {
 
 .justify {
   text-align: justify;
-  font-size: 0;
-  line-height: 0; }
+  font-size: 1px;
+  line-height: 0;
+  text-justify: newspaper;
+  zoom: 1; }
   .justify:after {
     width: 100%;
     height: 0;
@@ -62,6 +64,11 @@ html {
   cursor: pointer; }
   .button_content {
     width: 100%; }
+  .button_landmark {
+    margin: 0 0 0 24.41666%;
+    -webkit-transform: translate(25px, 0);
+        -ms-transform: translate(25px, 0);
+            transform: translate(25px, 0); }
 
 .header {
   color: #595959;
@@ -78,10 +85,13 @@ html {
 /*head*/
 .head {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 800px;
+  background: url(../img/promo.jpg) no-repeat 50% 35px; }
   .head.head_content {
-    height: 300px;
-    margin: 0 0 50px 0; }
+    height: 305px;
+    margin: 0 0 50px 0;
+    background: url(../img/promo_3.jpg) no-repeat 50% 34px; }
     .head.head_content .slogan {
       display: none; }
   .head .custom {
@@ -96,19 +106,29 @@ html {
   background: #ffaf00;
   margin: 0 0 14px 0;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  height: 35px; }
   .contact__item {
     display: inline-block;
     color: #fcfcfc;
     font-size: 15px;
     font-weight: 400;
-    line-height: 34px;
-    margin: 0 0 0 10px; }
+    line-height: 34px; }
   .contact_content {
     background: transparent; }
+  .contact.adress {
+    font-size: 14px;
+    word-spacing: 1px;
+    padding: 0 20px 0 20px; }
+
+.contact__item p, .contact__item.contact-phone p, .contact__item.contact-phone a, .contact__item a {
+  color: #fcfcfc; }
+
+.contact-phone_location a, .contact-phone_location p {
+  color: #737373; }
 
 .adress, .contact-phone {
-  padding: 0 0 0 25px;
+  padding: 0 0 0 20px;
   position: relative; }
   .adress:after, .contact-phone:after {
     content: '';
@@ -123,16 +143,18 @@ html {
     background: url(../img/ico.png) no-repeat 0 0; }
 
 .adress:after {
-  background-position: 0 -65px; }
+  background-position: 0 -64px;
+  left: -4px; }
 
 .adress_content:after {
   height: 25px;
   background-position: 0 -86px; }
 
 .contact-phone {
-  font-size: 19px; }
+  font-size: 17px; }
   .contact-phone:after {
-    background-position: 0 -1px; }
+    background-position: 0 -2px;
+    left: -9px; }
   .contact-phone_footer {
     line-height: 40px; }
     .contact-phone_footer:after {
@@ -141,12 +163,16 @@ html {
     height: 25px;
     background-position: 0 -116px; }
 
-.menu {
+.menu-top {
   box-sizing: border-box;
   margin: 0 0 30px 0; }
-  .menu__container {
+  .menu-top__container {
     display: inline-block; }
-  .menu__item {
+    .menu-top__container_left li:nth-child(2) {
+      margin: 0 0 0 48px; }
+    .menu-top__container_right li:nth-child(1) {
+      margin: 0 48px 0 0; }
+  .menu-top__item {
     display: inline-block;
     font-size: 18px;
     font-weight: 400;
@@ -154,9 +180,9 @@ html {
     text-transform: uppercase;
     box-sizing: border-box;
     border: 1px solid transparent; }
-    .menu__item_active {
+    .menu-top__item_active {
       border: 1px solid #fff; }
-  .menu__link {
+  .menu-top__link {
     display: block;
     padding: 12px 42px;
     color: #000; }
@@ -221,6 +247,7 @@ html {
 
 /*promo*/
 .promo {
+  display: none;
   position: relative;
   margin: -137px 0 0 0;
   text-align: center; }
@@ -240,7 +267,8 @@ html {
     color: #fff;
     font-size: 55px;
     font-weight: 700;
-    margin: 0 0 17px 0; }
+    margin: 0 0 17px 5px;
+    padding: 5px 0 0 0; }
     .slogan__title:after {
       content: '';
       position: absolute;
@@ -279,24 +307,26 @@ html {
 /*maintenance*/
 .maintenance {
   font-size: 0;
-  margin: -35px auto 0;
+  margin: -32px auto 40px;
   position: relative;
   z-index: 1; }
 
 .service {
   display: inline-block;
-  width: 25%;
-  padding: 5px;
+  margin: 0 9px 9px 0;
   font-size: 0px;
   box-sizing: border-box;
-  vertical-align: top; }
+  vertical-align: top;
+  width: 24.41666%; }
+  .service:nth-child(4n) {
+    margin: 0 0 9px 0; }
   .service__images {
     max-width: 100%;
     display: inline-block;
     margin: 0 auto; }
   .service__title {
     color: #3e3e3e;
-    padding: 8px 0 8px 14px;
+    padding: 5px 0 7px 14px;
     font-size: 18px;
     font-weight: 600;
     background: #ffc442; }
@@ -305,10 +335,11 @@ html {
 /*landmark*/
 .landmark {
   text-align: left;
-  padding: 0 0 0 320px;
-  margin: 35px auto 0;
-  box-sizing: border-box;
-  background: url(../img/bell.png) no-repeat -17px 84px; }
+  box-sizing: border-box; }
+  .landmark .content__left-column img {
+    margin: 35px 0 0 -9px;
+    width: 100%;
+    max-width: none; }
 
 .content-text {
   margin: 0 0 40px 0;
@@ -332,7 +363,7 @@ html {
 /*review*/
 .review {
   font-size: 0;
-  margin-bottom: 100px; }
+  margin-bottom: 95px; }
   .review__container {
     display: inline-block;
     vertical-align: top;
@@ -372,8 +403,8 @@ html {
     margin: 5px 0 0 0; }
   .recall__rating {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 2px;
+    right: 3px;
     width: 118px;
     height: 18px;
     background: url(../img/rating_button.png) no-repeat 0px 0px; }
@@ -414,7 +445,7 @@ html {
 /**/
 /*maps*/
 .maps {
-  height: 630px;
+  height: 635px;
   width: 100%; }
 
 /**/
@@ -433,13 +464,21 @@ html {
   display: table-cell;
   vertical-align: middle; }
   .menu-footer__item {
+    position: relative;
     display: inline-block;
-    border-left: 1px solid #fff;
-    padding: 0 25px 0 35px; }
+    padding: 0 31px 0 35px; }
+    .menu-footer__item:after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      right: 0;
+      background: #fff;
+      height: 18px;
+      width: 1px; }
     .menu-footer__item:last-child {
       padding: 0 0 0 35px; }
-    .menu-footer__item:first-child {
-      border: none; }
+    .menu-footer__item:last-child:after {
+      display: none; }
   .menu-footer__link {
     display: block;
     color: #fff;
@@ -451,7 +490,7 @@ html {
   color: #fff;
   font-size: 13px;
   font-weight: 400;
-  line-height: 40px; }
+  line-height: 1; }
 
 /*popup*/
 .container-popup {
@@ -469,7 +508,7 @@ html {
   display: block;
   position: absolute;
   left: 50%;
-  top: 185px;
+  top: 0;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -553,8 +592,7 @@ html {
 .select-arrow {
   position: relative;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
   -ms-appearance: none;
   background: url(../img/ico.png) no-repeat right -184px, #fff; }
   .select-arrow::-ms-expand {
@@ -567,19 +605,81 @@ html {
   overflow: hidden;
   margin: 0 auto 35px; }
   .content__left-column {
-    width: 25%;
-    box-sizing: border-box;
-    transition: 0.5s ease; }
+    width: 24.41666%;
+    text-align: left;
+    box-sizing: border-box; }
   .content__right-column {
     float: right;
     width: 75%;
     box-sizing: border-box;
-    transition: 0.5s ease;
-    padding: 0 0 0 15px; }
+    text-align: left;
+    padding: 0 0 0 20px; }
   .content__images {
     display: inline-block;
     padding: 10px 0 0 0;
     box-sizing: border-box; }
+
+.item-page {
+  font-size: initial; }
+
+.component-wraper {
+  overflow: hidden; }
+  .component-wraper:after {
+    content: '';
+    clear: both;
+    display: table; }
+
+.search {
+  font-size: initial; }
+
+.hotel-description {
+  margin: 0 0 95px 0; }
+
+.hotel-description > div {
+  margin: 0 0 55px 0; }
+
+.content-text .search {
+  position: relative;
+  left: -35%; }
+
+.contact-location .button_feedback {
+  width: 100%;
+  min-width: auto; }
+
+.contact-phone_location {
+  padding: 0 0 0 35px; }
+
+.contact-phone_location:after {
+  left: 0px;
+  top: 12px; }
+
+.adress_location {
+  padding: 0 0 0 35px; }
+
+.adress_location:after {
+  left: 0px;
+  top: 8px; }
+
+.header_location {
+  margin: 0 0 50px 0; }
+
+.contact_location {
+  margin: 0 0 98px 0; }
+
+.head.head_content:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.36); }
+
+.fix-mobile {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed; }
 
 /**/
 /*media*/
@@ -589,8 +689,6 @@ html {
     padding: 0 15px; }
     .wraper_footer-top {
       width: 100%; }
-    .wraper.landmark {
-      padding: 0 0 0 320px; }
     .wraper_maintenance {
       padding: 0 5px; }
     .wraper_popup {
@@ -601,17 +699,32 @@ html {
   .content__left-column {
     width: 30%; }
   .content__right-column {
-    width: 70%; } }
+    width: 70%; }
+  .contact__item.adress {
+    font-size: 14px;
+    margin: 0 10px 0 0; }
+  .content-text .search {
+    position: relative;
+    left: -45%; }
+  .service {
+    width: 24%; }
+  .menu-top__container_left:nth-child(2), .menu-top__container__right:nth-child(1) {
+    margin: 0; }
+  .button_landmark {
+    margin: 0 0 0 30%;
+    -webkit-transform: translate(20px, 0);
+        -ms-transform: translate(20px, 0);
+            transform: translate(20px, 0); } }
 
 @media screen and (max-width: 1050px) {
   .service__title {
     font-size: 16px; } }
 
 @media screen and (max-width: 992px) {
-  html, body {
+  html, body, .scroll-fix {
     height: 100%; }
   .head {
-    height: 50%; }
+    height: 500px; }
     .head_content .promo__images {
       width: 100%;
       height: auto; }
@@ -622,13 +735,13 @@ html {
             transform: none; }
   .wraper_contact {
     text-align: right; }
-  .menu {
+  .menu-top {
     text-align: right; }
-    .menu__container {
+    .menu-top__container {
       display: block; }
-    .menu__link {
+    .menu-top__link {
       padding: 10px 42px; }
-  .header {
+  .header, .content h3 {
     font-size: 35px;
     text-align: center; }
   .reservation {
@@ -653,8 +766,19 @@ html {
     text-align: center; }
     .landmark.wraper {
       padding: 0 10px; }
+    .landmark .content__left-column img {
+      margin: 0;
+      width: 50%;
+      max-width: 100%; }
+  .button_landmark {
+    margin: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
   .service__title {
     height: 48px; }
+  .content__right-column {
+    text-align: center; }
   .review {
     margin-bottom: 50px; }
     .review__container {
@@ -682,22 +806,33 @@ html {
     height: 440px; }
   .menu-footer__item {
     padding: 0 25px 0 20px; }
-  .popup {
-    top: 230px; }
-  .content__left-column {
-    width: auto; }
-  .content__right-column {
-    width: auto;
-    padding: 0; }
-  .content__images {
-    width: 50%;
-    padding: 10px 10px 0 0; }
+  .content {
+    text-align: center; }
+    .content__left-column {
+      text-align: center;
+      width: auto; }
+    .content__right-column {
+      float: none;
+      width: auto;
+      padding: 0; }
+    .content__images {
+      width: 50%;
+      padding: 10px 10px 0 0; }
   .button_content {
+    width: auto; }
+  .hotel-description {
+    margin: 0; }
+  .content-text .search {
+    position: relative;
+    left: 0; }
+  .contact-location .button_feedback {
+    min-width: 293px;
     width: auto; } }
 
 @media screen and (max-width: 768px) {
   .head {
-    height: 100%; }
+    height: 100%;
+    background-size: cover; }
   .head_content .promo__images {
     width: auto;
     height: 100%; }
@@ -716,12 +851,16 @@ html {
   .footer__container-top {
     display: none; }
   .service {
-    width: 50%; }
+    width: 50%;
+    margin: 0;
+    padding: 5px; }
     .service__title {
       height: auto;
       padding: 8px 0 8px 8px; }
     .service__images {
       width: 100%; }
+    .service:nth-child(4n) {
+      margin: 0; }
   .item-form {
     width: 50%; }
     .item-form__field {
@@ -743,12 +882,10 @@ html {
   .form-reservation__container_bottom {
     padding: 0 0 60px 0; }
   .select-arrow {
-    background-position: right -188px; }
-  .popup {
-    top: 0; } }
+    background-position: right -188px; } }
 
 @media screen and (max-width: 640px) {
-  .header {
+  .header, .content h3 {
     margin: 0 0 25px 0; }
   .head.head_content {
     margin: 0 0 25px 0; }
@@ -758,28 +895,32 @@ html {
     font-size: 35px; }
   .reservation.wraper {
     text-align: center; }
-  .menu__link {
+  .menu-top__link {
     padding: 12px; }
   .search-form {
     display: none; }
-  .landmark {
-    margin: 25px auto 0; }
+  .maintenance {
+    margin: 0 auto 25px; }
   .photo {
     margin: 45px auto 25px; }
   .review {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+  .hotel-description > div {
+    margin: 0 0 25px 0; } }
 
 @media screen and (max-width: 480px) {
-  .menu__container {
+  .menu-top__container {
     text-align: justify;
-    font-size: 0;
-    line-height: 0; }
-    .menu__container:after {
+    font-size: 1px;
+    line-height: 0;
+    text-justify: newspaper;
+    zoom: 1; }
+    .menu-top__container:after {
+      content: '';
       width: 100%;
       height: 0;
       visibility: hidden;
       overflow: hidden;
-      content: '';
       display: inline-block; }
   .logo {
     height: 65px;
@@ -788,9 +929,9 @@ html {
     height: 65px; }
     .contact__item {
       line-height: 68px; }
-  .menu__container {
+  .menu-top__container {
     display: block; }
-  .menu__item {
+  .menu-top__item {
     font-size: 16px; }
   .service {
     padding: 3px; }
@@ -803,6 +944,8 @@ html {
     font-size: 16px; }
   .footer .wraper {
     text-align: center; }
+  .landmark .content__left-column img {
+    width: 100%; }
   .footer__container-bottom {
     height: auto; }
   .copyright {
@@ -825,7 +968,10 @@ html {
   .form-reservation__container_bottom {
     padding: 0; }
   .form-reservation__title {
-    margin: 0 0 15px 0; } }
+    margin: 0 0 15px 0; }
+  .content__left-column img {
+    width: 100%;
+    padding: 10px 0 0 0; } }
 
 @media screen and (max-width: 420px) {
   .service__title {
@@ -842,11 +988,16 @@ html {
     padding: 0; } }
 
 @media screen and (max-width: 370px) {
-  .header {
+  .header, .content h3 {
     font-size: 30px; } }
 
-@media screen and (max-width: 960px) and (orientation: landscape) {
+@media screen and (max-width: 310px) {
+  .reservation {
+    padding: 0 10px 0 10px;
+    margin: 95px 0 0 0; } }
+
+@media screen and (min-width: 1920px) {
   .head {
-    height: 500px; } }
+    background-size: cover; } }
 
 /*# sourceMappingURL=../../landmark/css/main.css.map */
