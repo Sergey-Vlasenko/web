@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A custom super responsive and bootstrap friendly version of bxSlider v4.1.2">
+    <meta name="author" content="rahisify.com">
+    <title>BxSlider Rahisified - A custom super responsive and bootstrap friendly version of bxSlider v4.1.2</title>
+    <link href="css/demo.css" rel="stylesheet">
+    <link href="../jquery.bxslider.css" rel="stylesheet">
+    <link href="css/highlight.css" rel="stylesheet">
+    <link href="font-awesome/font-awesome.css" rel="stylesheet">
+  </head>
+
+  <body>
+  
+    <!-- Header -->
+    <header>
+      <div class="wrapper clearfix">
+        <a href="http://arnique.net" id="logo">Arnique.net</a>
+        <nav id="main-nav">
+          <ul class="nav-links clearfix">
+          <li><a href="https://github.com/Rahisify/bxslider-4"><i class="fa fa-github"></i>github project</a></li>
+            <li><a href="http://arnique.net/demos/plugins/bxslider-rahisified/bxslider-rahisified.zip" class="btn"><i class="fa fa-download"></i>download</a></li>
+            <li>
+              <div class="paypal-btn">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="6TMZ5ACX6FA58">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /Header -->
+    
+    <!-- Page Wrapper -->
+    <div id="page-wrapper" class="wrapper">
+    
+      <!-- Intro block -->
+      <div class="intro-block">
+      
+          <h1 class="title">
+            BxSlider Rahisified! 
+            <span>A custom super responsive and bootstrap friendly version of bxSlider v4.1.2</span>
+          </h1>
+          
+          <!-- BxSlider -->
+          <ul class="bxslider" data-call="bxslider" data-options="{slideMargin:5, autoReload:true, pager:true, controls:true}" data-breaks="[{screen:0, slides:1, pager:false},{screen:460, slides:2},{screen:768, slides:3}]" >
+            <li><img src="images/pic1.jpg" /></li>
+            <li><img src="images/pic2.jpg" /></li>
+            <li><img src="images/pic3.jpg" /></li>
+            <li><img src="images/pic4.jpg" /></li>
+            <li><img src="images/pic5.jpg" /></li>
+            <li><img src="images/pic6.jpg" /></li>
+          </ul>
+          <!-- /BxSlider -->
+          
+      </div>
+      <!-- /Intro block -->
+      
+      <!-- Content block -->
+      <div class="content-block default-bg">
+      
+        <h3>Step 1. setup your slider</h3>
+        <p>First setup your carousel as you would setup any other bxSlider slider.</p>
+<pre>
+ <code>
+    &lt;ul id="myslider" class="bxslider"&gt;
+      &lt;li&gt; &lt;img src="pic1.jpg" /&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;img src="pic2.jpg" /&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;img src="pic3.jpg" /&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;img src="pic4.jpg" /&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;img src="pic5.jpg" /&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;img src="pic6.jpg" /&gt; &lt;/li&gt;
+    &lt;/ul&gt;
+ </code>
+</pre>
+        <h3>Step 2: Call the slider</h3>
+
+        <p>Simply create a data attribute named <strong>data-call</strong> and set it's value to <strong>'bxslider'</strong> and the slider will set itself up!</p>
+<pre>
+ <code>
+    &lt;ul class="bxslider" data-call="bxslider" &gt;
+ </code>
+</pre>
+        <h3>Step 3: set default options</h3>
+        <p>You can use a handy data attribute I created called <strong>data-options</strong> to pass any configuration options. All of BxSlider's options are supported together with 3 new additional options.</p>
+        <ul>
+          <li><strong>screen: </strong> defines a minimum screen size to target</li>
+          <li><strong>slides: </strong> a quick way of setting both min and max slides with one value</li>
+          <li><strong>autoReload: </strong> forces the slider to be reloaded when the screen size changes</li>
+        </ul>
+<pre>
+ <code>
+    &lt;ul id="myslider" class="bxslider" data-call="bxslider" data-options="slideMargin:5, autoReload:true" &gt;
+ </code>
+</pre>
+        <h3>Step 4: Define break points</h3>
+        <p>Each break point is defined as a set configuration objects enclosed in curly brackets. All of BxSlider's options are supported.</p>
+<pre>
+ <code>
+    [{screen:460, slides:2, pager:false, controls:true}]
+ </code>
+</pre>    
+        <p>The above will be interpreted as follows:</p>
+        <ul>
+          <li>Target a minimum screen size of <strong>460px</strong></li>
+          <li>Only show <strong>2</strong> slides at that screen size</li>
+          <li>Set the <strong>pager</strong> option to false at that screen size</li>
+          <li>Set the <strong>controls</strong> option to true at that screen size</li>
+        </ul>
+  
+        <p>Multiple break points are separated by commas and set inside a data attribute named data-breaks. To target the <strong>least possible screen size</strong> use <strong>screen:0</strong></p>
+<pre>
+ <code>
+    data-breaks="[{screen:0, slides:1, pager:false},{screen:460, slides:2},{screen:768, slides:3}]"
+ </code>
+</pre>  
+        <h3>Step 5: Put everything together</h3>
+        <p>This is how your slider should look once you put everything together.</p>
+<pre>
+ <code>
+    &lt;ul id="myslider" class="bxslider" data-call="bxslider" data-call="bxslider" data-options="slideMargin:5, autoReload:true" data-breaks="[{screen:0, slides:1, pager:false},{screen:460, slides:2},{screen:768, slides:3}]"&gt;
+      &lt;li&gt; &lt;img src="pic1.jpg" /&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;img src="pic2.jpg" /&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;img src="pic3.jpg" /&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;img src="pic4.jpg" /&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;img src="pic5.jpg" /&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;img src="pic6.jpg" /&gt; &lt;/li&gt;
+    &lt;/ul&gt;
+ </code>
+</pre>
+<h3>Calling the slider via javascript is still supported</h3>
+        <p>You can still call bxSlider the usual way if you do not like data attributes.</p>
+<pre>
+ <code>
+    $(document).ready( function() {
+    
+        $('#myslider').bxSlider({
+          slideMargin: 5,
+          autoReload: true,
+          breaks: [{screen:0, slides:1, pager:false},{screen:460, slides:2},{screen:768, slides:3}]
+        });
+      
+    });
+ </code>
+</pre>  
+        <h3>Thats it!</h3>
+        <p>See how easy this is? Now resize the browser window and see the slider obey each and every one of your commands.</p>
+      </div>
+      <!-- /Content Block -->
+      
+      <!-- Footer -->
+      <footer class="clearfix">
+        <div id="copy-text">
+          Copyright &copy; 2014 - <a href="http://arnique.net">Arnique.net</a>
+        </div>
+      </footer>
+      <!-- /Footer -->
+    </div>  
+    <!-- /Page Wrapper --> 
+
+  
+  <!-- JavaScript
+  ================================================== -->
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/highlight.pack.js"></script>
+  <script src="../jquery.bxslider-rahisified.js"></script>
+  <script>
+    $(document).ready(function(){
+    
+      // code highlighter
+      hljs.initHighlightingOnLoad();
+      
+    });
+  </script>
+  </body>
+</html>

@@ -1,81 +1,100 @@
 .bx-wrapper {
-	position: relative;
-	margin: 0 auto;
-	padding: 3px 0;
+  position: relative;
+  margin: 0 auto;
+  padding: 3px 0;
 }
+
 .bx-wrapper img {
-	max-width: 100%;
-	display: block;
-	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.7);
+  max-width: 100%;
+  display: block;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.7);
 }
+
 .bx-wrapper .bx-viewport {
-	padding: 2px;
+  padding: 2px;
 }
-.bx-prev, .bx-next  {
-    border: 5px solid white;
-    border-radius: 20px;
-    display: inline-block;
-    height: 20px;
-    position: relative;
-    top: -80px;
-    width: 20px;
-}
+
+.bx-prev,
 .bx-next {
-	right: -870px;/*!!!!!!!!!!!*/
-	background: url(../img/ico.png) -52px -113px no-repeat, #fff;
+  border: 5px solid white;
+  border-radius: 20px;
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  top: -80px;
+  width: 20px;
 }
+
+.bx-next {
+  right: -870px;
+  /*!!!!!!!!!!!*/
+  background: url(../img/ico.png) -52px -113px no-repeat, #fff;
+}
+
 .bx-prev {
-	left: -36px;
-	background: url(../img/ico.png) -37px -113px no-repeat, #fff;
+  left: -36px;
+  background: url(../img/ico.png) -37px -113px no-repeat, #fff;
 }
-.bx-next:before, .bx-prev:before{
-	content: "";
-    display: block;
-    height: 40px;
-    position: absolute;
-    top: -10px;
-    width: 5px;
-    z-index: -2;
+
+.bx-next:before,
+.bx-prev:before {
+  content: "";
+  display: block;
+  height: 40px;
+  position: absolute;
+  top: -10px;
+  width: 5px;
+  z-index: -2;
 }
+
 .bx-next:before {
-	left: 7px;
-	background: url(../img/bg.png) repeat 0 8px;
+  left: 7px;
+  background: url(../img/bg.png) repeat 0 8px;
 }
-.bx-prev:before{
-	left: 7px;
-	background: url("../img/bg.png") repeat 0 6px;
+
+.bx-prev:before {
+  left: 7px;
+  background: url("../img/bg.png") repeat 0 6px;
 }
-.bx-prev:after , .bx-next:after{
-	content: "";
-	display: block;
-	position: relative;
-	width: 23px;
-	height: 40px;
-	background: rgba(0, 0, 0, 0.15);
-	z-index: -2;
+
+.bx-prev:after,
+.bx-next:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 23px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: -2;
 }
+
 .bx-prev:after {
-	left: -10px;
-    top: -10px;
-    width: 21px;
-	box-shadow: 0px -2px 1px -1px rgba(255,255,255,0.07), -2px 0px 1px -1px rgba(255,255,255,0.07), 0px 2px 1px -1px rgba(255,255,255,0.07);
-	border-radius: 20px 0 0 20px;
+  left: -10px;
+  top: -10px;
+  width: 21px;
+  box-shadow: 0px -2px 1px -1px rgba(255,255,255,0.07), -2px 0px 1px -1px rgba(255,255,255,0.07), 0px 2px 1px -1px rgba(255,255,255,0.07);
+  border-radius: 20px 0 0 20px;
 }
-.bx-next:after{
-	left: 7px;
-    top: -10px;
-	box-shadow: 0px -2px 1px -1px rgba(255,255,255,0.07), 2px 0px 1px -1px rgba(255,255,255,0.07), 0px 2px 1px -1px rgba(255,255,255,0.07);
-	border-radius: 0px 20px 20px 0px;
+
+.bx-next:after {
+  left: 7px;
+  top: -10px;
+  box-shadow: 0px -2px 1px -1px rgba(255,255,255,0.07), 2px 0px 1px -1px rgba(255,255,255,0.07), 0px 2px 1px -1px rgba(255,255,255,0.07);
+  border-radius: 0px 20px 20px 0px;
 }
+
 .bx-controls-direction {
-	height:0;
+  height: 0;
 }
+
 /*.bx-wrapper .bx-prev:hover {
 	background-position: 0 0;
 }
 .bx-wrapper .bx-next:hover {
 	background-position: -43px 0;
 }*/
-.bx-pager  {
-	display:none;
+
+.bx-pager {
+  display: none;
 }
+
