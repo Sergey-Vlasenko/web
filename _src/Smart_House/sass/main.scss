@@ -233,9 +233,9 @@ html{
 		@extend %c-v;
 		right: 0;
 		z-index: 1;
-		height:100%;
+		//height:100%;
 		width: 50%;
-		padding: 50px 0;
+		//padding: 50px 0;
 		box-sizing: border-box;
 	}
 	&__images{
@@ -244,11 +244,12 @@ html{
 }
 .sub-title{
 	font-size:40px;
+	padding: 0 0 15px 0;
 	span{
 		display:block;
 	}
 }
-.header_slogan{
+.header.header_slogan{
 	font-size:50px;
 	margin: 0 0 25px 0;
 }
@@ -299,6 +300,7 @@ html{
 	width:25%;
 	box-sizing:border-box;
     padding: 0 10px;
+	vertical-align: top;
 	&__images{
 
 	}
@@ -398,14 +400,22 @@ html{
 	    padding: 0px 25px 0 10px;
 	    height: 40px;
 	    font-size: 20px;
-	    border: 1px solid #555;
+		border: 2px solid #333;
+		border-radius: 5px;
+		box-shadow: 0px 0px 0px 1px #333;
 	}
-	&_fireplace{
+	&__fireplace{
+	    display: inline-block;
 		position: relative;
 		vertical-align: top;
 		text-align: left;
+		line-height:1.3;
 		width:40%;
 		margin: 0;
+	}
+	&.justify{
+		margin: 0;
+		text-align: justify;
 	}
 }
 .checkbox{
@@ -429,9 +439,11 @@ html{
 	text-align: right;
     display: inline-block;
     vertical-align: top;
+	line-height:1.3;
 	&__item{
 		max-width: 1019px;
 		font-weight: 600;
+		font-size:20px;
 	}
 	&__value{
 		font-size: 25px;
@@ -439,14 +451,12 @@ html{
 	}
 }
 .fireplace{
-	display: block;
+	display: inline-block;
     width: 40px;
     height: 40px;
-    position: absolute;
-    top: 0;
-	right: 25px;
     background: url(../img/checked_checkbox.png) no-repeat 0 -43px;
     background-size: cover;
+	margin: 0 0 0 10px;
 }
 /*calculator end*/
 
@@ -505,15 +515,23 @@ html{
 	.phone{
 		width: auto;
 	}
+	.form-calculator{
+		width: 60%;
+	}
 }
 @media screen and (max-width: 992px){
 	.photo{
 		width: 50%;
+		padding: 0 10px 20px 10px;
+		&:nth-child(n+3) {
+			padding: 0 10px 0px 10px;
+		}
 	}
 	.service{
 		width: 35%;
 	}
 	.promo__slogan{
+		width:100%;
 		right: initial;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -528,20 +546,94 @@ html{
 	.header_slogan{
 		margin: 0 0 25px 0;
 	}
+	.review__content {
+		padding: 0 0  0 300px;
+	}
 }
 @media screen and (max-width: 850px){
 	.form-calculator{
-		width:100%;
+		width:70%;
+	}
+	.review__text {
+		line-height: 30px;
 	}
 }
 @media screen and (max-width: 768px){
-
+	html, body, .promo{
+		height:100%;
+	}
+	.header {
+		font-size: 36px;
+	}
+	.service{
+		margin: 0 3% 25px 3%;
+		&__title {
+			font-size:20px;
+		}
+	}
+	.row-photo {
+		//padding: 0 0 25px 0;
+	}
+	.header_review{
+		text-align:center;
+	}
+	.review__content {
+		padding: 0 25px;
+		background: none;
+		text-align: center;
+	}
+	.review__text{
+		font-size:18px;
+	}
+}
+@media screen and (max-width: 715px){
+	.item-form__fireplace {
+		vertical-align: bottom;
+	}
+	.price__value{
+		display:block;
+	}
 }
 @media screen and (max-width: 640px){
-
+	.header {
+		margin: 0 0 25px 0;
+	}
+	.advantages{
+		padding: 25px 0 0 0;
+	}
+	.review, .gallery {
+		padding: 25px 0;
+	}
+	.service {
+		width: 44%;
+	}
+}
+@media screen and (max-width: 540px){
+	.photo__title {
+		font-size: 16px;
+		letter-spacing:0;
+	}
+	.service__title {
+		font-size: 18px;
+	}
+	.service__images {
+		width: 120px;
+	}
 }
 @media screen and (max-width: 480px){
-
+	.review__text {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.header {
+		font-size: 30px;
+	}
+	.review__title {
+		font-size: 24px;
+		span {
+			font-size: 20px;
+		}
+	}
 }
 @media screen and (max-width: 420px){
 

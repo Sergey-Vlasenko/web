@@ -8,6 +8,7 @@
         <title>Smart_House</title>
         <link href="" rel="shortcut icon" type="img/*.icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
 		<link rel="stylesheet" href="css/normalize.css">
         <link href="css/lightbox.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/jquery.bxslider.css">
@@ -250,13 +251,15 @@
                         <option>Да</option>
                         <option>Нет</option>
                     </select>-->
-				<div class="item-form item-form_fireplace">
-					<p class="item-form__title item-form__title_checkbox">Нужен камин?</p>
-					<input type="checkbox" class="checkbox" id="fireplace">
-                    <label class="fireplace" for="fireplace"></label>
-				</div>
-				<div class="price">
-					<p class="price__item">Стоимость: <span class="price__value">1 020 690 $</span></p>
+				<div class="item-form justify">
+					<div class="item-form__fireplace">
+						<p class="item-form__title item-form__title_checkbox">Нужен камин?</p>
+						<input type="checkbox" class="checkbox" id="fireplace">
+						<label class="fireplace" for="fireplace"></label>
+					</div>
+					<div class="price">
+						<p class="price__item">Стоимость: <span class="price__value">1 020 690 $</span></p>
+					</div>
 				</div>
 				<!--Кнопка рассчитать -->
                 <!-- <div onClick="calculateForm();">Рассчитать</div> -->
@@ -288,7 +291,7 @@
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/jquery.bxslider-rahisified.min.js"></script>
-    <script src="js/plugins-scroll.js"></script>
+    <!--<script src="js/plugins-scroll.js"></script>-->
     <script src="js/lightbox.js"></script>
 	<script src="js/plugins.js"></script>
 	</body>
