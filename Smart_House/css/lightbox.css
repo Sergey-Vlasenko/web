@@ -93,7 +93,8 @@ body:after {
   outline: none;
 }
 
-/*.lb-prev, .lb-next {
+.lb-prev,
+.lb-next {
   height: 100%;
   cursor: pointer;
   display: block;
@@ -106,9 +107,6 @@ body:after {
   background: url(../img/prev.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: opacity 0.6s;
-  -moz-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
 
@@ -124,9 +122,6 @@ body:after {
   background: url(../img/next.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: opacity 0.6s;
-  -moz-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
 
@@ -134,7 +129,6 @@ body:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-*/
 
 .lb-dataContainer {
   margin: 0 auto;
