@@ -105,7 +105,7 @@
   }
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:768px) {
   .bx-wrapper {
     padding: 0 25px;
   }
