@@ -147,8 +147,9 @@ html {
 
 .logo {
   float: left;
-  width: 200px;
+  width: 125px;
   z-index: 3;
+  padding: 0 0 0 30px;
 }
 
 .logo__link {
@@ -159,7 +160,7 @@ html {
   position: relative;
   z-index: 2;
   height: 100%;
-  margin: 0 250px 0 157px;
+  margin: 0 250px 0 125px;
   text-align: center;
 }
 
@@ -208,7 +209,7 @@ html {
   color: #fff;
   overflow: hidden;
   height: 550px;
-  background: url(../img/promo.jpg) no-repeat 50% 0px;
+  background: url(../img/m-promo.jpg) no-repeat 50% 0px;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -363,7 +364,7 @@ html {
 .calculator {
   text-align: center;
   height: 550px;
-  background: url(../img/calc-bg.jpg) no-repeat 0 0;
+  background: url(../img/m-calc-bg.jpg) no-repeat 0 0;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -417,18 +418,9 @@ html {
   padding: 0px 25px 0 10px;
   height: 45px;
   font-size: 20px;
-  border: 2px solid #333;
+  border: 1px solid #333;
   border-radius: 5px;
   box-shadow: 0px 0px 0px 1px #333;
-}
-
-.item-form__field_wc {
-  border: 1px solid #333;
-  box-shadow: 0px 0px 0px 0px #333;
-}
-
-.item-form__field_bedroom {
-  border: 1px solid #333;
 }
 
 .item-form__fireplace {
@@ -451,7 +443,7 @@ html {
 }
 
 .checkbox:checked ~ .fireplace {
-  background-position: 0 0px;
+  background: url(../img/arrow.png) no-repeat center -287px;
 }
 
 .select-arrow {
@@ -489,8 +481,9 @@ html {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: url(../img/checked_checkbox.png) no-repeat 0 -43px;
-  background-size: cover;
+  border: 1px solid #333;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 1px #333;
   margin: 0 0 0 10px;
 }
 
@@ -605,6 +598,18 @@ html {
 
 /*media*/
 
+@media screen and (min-width: 768px) {
+  .promo {
+    background: url(../img/promo.jpg) no-repeat 50% 0px;
+    background-size: cover;
+  }
+
+  .calculator {
+    background: url(../img/calc-bg.jpg) no-repeat 0 0;
+    background-size: cover;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .wraper {
     width: 100%;
@@ -641,6 +646,26 @@ html {
 
   .photo:nth-child(n+3) {
     padding: 0 10px 0px 10px;
+  }
+
+  .menu {
+    margin: 0;
+  }
+
+  .menu__item {
+    margin-left: 10px;
+  }
+
+  .menu__item:first-child {
+    margin: 0;
+  }
+
+  .phone {
+    padding: 0 10px;
+  }
+
+  .logo {
+    padding: 0;
   }
 
   .service {
@@ -683,7 +708,7 @@ html {
   }
 
   .model:last-child {
-    padding: 0 45px;
+    padding-bottom: 0;
   }
 }
 
@@ -736,8 +761,7 @@ html {
     height: 44px;
   }
 
-  .model,
-  .model:last-child {
+  .model {
     padding: 0 25px 50px 25px;
   }
 }
@@ -781,10 +805,6 @@ html {
 
   .model {
     padding: 0 25px 25px 25px;
-  }
-
-  .model:last-child {
-    padding: 0 25px 0 25px;
   }
 }
 
@@ -863,6 +883,10 @@ html {
   .header.header_slogan {
     font-size: 42px;
   }
+
+  .footer {
+    padding: 25px 10px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -881,12 +905,21 @@ html {
   .promo__list {
     padding: 0 0 0 30px;
   }
+
+  .copyright__item {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 380px) {
   .form-calculator {
     padding: 10px;
     width: 95%;
+  }
+
+  .phone {
+    padding: 0 10px 0 0;
+    border: none;
   }
 }
 
