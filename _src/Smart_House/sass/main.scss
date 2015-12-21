@@ -65,7 +65,7 @@ $browser-context: 16; // Default
     vertical-align: middle;
 }
 html{
-	font: 20px 'Open Sans', sans-serif;
+	font: 18px 'Open Sans', sans-serif;
 	color: #333;
 }
 .justify {
@@ -149,6 +149,7 @@ html{
 	top: 0;
 	left: 0;
 	background-color: rgb(10, 10, 10);
+	font-size: 20px;
 	&.white-block{
 		background: #fff;
 		color: #252525;
@@ -160,11 +161,11 @@ html{
 		}
 	}
 }
-.logo{
-	float:left;
-	width:125px;
-	z-index:3;
-	padding: 0 0 0 30px;
+.logo {
+    float: left;
+    width: 254px;
+    z-index: 3;
+    padding: 3px 0 3px 30px;
 	&__link{
 		display: block;
 	}
@@ -509,9 +510,10 @@ html{
 		text-align: center;
 	}
 	&__text{
-		font-size:20px;
+		font-size:18px;
 		line-height: 1.8;
 		margin: 25px 0 0 0;
+		text-align: justify;
 	}
 	&__link{
 		display: block;
@@ -533,11 +535,18 @@ html{
 	}
 	&__text{
 		line-height:36px;
+		text-align: justify;
 	}
 	&__content{
 		padding:0 0 0 350px;
 		box-sizing: border-box;
 		background: url(../img/men.jpg) no-repeat 0 bottom;
+	}
+	&__images{
+		display: none;
+		min-width: 38%;
+		margin: 0 auto;
+		max-width: 60%;
 	}
 }
 .header_review{
@@ -605,6 +614,10 @@ html{
 		&:nth-child(n+3) {
 			padding: 0 10px 0px 10px;
 		}
+	}
+	.row-photo{
+		padding: 0;
+		border: none;
 	}
 	.menu{
 		margin:0;
@@ -686,6 +699,9 @@ html{
 	}
 	.review__text, .model__text{
 		font-size:18px;
+	}
+	.review__images{
+		display: inline-block;
 	}
 	.service__title {
 	    height: 44px;
