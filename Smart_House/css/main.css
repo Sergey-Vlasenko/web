@@ -46,7 +46,7 @@ img {
 }
 
 html {
-  font: 20px 'Open Sans', sans-serif;
+  font: 18px 'Open Sans', sans-serif;
   color: #333;
 }
 
@@ -130,6 +130,7 @@ html {
   z-index: 2;
   top: 0;
   left: 0;
+  font-size: 20px;
 }
 
 .head.white-block {
@@ -147,9 +148,9 @@ html {
 
 .logo {
   float: left;
-  width: 125px;
+  width: 254px;
   z-index: 3;
-  padding: 0 0 0 30px;
+  padding: 3px 0 3px 30px;
 }
 
 .logo__link {
@@ -524,9 +525,10 @@ html {
 }
 
 .model__text {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.8;
   margin: 25px 0 0 0;
+  text-align: justify;
 }
 
 .model__link {
@@ -555,12 +557,20 @@ html {
 
 .review__text {
   line-height: 36px;
+  text-align: justify;
 }
 
 .review__content {
   padding: 0 0 0 350px;
   box-sizing: border-box;
   background: url(../img/men.jpg) no-repeat 0 bottom;
+}
+
+.review__images {
+  display: none;
+  min-width: 38%;
+  margin: 0 auto;
+  max-width: 60%;
 }
 
 .header_review {
@@ -646,6 +656,11 @@ html {
 
   .photo:nth-child(n+3) {
     padding: 0 10px 0px 10px;
+  }
+
+  .row-photo {
+    padding: 0;
+    border: none;
   }
 
   .menu {
@@ -755,6 +770,10 @@ html {
   .review__text,
   .model__text {
     font-size: 18px;
+  }
+
+  .review__images {
+    display: inline-block;
   }
 
   .service__title {
