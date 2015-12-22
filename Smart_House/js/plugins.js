@@ -17,6 +17,15 @@ $(window).scroll(function() {
 		$('.logo__images').attr('src', 'img/logo2.png');
 	}
 });
+//меню
+$(function(){
+    $(".mobile-control").on("click", function(e){
+        $(".menu").slideToggle(300);
+		e.stopPropagation();
+		return false;
+    });
+});
+
 //Слайдер галерея
  $(function(){
   $('.slider-gallery').bxSlider({
