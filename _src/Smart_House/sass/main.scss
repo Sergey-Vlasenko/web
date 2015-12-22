@@ -118,6 +118,9 @@ html{
 	position: relative;
 	width:1200px;
 	margin: 0 auto;
+	&_promo{
+		width: 800px;
+	}
 }
 .button{
 	display:inline-block;
@@ -175,6 +178,12 @@ html{
 		.phone{
 			color: #252525;
 		}
+		.mobile-control {
+		    background: #0a0a0a;
+			&:after, &:before{
+				background: #fff;
+			}
+		}
 	}
 }
 .logo {
@@ -196,8 +205,7 @@ html{
 	width: 100%;
 	height: 20%;
 	background:#0a0a0a;
-	transition: all ease .2s;
-	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 }
 .mobile{
 	display: none;
@@ -208,7 +216,7 @@ html{
     width: 70px;
 	&-control{
 		@extend %center;
-		width: 20px;
+		width: 26px;
 		height: 20px;
 		background:#fff;
 		z-index: 1;
@@ -431,6 +439,27 @@ html{
 	//	padding: 0 0 25px 0;
 	//}
 }
+/*video*/
+.video{
+	text-align: center;
+	padding: 50px 0;
+	&__text{
+		text-align: justify;
+		font-size: 18px;
+    	line-height: 1.8;
+	}
+	&__content{
+		padding: 50px 0 0 0;
+		width: 560px;
+		height: 315px;
+		margin: 0 auto;
+		iframe{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+/*video end*/
 /*calculator*/
 .calculator{
 	text-align:center;
@@ -684,6 +713,12 @@ html{
 	.sub-title{
 		text-align: center;
 	}
+	.review__text{
+		padding: 0 45px 0 0;
+	}
+	.video__text {
+    	padding: 0 45px;
+	}
 }
 @media screen and (max-width: 1100px){
 	.form-calculator {
@@ -804,8 +839,11 @@ html{
 	}
 }
 @media screen and (max-width: 768px){
-	html, body, .promo{
-		height:100%!important;
+	html, body{
+		height:100%;
+	}
+	.promo{
+		height: 80%;
 	}
 	.header {
 		font-size: 36px;
@@ -823,7 +861,7 @@ html{
 	}
 	.container{
 		text-align: center;
-		padding: 0x;
+		padding: 0;
 	}
 	.service{
 		margin: 0 3% 25px 3%;
@@ -839,11 +877,17 @@ html{
 		background: none;
 		text-align: center;
 	}
+	.review__text{
+		padding: 0;
+	}
 	.review__text, .model__text{
 		font-size:18px;
 	}
 	.review__images{
 		display: inline-block;
+	}
+	.video__text {
+    	padding: 0 25px;
 	}
 	.service__title {
 	    height: 44px;
@@ -876,7 +920,8 @@ html{
 		padding: 3px 0;
 	}
 	.promo{
-		padding: 0 0 330px 0;
+		//padding: 0 0 330px 0;
+		height: 100%;
 		&__tv{
 			bottom: -60px;
 			transform: translate(50%, 100%);
@@ -891,8 +936,14 @@ html{
 	.advantages{
 		padding: 25px 0 0 0;
 	}
-	.review, .gallery {
+	.review, .gallery, .video {
 		padding: 25px 0;
+	}
+	.video__content{
+		padding: 25px 25px 0 25px;
+    	box-sizing: border-box;
+		height: auto;
+		width: auto;
 	}
 	.service {
 		width: 44%;
@@ -990,6 +1041,9 @@ html{
 	.review__content {
     	padding: 0 10px;
 	}
+	.video__content{
+		height: auto;
+	}
 	.select-arrow{
 		font-size: 16px;
 	}
@@ -1011,7 +1065,7 @@ html{
 	.mobile{
 		width:30px;
 		height: 38px;
-		padding: 0 5px 0 0;
+		padding: 0 10px 0 0;
 	}
 	.phone{
 	    height: 30px;

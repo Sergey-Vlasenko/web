@@ -4,13 +4,11 @@ $(function(){
 	  e.preventDefault();
 	});
 });
-
+//смена цвета топ меню
 $(window).scroll(function() {
 	if ($(this).scrollTop() > 90){
 		$('.head').addClass("white-block");
 		$('.logo__images').attr('src', 'img/logo.png');
-		// $('a#myLink').attr('href', 'http://www.example.com/');
-
 	}
 	else{
 		$('.head').removeClass("white-block");
