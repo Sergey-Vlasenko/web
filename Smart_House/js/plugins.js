@@ -39,6 +39,30 @@ $(function(){
   });
  });
 
+ //Слайдер promo
+  $(function(){
+   $('.video-list').bxSlider({
+	 video: true,
+	 autoStart:true,
+     auto: true,
+	 pause: 4000,
+	 mode:'fade',
+     moveSlides: 1,
+     slideMargin:0,
+     nextText:'',
+     prevText:'',
+ 	pager:false,
+     controls: false,
+     autoReload: true,
+     breaks: [{screen:100, slides:1}],
+	 onSliderLoad: function(){
+		 jQuery('video').trigger('play');
+	  },
+	  onSlideAfter: function(){
+		  jQuery('video').trigger('play');
+	  }
+   });
+  });
 //Галлерея
 $(function(){
    lightbox.option({
@@ -59,6 +83,8 @@ $(document).ready(function() {
 
     };
 });
+
+
 /*функция, отображающая результат на странице */
 function changeResult(result){
 document.getElementById('result').innerHTML = result;
