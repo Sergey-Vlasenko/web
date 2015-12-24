@@ -54,7 +54,7 @@ $browser-context: 16; // Default
 		left: 0;
 		bottom: 0;
 		right: 0;
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(0, 0, 0, 0.3);
 	}
 }
 %img{
@@ -118,7 +118,7 @@ html{
 	position: relative;
 	width:1182px;
 	margin: 0 auto;
-	&_promo, &_video{
+	&_promo{
 		width: 800px;
 	}
 }
@@ -274,18 +274,21 @@ html{
 /*promo*/
 .video-promo{
 		position: absolute;
-	    height: 100%;
+	    top: 0;
+	    left: 0;
 	    width: 100%;
+	    height: 600px;
+	    overflow: hidden;
 	&__item{
-		height: 550px;
-}
+
+	}
 }
 .promo{
 	position:relative;
 	margin: 70px 0 0 0;
 	color: #fff;
     overflow: hidden;
-    height: 550px;
+    height: 600px;
     //background: url(../img/promo.jpg) no-repeat 50% 0px;
 	//background: url(../img/m-promo.jpg) no-repeat 50% 0px;
 	//background-size: cover;
@@ -314,9 +317,17 @@ html{
 		width: 100%;
 	}
 	&__video{
-		height: 100%;
-		max-width: none;
-		@extend %center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		right: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		transform: translate(-50%,-50%);
+		margin-top: -1px;
 	}
 	&__text{
 		background: url(../img/arrow.png) no-repeat -7px -196px;
@@ -462,8 +473,8 @@ html{
 	}
 	&__content{
 		padding: 50px 0 0 0;
-		width: 100%;
-		height: 315px;
+		width: 800px;
+	    height: 450px;
 		margin: 0 auto;
 		iframe{
 			width: 100%;
@@ -706,12 +717,12 @@ html{
 	}
 }
 @media screen and (min-width: 1980px){
-	.promo__video{
-	    height: auto;
-		width: 100%;
-		top: 0;
-		transform: translate(-50%, 0%);
-	}
+	// .promo__video{
+	//     height: auto;
+	// 	width: 100%;
+	// 	top: 0;
+	// 	transform: translate(-50%, 0%);
+	// }
 }
 @media screen and (max-width: 1200px){
 	.wraper{
@@ -745,7 +756,8 @@ html{
 			padding: 0 45px;
 		}
 		&__content{
-			width:70%;
+			width: auto;
+			padding: 50px 45px 0 45px;
 		}
 	}
 }
@@ -972,7 +984,6 @@ html{
 		padding: 25px 25px 0 25px;
     	box-sizing: border-box;
 		height: 300px;
-		width: auto;
 	}
 	.service {
 		width: 44%;
