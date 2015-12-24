@@ -724,18 +724,29 @@ html{
 	// 	transform: translate(-50%, 0%);
 	// }
 }
+@media screen and (max-width: 1400px){
+	.promo{
+		//text-align:center;
+		height: 485px;
+		&__video{
+			top: -130px;
+			height: 787px;
+			transform: translate(-50%, 0%);
+		}
+	}
+}
 @media screen and (max-width: 1200px){
 	.wraper{
 		width: 100%;
 	}
 	.promo{
 		text-align:center;
-		height: 470px;
-		&__video{
-			top: -126px;
-			height: 753px;
-			transform: translate(-50%, 0%);
-		}
+		// height: 470px;
+		// &__video{
+		// 	top: -126px;
+		// 	height: 753px;
+		// 	transform: translate(-50%, 0%);
+		// }
 	}
 	.phone{
 		width: auto;
@@ -890,10 +901,11 @@ html{
 		height:100% !important;
 	}
 	.promo{
-		height: 80%;
+		//height: 80%;
+    	height: 460px;
 		&__video{
 			top: 50%;
-			height: auto;
+			//height: auto;
 			transform: translate(-50%, -50%);
 		}
 	}
@@ -973,7 +985,7 @@ html{
 	}
 	.promo{
 		//padding: 0 0 330px 0;
-		height: 100%;
+		//height: 100%;
 		&__tv{
 			bottom: -60px;
 			transform: translate(50%, 100%);
@@ -1037,6 +1049,12 @@ html{
 	}
 }
 @media screen and (max-width: 480px){
+	.promo {
+    	height: 100%;
+		&__video{
+			height: auto;
+		}
+	}
 	.menu{
 		padding: 0 5px;
 		&__item {
