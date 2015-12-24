@@ -1140,6 +1140,14 @@ html {
 }
 
 @media screen and (max-width: 480px) {
+  .promo {
+    height: 100%;
+  }
+
+  .promo__video {
+    height: auto;
+  }
+
   .menu {
     padding: 0 5px;
   }
