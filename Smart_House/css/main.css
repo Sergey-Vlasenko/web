@@ -267,7 +267,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 600px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -757,6 +757,14 @@ html {
 
   .promo {
     text-align: center;
+    height: 470px;
+  }
+
+  .promo__video {
+    top: -126px;
+    height: 753px;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
   }
 
   .phone {
@@ -842,7 +850,6 @@ html {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: left;
   }
 
   .promo__list {
@@ -877,11 +884,6 @@ html {
 
   .model:last-child {
     padding-bottom: 0;
-  }
-
-  .container {
-    text-align: left;
-    padding: 0 0 0 25px;
   }
 }
 
@@ -951,6 +953,13 @@ html {
 
   .promo {
     height: 80%;
+  }
+
+  .promo__video {
+    top: 50%;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .header {
