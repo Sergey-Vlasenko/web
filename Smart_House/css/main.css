@@ -957,12 +957,11 @@ html {
   }
 
   .promo {
-    height: 80%;
+    height: 460px;
   }
 
   .promo__video {
     top: 50%;
-    height: auto;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
@@ -1058,10 +1057,6 @@ html {
   .logo {
     width: 245px;
     padding: 3px 0;
-  }
-
-  .promo {
-    height: 100%;
   }
 
   .promo__tv {
