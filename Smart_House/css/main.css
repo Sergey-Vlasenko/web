@@ -36,7 +36,7 @@ img {
 
 .promo:after,
 .calculator:after {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   content: '';
   position: absolute;
   top: 0;
@@ -74,8 +74,7 @@ html {
   transform: translate(0, -50%);
 }
 
-.mobile-control,
-.promo__video {
+.mobile-control {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -265,12 +264,11 @@ html {
 
 .video-promo {
   position: absolute;
-  height: 100%;
+  top: 0;
+  left: 0;
   width: 100%;
-}
-
-.video-promo__item {
-  height: 550px;
+  height: 600px;
+  overflow: hidden;
 }
 
 .promo {
@@ -278,7 +276,7 @@ html {
   margin: 70px 0 0 0;
   color: #fff;
   overflow: hidden;
-  height: 550px;
+  height: 600px;
 }
 
 .promo .wraper_promo {
@@ -302,8 +300,18 @@ html {
 }
 
 .promo__video {
-  height: 100%;
-  max-width: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: -1px;
 }
 
 .promo__text {
@@ -739,16 +747,6 @@ html {
     background: url(../img/calc-bg.jpg) no-repeat 0 0;
     background-size: cover;
     background-attachment: fixed;
-  }
-}
-
-@media screen and (min-width: 1980px) {
-  .promo__video {
-    height: auto;
-    width: 100%;
-    top: 0;
-    -webkit-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0%);
   }
 }
 
