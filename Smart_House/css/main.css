@@ -750,6 +750,19 @@ html {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .promo {
+    height: 485px;
+  }
+
+  .promo__video {
+    top: -130px;
+    height: 778px;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .wraper {
     width: 100%;
@@ -757,14 +770,6 @@ html {
 
   .promo {
     text-align: center;
-    height: 470px;
-  }
-
-  .promo__video {
-    top: -126px;
-    height: 753px;
-    -webkit-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0%);
   }
 
   .phone {
