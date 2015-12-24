@@ -277,7 +277,7 @@ html{
 	    top: 0;
 	    left: 0;
 	    width: 100%;
-	    height: 600px;
+	    height: 100%;
 	    overflow: hidden;
 	&__item{
 
@@ -730,6 +730,12 @@ html{
 	}
 	.promo{
 		text-align:center;
+		height: 470px;
+		&__video{
+			top: -126px;
+			height: 753px;
+			transform: translate(-50%, 0%);
+		}
 	}
 	.phone{
 		width: auto;
@@ -798,7 +804,7 @@ html{
 		right: initial;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		text-align: left;
+		//text-align: left;
 	}
 	.promo__list{
 		padding: 0 0 0 25px;
@@ -827,8 +833,8 @@ html{
 		}
 	}
 	.container{
-		text-align: left;
-		padding: 0 0 0 25px;
+		//text-align: left;
+		//padding: 0 0 0 25px;
 	}
 }
 @media screen and (max-width: 920px){
@@ -885,6 +891,11 @@ html{
 	}
 	.promo{
 		height: 80%;
+		&__video{
+			top: 50%;
+			height: auto;
+			transform: translate(-50%, -50%);
+		}
 	}
 	.header {
 		font-size: 36px;
