@@ -929,8 +929,13 @@ html{
 	}
 	.service{
 		margin: 0 3% 25px 3%;
+		width: 44%;
 		&__title {
-			font-size:20px;
+			font-size:22px;
+			font-weight: 700;
+		}
+		&__description{
+			font-size: 20px;
 		}
 	}
 	.header_review{
@@ -944,8 +949,8 @@ html{
 	.review__text{
 		padding: 0;
 	}
-	.review__text, .model__text{
-		font-size:18px;
+	.review__text, .model__text, .video__text{
+		font-size:20px;
 	}
 	.review__images{
 		display: inline-block;
@@ -958,6 +963,9 @@ html{
 	}
 	.model{
 		padding: 0 25px 50px 25px;
+	}
+	.photo__title{
+		font-size: 20px;
 	}
 	//.model:last-child{
 	//	padding: 0 25px;
@@ -1030,6 +1038,9 @@ html{
 	.service__images {
 		width: 120px;
 	}
+	.service__description {
+    	font-size: 15px;
+	}
 	.form-calculator {
 		padding: 20px;
 		width: 88%;
@@ -1071,7 +1082,7 @@ html{
 	.phone {
 		font-size: 17px;
 	}
-	.review__text, .model__text {
+	.review__text, .model__text, .video__text {
 		font-size: 16px;
 		line-height: 24px;
 	}
