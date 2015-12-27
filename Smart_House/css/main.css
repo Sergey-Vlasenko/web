@@ -992,9 +992,15 @@ html {
 
   .service {
     margin: 0 3% 25px 3%;
+    width: 44%;
   }
 
   .service__title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .service__description {
     font-size: 20px;
   }
 
@@ -1013,8 +1019,9 @@ html {
   }
 
   .review__text,
-  .model__text {
-    font-size: 18px;
+  .model__text,
+  .video__text {
+    font-size: 20px;
   }
 
   .review__images {
@@ -1031,6 +1038,10 @@ html {
 
   .model {
     padding: 0 25px 50px 25px;
+  }
+
+  .photo__title {
+    font-size: 20px;
   }
 }
 
@@ -1117,6 +1128,10 @@ html {
     width: 120px;
   }
 
+  .service__description {
+    font-size: 15px;
+  }
+
   .form-calculator {
     padding: 20px;
     width: 88%;
@@ -1170,7 +1185,8 @@ html {
   }
 
   .review__text,
-  .model__text {
+  .model__text,
+  .video__text {
     font-size: 16px;
     line-height: 24px;
   }
